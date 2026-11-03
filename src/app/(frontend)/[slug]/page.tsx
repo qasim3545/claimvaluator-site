@@ -32,11 +32,11 @@ async function load(slug: string) {
 export async function generateStaticParams() {
   const payload = await getClient()
   const [tools, pages] = await Promise.all([
-    payload.find({ collection: 'tools', limit: 1000, depth: 0, select: { slug: true }, pagination: false }),
-    payload.find({ collection: 'pages', limit: 1000, depth: 0, select: { slug: true, parent: true }, pagination: false }),
+    payload.find({ collection: 'tools', limit: 1000, depth: 0, select: { slug: true }, where: { _status: { equals: 'published' } }, pagination: false }),
+    payload.find({ collection: 'pages', limit: 1000, depth: 0, select: { slug: true, parent: true }, where: { _status: { equals: 'published' } }, pagination: false }),
   ])
   return [
-    ...tools.docs.map((d: any) => ({ slug: d.slug })),
+    ...tools.docs.filter((d: any) => d.slug).map((d: any) => ({ slug: d.slug })),
     ...pages.docs.filter((d: any) => d.slug && d.slug !== 'home' && !d.parent).map((d: any) => ({ slug: d.slug })),
   ]
 }

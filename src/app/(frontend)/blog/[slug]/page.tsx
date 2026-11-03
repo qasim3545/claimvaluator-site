@@ -11,8 +11,16 @@ type Args = { params: Promise<{ slug: string }> }
 
 export async function generateStaticParams() {
   const payload = await getClient()
-  const res = await payload.find({ collection: 'posts', limit: 5000, depth: 0, select: { slug: true }, pagination: false })
-  return res.docs.map((d: any) => ({ slug: d.slug }))
+  const res = await payload.find({
+    collection: 'posts',
+    limit: 5000,
+    depth: 0,
+    select: { slug: true },
+    where: { _status: { equals: 'published' } },
+    pagination: false,
+  })
+  // Unfinished drafts can have no slug yet; they are not pages.
+  return res.docs.filter((d: any) => typeof d.slug === 'string' && d.slug).map((d: any) => ({ slug: d.slug }))
 }
 
 export default async function Post({ params }: Args) {

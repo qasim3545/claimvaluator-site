@@ -3,6 +3,8 @@ import type { Metadata } from 'next'
 import { PayloadRedirects } from '@/components/PayloadRedirects'
 import { findAll, findOne, getClient } from '@/site/cms'
 import { buildMeta } from '@/site/meta'
+import { stateCalcDescription, stateHubDescription } from '@/site/rules'
+import { getState, getTool } from '@/calculators/data'
 import { PageView } from '@/site/views/PageView'
 import { StateCalcView } from '@/site/views/StateCalcView'
 import { StateHubView } from '@/site/views/StateHubView'
@@ -27,15 +29,15 @@ async function load(slug: string, child: string) {
 export async function generateStaticParams() {
   const payload = await getClient()
   const [sp, states] = await Promise.all([
-    payload.find({ collection: 'state-pages', limit: 5000, depth: 0, select: { path: true }, pagination: false }),
+    payload.find({ collection: 'state-pages', limit: 5000, depth: 0, select: { path: true }, where: { _status: { equals: 'published' } }, pagination: false }),
     payload.find({ collection: 'states', limit: 100, depth: 0, select: { slug: true }, pagination: false }),
   ])
   return [
-    ...sp.docs.map((d: any) => {
+    ...sp.docs.filter((d: any) => typeof d.path === 'string' && d.path.includes('/')).map((d: any) => {
       const [slug, child] = String(d.path).split('/')
       return { slug, child }
     }),
-    ...states.docs.map((d: any) => ({ slug: 'states', child: d.slug })),
+    ...states.docs.filter((d: any) => d.slug).map((d: any) => ({ slug: 'states', child: d.slug })),
   ]
 }
 
@@ -63,5 +65,12 @@ export async function generateMetadata({ params }: Args): Promise<Metadata> {
   const { slug, child } = await params
   const hit = await load(slug, child)
   if (!hit) return {}
-  return buildMeta({ doc: hit.doc, path: `/${slug}/${child}/`, title: `${hit.doc.title} | ClaimValuator`, description: hit.doc.excerpt })
+  let description: string | undefined = hit.doc.excerpt || undefined
+  const st = getState(child)
+  if (!description && st && hit.kind === 'statecalc') {
+    const tool = getTool(slug)
+    if (tool) description = stateCalcDescription(st, tool.short, tool.variant)
+  }
+  if (!description && st && hit.kind === 'state') description = stateHubDescription(st)
+  return buildMeta({ doc: hit.doc, path: `/${slug}/${child}/`, title: `${hit.doc.title} | ClaimValuator`, description })
 }
