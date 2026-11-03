@@ -1,0 +1,3895 @@
+{
+    "states": {
+        "alabama": {
+            "short": "",
+            "fault_note": "Narrow exceptions, such as the other driver’s wanton conduct or the last clear chance doctrine, can still allow recovery.",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 2,
+            "sol_wd_note": "",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": false,
+            "nf": null,
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "limited",
+                "text": "Owners are strictly liable for bites on their own property and for bites elsewhere if they knew the dog was dangerous.",
+                "cite": "Ala. Code §§ 3-1-3, 3-6-1"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Alabama",
+            "abbr": "AL",
+            "nb": [
+                "mississippi",
+                "tennessee",
+                "georgia",
+                "florida"
+            ],
+            "fault": "contributory",
+            "fault_cite": "Williams v. Delta Int’l Mach. Corp., 619 So. 2d 1330 (Ala. 1993)",
+            "sol": 2,
+            "sol_cite": "Ala. Code § 6-2-38",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "slug": "alabama"
+        },
+        "alaska": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 2,
+            "sol_wd_note": "",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": false,
+            "nf": null,
+            "cap": {
+                "amount": 400000,
+                "cat": 1000000,
+                "formula": "ak",
+                "text": "$400,000 or $8,000 times the injured person’s remaining life expectancy, whichever is greater. For severe permanent impairment or disfigurement, $1 million or $25,000 times life expectancy.",
+                "cite": "Alaska Stat. § 09.17.010"
+            },
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "common",
+                "text": "No dog bite statute. The owner is liable if they knew or should have known the dog was dangerous, or if they were negligent.",
+                "cite": ""
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Alaska",
+            "abbr": "AK",
+            "nb": [
+                "washington",
+                "oregon",
+                "idaho",
+                "hawaii"
+            ],
+            "fault": "pure",
+            "fault_cite": "Alaska Stat. § 09.17.060",
+            "sol": 2,
+            "sol_cite": "Alaska Stat. § 09.10.070",
+            "ins": [
+                50000,
+                100000,
+                25000
+            ],
+            "slug": "alaska"
+        },
+        "arizona": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 2,
+            "sol_wd_note": "",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": false,
+            "nf": null,
+            "cap": null,
+            "cap_text": "None. Arizona’s constitution bars limits on injury damages.",
+            "cap_cite": "Ariz. Const. art. II, § 31",
+            "dog": {
+                "rule": "strict",
+                "text": "Owners are strictly liable for bites to people lawfully in a public or private place, unless the victim provoked the dog.",
+                "cite": "Ariz. Rev. Stat. § 11-1025"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Arizona",
+            "abbr": "AZ",
+            "nb": [
+                "california",
+                "nevada",
+                "utah",
+                "new-mexico",
+                "colorado"
+            ],
+            "fault": "pure",
+            "fault_cite": "Ariz. Rev. Stat. § 12-2505",
+            "sol": 2,
+            "sol_cite": "Ariz. Rev. Stat. § 12-542",
+            "ins": [
+                25000,
+                50000,
+                15000
+            ],
+            "slug": "arizona"
+        },
+        "arkansas": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 3,
+            "sol_wd_note": "",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": false,
+            "nf": null,
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "common",
+                "text": "No dog bite statute. The owner is liable if they knew or should have known the dog was dangerous, or if they were negligent.",
+                "cite": ""
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Arkansas",
+            "abbr": "AR",
+            "nb": [
+                "missouri",
+                "tennessee",
+                "mississippi",
+                "louisiana",
+                "texas",
+                "oklahoma"
+            ],
+            "fault": "bar50",
+            "fault_cite": "Ark. Code § 16-64-122",
+            "sol": 3,
+            "sol_cite": "Ark. Code § 16-56-105",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "slug": "arkansas"
+        },
+        "california": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 2,
+            "sol_wd_note": "",
+            "ins_note": "Raised from 15/30/5 on January 1, 2025.",
+            "ins_cite": "Cal. Veh. Code § 16056",
+            "um": false,
+            "nf": null,
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "strict",
+                "text": "Owners are strictly liable for bites in a public place or to people lawfully on private property, even if the dog never bit before.",
+                "cite": "Cal. Civ. Code § 3342"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "California",
+            "abbr": "CA",
+            "nb": [
+                "oregon",
+                "nevada",
+                "arizona"
+            ],
+            "fault": "pure",
+            "fault_cite": "Li v. Yellow Cab Co., 13 Cal. 3d 804 (1975)",
+            "sol": 2,
+            "sol_cite": "Cal. Civ. Proc. Code § 335.1",
+            "ins": [
+                30000,
+                60000,
+                15000
+            ],
+            "slug": "california"
+        },
+        "colorado": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 3,
+            "sol_note": "Three years for injuries from a motor vehicle crash; two years for most other injuries.",
+            "sol_prior": null,
+            "sol_wd": 2,
+            "sol_wd_note": "",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": false,
+            "nf": null,
+            "cap": {
+                "amount": 1500000,
+                "text": "$1.5 million on non-economic damages for claims that arose on or after January 1, 2025.",
+                "cite": "Colo. Rev. Stat. § 13-21-102.5"
+            },
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "limited",
+                "text": "Owners are strictly liable for economic damages when a dog causes serious bodily injury or death. Other bites follow the negligence rules.",
+                "cite": "Colo. Rev. Stat. § 13-21-124"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Colorado",
+            "abbr": "CO",
+            "nb": [
+                "wyoming",
+                "nebraska",
+                "kansas",
+                "oklahoma",
+                "new-mexico",
+                "utah",
+                "arizona"
+            ],
+            "fault": "bar50",
+            "fault_cite": "Colo. Rev. Stat. § 13-21-111",
+            "sol": 2,
+            "sol_cite": "Colo. Rev. Stat. §§ 13-80-102, 13-80-101(1)(n)",
+            "ins": [
+                25000,
+                50000,
+                15000
+            ],
+            "slug": "colorado"
+        },
+        "connecticut": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 2,
+            "sol_wd_note": "",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": true,
+            "nf": null,
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "strict",
+                "text": "Owners and keepers are strictly liable for any damage their dog causes, unless the victim was trespassing or teasing the dog.",
+                "cite": "Conn. Gen. Stat. § 22-357"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Connecticut",
+            "abbr": "CT",
+            "nb": [
+                "new-york",
+                "massachusetts",
+                "rhode-island"
+            ],
+            "fault": "bar51",
+            "fault_cite": "Conn. Gen. Stat. § 52-572h",
+            "sol": 2,
+            "sol_cite": "Conn. Gen. Stat. § 52-584",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "slug": "connecticut"
+        },
+        "delaware": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 2,
+            "sol_wd_note": "",
+            "ins_note": "Delaware also requires $15,000/$30,000 of personal injury protection (PIP), but it is not a no-fault state.",
+            "ins_cite": "",
+            "um": false,
+            "nf": null,
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "strict",
+                "text": "Owners are strictly liable for injuries their dog causes, unless the victim was trespassing, committing a crime or provoking the dog.",
+                "cite": "Del. Code tit. 16, § 3053F"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Delaware",
+            "abbr": "DE",
+            "nb": [
+                "maryland",
+                "pennsylvania",
+                "new-jersey"
+            ],
+            "fault": "bar51",
+            "fault_cite": "Del. Code tit. 10, § 8132",
+            "sol": 2,
+            "sol_cite": "Del. Code tit. 10, § 8119",
+            "ins": [
+                25000,
+                50000,
+                10000
+            ],
+            "slug": "delaware"
+        },
+        "district-of-columbia": {
+            "short": "DC",
+            "fault_note": "Pedestrians, cyclists and other vulnerable road users can recover unless they were more at fault than the driver.",
+            "fault_note_cite": "D.C. Code § 50-2204.52",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 2,
+            "sol_wd_note": "",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": true,
+            "nf": null,
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "common",
+                "text": "Liability usually turns on whether the owner knew the dog was dangerous or broke a leash or control law.",
+                "cite": ""
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "District of Columbia",
+            "abbr": "DC",
+            "nb": [
+                "maryland",
+                "virginia"
+            ],
+            "fault": "contributory",
+            "fault_cite": "Wingfield v. People’s Drug Store, 379 A.2d 685 (D.C. 1977)",
+            "sol": 3,
+            "sol_cite": "D.C. Code § 12-301(8)",
+            "ins": [
+                25000,
+                50000,
+                10000
+            ],
+            "slug": "district-of-columbia"
+        },
+        "florida": {
+            "short": "",
+            "fault_note": "Florida switched from pure comparative fault for claims filed after March 24, 2023. Medical malpractice claims still use pure comparative fault.",
+            "fault_note_cite": "",
+            "fault_prior": {
+                "rule": "pure",
+                "until": "2023-03-24"
+            },
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "Cut from four years to two for negligence claims that arose after March 24, 2023.",
+            "sol_prior": {
+                "years": 4,
+                "until": "2023-03-24"
+            },
+            "sol_wd": 2,
+            "sol_wd_note": "",
+            "ins_note": "Florida requires $10,000 of PIP and $10,000 of property damage liability, but no bodily injury liability coverage.",
+            "ins_cite": "Fla. Stat. §§ 627.736, 324.022",
+            "um": false,
+            "nf": {
+                "type": "yes",
+                "pip": 10000,
+                "th": "verbal",
+                "th_text": "a permanent injury, significant and permanent scarring or disfigurement, or death",
+                "cite": "Fla. Stat. § 627.737"
+            },
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "strict",
+                "text": "Owners are strictly liable for bites in public places or on private property where the victim was lawfully present. A “Bad Dog” sign can limit liability, except for children under six.",
+                "cite": "Fla. Stat. § 767.04"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Florida",
+            "abbr": "FL",
+            "nb": [
+                "georgia",
+                "alabama"
+            ],
+            "fault": "bar51",
+            "fault_cite": "Fla. Stat. § 768.81",
+            "sol": 2,
+            "sol_cite": "Fla. Stat. § 95.11",
+            "ins": [
+                0,
+                0,
+                10000
+            ],
+            "slug": "florida"
+        },
+        "georgia": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 2,
+            "sol_wd_note": "",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": false,
+            "nf": null,
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "limited",
+                "text": "Owners are liable when they knew the dog was vicious or dangerous and let it run at large, including breaking a local leash law.",
+                "cite": "O.C.G.A. § 51-2-7"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Georgia",
+            "abbr": "GA",
+            "nb": [
+                "florida",
+                "alabama",
+                "tennessee",
+                "north-carolina",
+                "south-carolina"
+            ],
+            "fault": "bar50",
+            "fault_cite": "O.C.G.A. § 51-12-33",
+            "sol": 2,
+            "sol_cite": "O.C.G.A. § 9-3-33",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "slug": "georgia"
+        },
+        "hawaii": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 2,
+            "sol_wd_note": "",
+            "ins_note": "Raised from 20/40/10 for policies starting on or after January 1, 2026.",
+            "ins_cite": "",
+            "um": false,
+            "nf": {
+                "type": "yes",
+                "pip": 10000,
+                "th": "monetary",
+                "th_amount": 5000,
+                "th_text": "medical bills above $5,000, or death, significant permanent loss of a bodily function or permanent and serious disfigurement",
+                "cite": "Haw. Rev. Stat. § 431:10C-306"
+            },
+            "cap": {
+                "amount": 375000,
+                "apply": false,
+                "text": "$375,000 on pain and suffering, with exceptions for many serious injuries, including disfigurement, loss of a bodily function and intentional or reckless conduct.",
+                "cite": "Haw. Rev. Stat. § 663-8.7"
+            },
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "strict",
+                "text": "Owners are strictly liable for injuries their animal causes, unless the victim was trespassing or provoked it.",
+                "cite": "Haw. Rev. Stat. § 663-9"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Hawaii",
+            "abbr": "HI",
+            "nb": [
+                "california",
+                "alaska",
+                "oregon",
+                "washington"
+            ],
+            "fault": "bar51",
+            "fault_cite": "Haw. Rev. Stat. § 663-31",
+            "sol": 2,
+            "sol_cite": "Haw. Rev. Stat. § 657-7",
+            "ins": [
+                40000,
+                80000,
+                20000
+            ],
+            "slug": "hawaii"
+        },
+        "idaho": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 2,
+            "sol_wd_note": "",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": false,
+            "nf": null,
+            "cap": {
+                "amount": 0,
+                "apply": false,
+                "text": "A cap on non-economic damages that started at $250,000 and is adjusted every July 1 for wage growth. It does not apply to willful or reckless conduct.",
+                "cite": "Idaho Code § 6-1603"
+            },
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "common",
+                "text": "No dog bite statute. The owner is liable if they knew or should have known the dog was dangerous, or if they were negligent.",
+                "cite": ""
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Idaho",
+            "abbr": "ID",
+            "nb": [
+                "washington",
+                "oregon",
+                "nevada",
+                "utah",
+                "wyoming",
+                "montana"
+            ],
+            "fault": "bar50",
+            "fault_cite": "Idaho Code § 6-801",
+            "sol": 2,
+            "sol_cite": "Idaho Code § 5-219",
+            "ins": [
+                25000,
+                50000,
+                15000
+            ],
+            "slug": "idaho"
+        },
+        "illinois": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 2,
+            "sol_wd_note": "",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": true,
+            "nf": null,
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "strict",
+                "text": "Owners are strictly liable when a dog injures someone who was peaceably and lawfully where they had a right to be, without provoking it.",
+                "cite": "510 ILCS 5/16"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Illinois",
+            "abbr": "IL",
+            "nb": [
+                "wisconsin",
+                "iowa",
+                "missouri",
+                "kentucky",
+                "indiana"
+            ],
+            "fault": "bar51",
+            "fault_cite": "735 ILCS 5/2-1116",
+            "sol": 2,
+            "sol_cite": "735 ILCS 5/13-202",
+            "ins": [
+                25000,
+                50000,
+                20000
+            ],
+            "slug": "illinois"
+        },
+        "indiana": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 2,
+            "sol_wd_note": "",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": false,
+            "nf": null,
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "limited",
+                "text": "Strict liability covers bites to people carrying out a legal duty, such as mail carriers. Other bites usually follow the one-bite and negligence rules.",
+                "cite": "Ind. Code § 15-20-1-3"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Indiana",
+            "abbr": "IN",
+            "nb": [
+                "illinois",
+                "michigan",
+                "ohio",
+                "kentucky"
+            ],
+            "fault": "bar51",
+            "fault_cite": "Ind. Code § 34-51-2-6",
+            "sol": 2,
+            "sol_cite": "Ind. Code § 34-11-2-4",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "slug": "indiana"
+        },
+        "iowa": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 2,
+            "sol_wd_note": "",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": false,
+            "nf": null,
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "strict",
+                "text": "Owners are strictly liable for injuries their dog causes, unless the victim was doing something unlawful that contributed to the injury.",
+                "cite": "Iowa Code § 351.28"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Iowa",
+            "abbr": "IA",
+            "nb": [
+                "minnesota",
+                "wisconsin",
+                "illinois",
+                "missouri",
+                "nebraska",
+                "south-dakota"
+            ],
+            "fault": "bar51",
+            "fault_cite": "Iowa Code § 668.3",
+            "sol": 2,
+            "sol_cite": "Iowa Code § 614.1(2)",
+            "ins": [
+                20000,
+                40000,
+                15000
+            ],
+            "slug": "iowa"
+        },
+        "kansas": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 2,
+            "sol_wd_note": "",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": true,
+            "nf": {
+                "type": "yes",
+                "pip": 4500,
+                "pip_text": "$4,500 for medical bills, plus income, rehabilitation and other benefits",
+                "th": "monetary",
+                "th_amount": 2000,
+                "th_text": "$2,000 in medical bills, or a permanent injury, fracture, permanent disfigurement or death",
+                "cite": "Kan. Stat. § 40-3117"
+            },
+            "cap": null,
+            "cap_text": "None on injury damages. The Kansas Supreme Court struck down the non-economic cap in 2019.",
+            "cap_cite": "Hilburn v. Enerpipe Ltd., 442 P.3d 509 (Kan. 2019)",
+            "dog": {
+                "rule": "common",
+                "text": "No dog bite statute. The owner is liable if they knew or should have known the dog was dangerous, or if they were negligent.",
+                "cite": ""
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Kansas",
+            "abbr": "KS",
+            "nb": [
+                "nebraska",
+                "missouri",
+                "oklahoma",
+                "colorado"
+            ],
+            "fault": "bar50",
+            "fault_cite": "Kan. Stat. § 60-258a",
+            "sol": 2,
+            "sol_cite": "Kan. Stat. § 60-513",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "slug": "kansas"
+        },
+        "kentucky": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 2,
+            "sol_note": "Two years for motor vehicle injuries, counted from the crash or the last no-fault (PIP) payment, whichever is later. One year for most other injuries.",
+            "sol_prior": null,
+            "sol_wd": 1,
+            "sol_wd_note": "Generally one year from the appointment of the estate’s personal representative.",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": false,
+            "nf": {
+                "type": "choice",
+                "pip": 10000,
+                "th": "monetary",
+                "th_amount": 1000,
+                "th_text": "$1,000 in medical bills, or a fracture, permanent injury, permanent disfigurement or death",
+                "choice_text": "Drivers who reject the no-fault limitation in writing keep the right to sue for any injury.",
+                "cite": "Ky. Rev. Stat. § 304.39-060"
+            },
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "strict",
+                "text": "Owners are strictly liable for any damage their dog causes.",
+                "cite": "Ky. Rev. Stat. § 258.235(4)"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Kentucky",
+            "abbr": "KY",
+            "nb": [
+                "indiana",
+                "ohio",
+                "west-virginia",
+                "virginia",
+                "tennessee",
+                "missouri",
+                "illinois"
+            ],
+            "fault": "pure",
+            "fault_cite": "Ky. Rev. Stat. § 411.182",
+            "sol": 1,
+            "sol_cite": "Ky. Rev. Stat. §§ 413.140, 304.39-230",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "slug": "kentucky"
+        },
+        "louisiana": {
+            "short": "",
+            "fault_note": "Louisiana moved from pure comparative fault to a 51% bar for injuries on or after January 1, 2026. Earlier injuries keep the old rule.",
+            "fault_note_cite": "",
+            "fault_prior": {
+                "rule": "pure",
+                "until": "2026-01-01"
+            },
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "Two years for injuries on or after July 1, 2024. Earlier injuries had one year.",
+            "sol_prior": {
+                "years": 1,
+                "until": "2024-07-01"
+            },
+            "sol_wd": 1,
+            "sol_wd_note": "Check with a Louisiana attorney: the wrongful death period runs from the date of death and the 2024 changes may affect it.",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": false,
+            "nf": null,
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "limited",
+                "text": "Owners are liable for injuries they could have prevented, unless the victim provoked the dog.",
+                "cite": "La. Civ. Code art. 2321"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Louisiana",
+            "abbr": "LA",
+            "nb": [
+                "texas",
+                "arkansas",
+                "mississippi"
+            ],
+            "fault": "bar51",
+            "fault_cite": "La. Civ. Code art. 2323",
+            "sol": 2,
+            "sol_cite": "La. Civ. Code art. 3493.1",
+            "ins": [
+                15000,
+                30000,
+                25000
+            ],
+            "slug": "louisiana"
+        },
+        "maine": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 3,
+            "sol_wd_note": "",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": true,
+            "nf": null,
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "limited",
+                "text": "Owners are strictly liable for injuries their dog causes off the owner’s premises. Bites on the owner’s property follow the negligence rules.",
+                "cite": "Me. Rev. Stat. tit. 7, § 3961"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Maine",
+            "abbr": "ME",
+            "nb": [
+                "new-hampshire",
+                "massachusetts",
+                "vermont"
+            ],
+            "fault": "bar50",
+            "fault_cite": "Me. Rev. Stat. tit. 14, § 156",
+            "sol": 6,
+            "sol_cite": "Me. Rev. Stat. tit. 14, § 752",
+            "ins": [
+                50000,
+                100000,
+                25000
+            ],
+            "slug": "maine"
+        },
+        "maryland": {
+            "short": "",
+            "fault_note": "Maryland’s highest court kept contributory negligence in 2013. Narrow exceptions such as last clear chance still apply.",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 3,
+            "sol_wd_note": "",
+            "ins_note": "Maryland also requires $2,500 of PIP unless you waive it.",
+            "ins_cite": "",
+            "um": true,
+            "nf": null,
+            "cap": {
+                "amount": 965000,
+                "text": "$965,000 on non-economic damages for injuries on or after October 1, 2026. The cap rises by $15,000 every October 1.",
+                "cite": "Md. Code, Cts. & Jud. Proc. § 11-108"
+            },
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "limited",
+                "text": "The law presumes the owner knew the dog was dangerous, which the owner can rebut. Owners are strictly liable for a dog running at large.",
+                "cite": "Md. Code, Cts. & Jud. Proc. § 3-1901"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Maryland",
+            "abbr": "MD",
+            "nb": [
+                "pennsylvania",
+                "delaware",
+                "virginia",
+                "west-virginia",
+                "district-of-columbia"
+            ],
+            "fault": "contributory",
+            "fault_cite": "Coleman v. Soccer Ass’n of Columbia, 432 Md. 679 (2013)",
+            "sol": 3,
+            "sol_cite": "Md. Code, Cts. & Jud. Proc. § 5-101",
+            "ins": [
+                30000,
+                60000,
+                15000
+            ],
+            "slug": "maryland"
+        },
+        "massachusetts": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 3,
+            "sol_wd_note": "",
+            "ins_note": "Raised from 20/40/5 on July 1, 2025.",
+            "ins_cite": "",
+            "um": true,
+            "nf": {
+                "type": "yes",
+                "pip": 8000,
+                "th": "monetary",
+                "th_amount": 2000,
+                "th_text": "$2,000 in reasonable medical bills, or a fracture, permanent and serious disfigurement, loss of sight or hearing, or death",
+                "cite": "Mass. Gen. Laws ch. 231, § 6D"
+            },
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "strict",
+                "text": "Owners and keepers are strictly liable for any damage their dog causes, unless the victim was trespassing, committing a crime or teasing the dog.",
+                "cite": "Mass. Gen. Laws ch. 140, § 155"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Massachusetts",
+            "abbr": "MA",
+            "nb": [
+                "new-hampshire",
+                "vermont",
+                "new-york",
+                "connecticut",
+                "rhode-island"
+            ],
+            "fault": "bar51",
+            "fault_cite": "Mass. Gen. Laws ch. 231, § 85",
+            "sol": 3,
+            "sol_cite": "Mass. Gen. Laws ch. 260, § 2A",
+            "ins": [
+                25000,
+                50000,
+                30000
+            ],
+            "slug": "massachusetts"
+        },
+        "michigan": {
+            "short": "",
+            "fault_note": "Above 50% fault you lose pain and suffering damages, but can still recover economic damages reduced by your share.",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "noneconomic",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 3,
+            "sol_wd_note": "",
+            "ins_note": "Policies default to $250,000/$500,000 unless you choose the $50,000/$100,000 option in writing.",
+            "ins_cite": "",
+            "um": false,
+            "nf": {
+                "type": "yes",
+                "pip": 250000,
+                "pip_text": "a PIP medical level you choose: unlimited, $500,000, $250,000, or $50,000 for Medicaid enrollees",
+                "th": "verbal",
+                "th_text": "death, serious impairment of a body function or permanent serious disfigurement",
+                "cite": "Mich. Comp. Laws § 500.3135"
+            },
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "strict",
+                "text": "Owners are strictly liable for bites to people lawfully on public or private property who did not provoke the dog.",
+                "cite": "Mich. Comp. Laws § 287.351"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Michigan",
+            "abbr": "MI",
+            "nb": [
+                "ohio",
+                "indiana",
+                "wisconsin"
+            ],
+            "fault": "bar51",
+            "fault_cite": "Mich. Comp. Laws § 600.2959",
+            "sol": 3,
+            "sol_cite": "Mich. Comp. Laws § 600.5805",
+            "ins": [
+                50000,
+                100000,
+                10000
+            ],
+            "slug": "michigan"
+        },
+        "minnesota": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "Six years for negligence. Two years for intentional injuries such as assault.",
+            "sol_prior": null,
+            "sol_wd": 3,
+            "sol_wd_note": "",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": true,
+            "nf": {
+                "type": "yes",
+                "pip": 40000,
+                "pip_text": "$40,000: $20,000 for medical bills and $20,000 for income and other losses",
+                "th": "monetary",
+                "th_amount": 4000,
+                "th_text": "$4,000 in medical bills (not counting diagnostic X-rays and rehabilitation), or 60 days of disability, a permanent injury or disfigurement, or death",
+                "cite": "Minn. Stat. § 65B.51"
+            },
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "strict",
+                "text": "Owners are strictly liable when a dog attacks or injures someone acting peaceably where they had a right to be, without provoking it.",
+                "cite": "Minn. Stat. § 347.22"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Minnesota",
+            "abbr": "MN",
+            "nb": [
+                "north-dakota",
+                "south-dakota",
+                "iowa",
+                "wisconsin"
+            ],
+            "fault": "bar51",
+            "fault_cite": "Minn. Stat. § 604.01",
+            "sol": 6,
+            "sol_cite": "Minn. Stat. § 541.05",
+            "ins": [
+                30000,
+                60000,
+                10000
+            ],
+            "slug": "minnesota"
+        },
+        "mississippi": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 3,
+            "sol_wd_note": "",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": false,
+            "nf": null,
+            "cap": {
+                "amount": 1000000,
+                "text": "$1 million on non-economic damages ($500,000 in medical malpractice cases).",
+                "cite": "Miss. Code § 11-1-60"
+            },
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "common",
+                "text": "No dog bite statute. The owner is liable if they knew or should have known the dog was dangerous, or if they were negligent.",
+                "cite": ""
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Mississippi",
+            "abbr": "MS",
+            "nb": [
+                "louisiana",
+                "arkansas",
+                "tennessee",
+                "alabama"
+            ],
+            "fault": "pure",
+            "fault_cite": "Miss. Code § 11-7-15",
+            "sol": 3,
+            "sol_cite": "Miss. Code § 15-1-49",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "slug": "mississippi"
+        },
+        "missouri": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 3,
+            "sol_wd_note": "",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": true,
+            "nf": null,
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "strict",
+                "text": "Owners are strictly liable for bites to people lawfully on public or private property. Damages are reduced by the victim’s share of fault.",
+                "cite": "Mo. Rev. Stat. § 273.036"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Missouri",
+            "abbr": "MO",
+            "nb": [
+                "iowa",
+                "illinois",
+                "kentucky",
+                "tennessee",
+                "arkansas",
+                "oklahoma",
+                "kansas",
+                "nebraska"
+            ],
+            "fault": "pure",
+            "fault_cite": "Gustafson v. Benda, 661 S.W.2d 11 (Mo. 1983)",
+            "sol": 5,
+            "sol_cite": "Mo. Rev. Stat. § 516.120",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "slug": "missouri"
+        },
+        "montana": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 3,
+            "sol_wd_note": "",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": false,
+            "nf": null,
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "limited",
+                "text": "Owners are strictly liable for bites inside incorporated cities and towns. Elsewhere the negligence rules apply.",
+                "cite": "Mont. Code § 27-1-715"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Montana",
+            "abbr": "MT",
+            "nb": [
+                "idaho",
+                "wyoming",
+                "south-dakota",
+                "north-dakota"
+            ],
+            "fault": "bar51",
+            "fault_cite": "Mont. Code § 27-1-702",
+            "sol": 3,
+            "sol_cite": "Mont. Code § 27-2-204",
+            "ins": [
+                25000,
+                50000,
+                20000
+            ],
+            "slug": "montana"
+        },
+        "nebraska": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 2,
+            "sol_wd_note": "",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": true,
+            "nf": null,
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "strict",
+                "text": "Owners are strictly liable for injuries their dog causes, except to trespassers.",
+                "cite": "Neb. Rev. Stat. § 54-601"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Nebraska",
+            "abbr": "NE",
+            "nb": [
+                "south-dakota",
+                "iowa",
+                "missouri",
+                "kansas",
+                "colorado",
+                "wyoming"
+            ],
+            "fault": "bar50",
+            "fault_cite": "Neb. Rev. Stat. § 25-21,185.09",
+            "sol": 4,
+            "sol_cite": "Neb. Rev. Stat. § 25-207",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "slug": "nebraska"
+        },
+        "nevada": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 2,
+            "sol_wd_note": "",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": false,
+            "nf": null,
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "common",
+                "text": "No dog bite statute. The owner is liable if they knew or should have known the dog was dangerous, or if they were negligent.",
+                "cite": ""
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Nevada",
+            "abbr": "NV",
+            "nb": [
+                "california",
+                "oregon",
+                "idaho",
+                "utah",
+                "arizona"
+            ],
+            "fault": "bar51",
+            "fault_cite": "Nev. Rev. Stat. § 41.141",
+            "sol": 2,
+            "sol_cite": "Nev. Rev. Stat. § 11.190(4)(e)",
+            "ins": [
+                25000,
+                50000,
+                20000
+            ],
+            "slug": "nevada"
+        },
+        "new-hampshire": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 3,
+            "sol_wd_note": "",
+            "ins_note": "Insurance is optional, but drivers who cause a crash must show they can pay at these levels.",
+            "ins_cite": "",
+            "um": false,
+            "nf": null,
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "strict",
+                "text": "Owners are strictly liable for damage their dog causes, unless the victim was trespassing or committing a tort.",
+                "cite": "N.H. Rev. Stat. § 466:19"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "New Hampshire",
+            "abbr": "NH",
+            "nb": [
+                "maine",
+                "vermont",
+                "massachusetts"
+            ],
+            "fault": "bar51",
+            "fault_cite": "N.H. Rev. Stat. § 507:7-d",
+            "sol": 3,
+            "sol_cite": "N.H. Rev. Stat. § 508:4",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "slug": "new-hampshire"
+        },
+        "new-jersey": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 2,
+            "sol_wd_note": "",
+            "ins_note": "Standard policies since January 1, 2026. A basic policy with lower limits is still sold.",
+            "ins_cite": "",
+            "um": true,
+            "nf": {
+                "type": "choice",
+                "pip": 15000,
+                "th": "verbal",
+                "th_text": "a permanent injury, displaced fracture, significant disfigurement or scarring, loss of a fetus, or death",
+                "choice_text": "This applies to drivers with the “limitation on lawsuit” option. With the “no limitation” option you can sue for any injury.",
+                "cite": "N.J. Stat. § 39:6A-8"
+            },
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "strict",
+                "text": "Owners are strictly liable for bites in public places or to people lawfully on private property, even if the dog never bit before.",
+                "cite": "N.J. Stat. § 4:19-16"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "New Jersey",
+            "abbr": "NJ",
+            "nb": [
+                "new-york",
+                "pennsylvania",
+                "delaware"
+            ],
+            "fault": "bar51",
+            "fault_cite": "N.J. Stat. § 2A:15-5.1",
+            "sol": 2,
+            "sol_cite": "N.J. Stat. § 2A:14-2",
+            "ins": [
+                35000,
+                70000,
+                25000
+            ],
+            "slug": "new-jersey"
+        },
+        "new-mexico": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 3,
+            "sol_wd_note": "",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": false,
+            "nf": null,
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "common",
+                "text": "No dog bite statute. The owner is liable if they knew or should have known the dog was dangerous, or if they were negligent.",
+                "cite": ""
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "New Mexico",
+            "abbr": "NM",
+            "nb": [
+                "arizona",
+                "colorado",
+                "oklahoma",
+                "texas",
+                "utah"
+            ],
+            "fault": "pure",
+            "fault_cite": "Scott v. Rizzo, 96 N.M. 682 (1981)",
+            "sol": 3,
+            "sol_cite": "N.M. Stat. § 37-1-8",
+            "ins": [
+                25000,
+                50000,
+                10000
+            ],
+            "slug": "new-mexico"
+        },
+        "new-york": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 2,
+            "sol_wd_note": "",
+            "ins_note": "$50,000/$100,000 applies to claims for death.",
+            "ins_cite": "N.Y. Veh. & Traf. Law § 311",
+            "um": true,
+            "nf": {
+                "type": "yes",
+                "pip": 50000,
+                "th": "verbal",
+                "th_text": "a “serious injury”, such as a fracture, significant disfigurement, a permanent or significant limitation, or an injury that kept you from your usual activities for 90 of the first 180 days",
+                "cite": "N.Y. Ins. Law § 5102(d)"
+            },
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "common",
+                "text": "Owners are liable for injuries if they knew or should have known the dog was vicious. Medical costs are covered without proof of fault if the dog was already declared dangerous.",
+                "cite": "N.Y. Agric. & Mkts. Law § 123"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "New York",
+            "abbr": "NY",
+            "nb": [
+                "new-jersey",
+                "pennsylvania",
+                "connecticut",
+                "massachusetts",
+                "vermont"
+            ],
+            "fault": "pure",
+            "fault_cite": "N.Y. CPLR § 1411",
+            "sol": 3,
+            "sol_cite": "N.Y. CPLR § 214(5)",
+            "ins": [
+                25000,
+                50000,
+                10000
+            ],
+            "slug": "new-york"
+        },
+        "north-carolina": {
+            "short": "",
+            "fault_note": "Gross negligence by the other party or the last clear chance doctrine can still allow recovery.",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 2,
+            "sol_wd_note": "",
+            "ins_note": "Raised from 30/60/25 on July 1, 2025.",
+            "ins_cite": "",
+            "um": true,
+            "nf": null,
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "limited",
+                "text": "Strict liability applies to dogs over six months old running at large at night and to dogs declared dangerous. Otherwise the one-bite rule applies.",
+                "cite": "N.C. Gen. Stat. §§ 67-12, 67-4.4"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "North Carolina",
+            "abbr": "NC",
+            "nb": [
+                "virginia",
+                "tennessee",
+                "georgia",
+                "south-carolina"
+            ],
+            "fault": "contributory",
+            "fault_cite": "North Carolina common law; N.C. Gen. Stat. § 1-139",
+            "sol": 3,
+            "sol_cite": "N.C. Gen. Stat. § 1-52",
+            "ins": [
+                50000,
+                100000,
+                50000
+            ],
+            "slug": "north-carolina"
+        },
+        "north-dakota": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 2,
+            "sol_wd_note": "",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": true,
+            "nf": {
+                "type": "yes",
+                "pip": 30000,
+                "th": "monetary",
+                "th_amount": 2500,
+                "th_text": "$2,500 in medical bills, or a serious injury such as a fracture, permanent disability, disfigurement or 60 days of disability",
+                "cite": "N.D. Cent. Code § 26.1-41-08"
+            },
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "common",
+                "text": "No dog bite statute. The owner is liable if they knew or should have known the dog was dangerous, or if they were negligent.",
+                "cite": ""
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "North Dakota",
+            "abbr": "ND",
+            "nb": [
+                "minnesota",
+                "south-dakota",
+                "montana"
+            ],
+            "fault": "bar50",
+            "fault_cite": "N.D. Cent. Code § 32-03.2-02",
+            "sol": 6,
+            "sol_cite": "N.D. Cent. Code § 28-01-16",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "slug": "north-dakota"
+        },
+        "ohio": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 2,
+            "sol_wd_note": "",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": false,
+            "nf": null,
+            "cap": {
+                "amount": 350000,
+                "formula": "oh",
+                "text": "Non-economic damages are capped at the greater of $250,000 or three times economic damages, up to $350,000 per person. There is no cap for catastrophic injuries such as permanent loss of a limb or bodily function.",
+                "cite": "Ohio Rev. Code § 2315.18"
+            },
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "strict",
+                "text": "Owners, keepers and harborers are strictly liable for injuries their dog causes, unless the victim was trespassing, committing a crime or teasing the dog.",
+                "cite": "Ohio Rev. Code § 955.28"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Ohio",
+            "abbr": "OH",
+            "nb": [
+                "michigan",
+                "indiana",
+                "kentucky",
+                "west-virginia",
+                "pennsylvania"
+            ],
+            "fault": "bar51",
+            "fault_cite": "Ohio Rev. Code § 2315.33",
+            "sol": 2,
+            "sol_cite": "Ohio Rev. Code § 2305.10",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "slug": "ohio"
+        },
+        "oklahoma": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 2,
+            "sol_wd_note": "",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": false,
+            "nf": null,
+            "cap": null,
+            "cap_text": "None on injury damages. The Oklahoma Supreme Court struck down the non-economic cap in 2019.",
+            "cap_cite": "Beason v. I.E. Miller Services, 2019 OK 28",
+            "dog": {
+                "rule": "strict",
+                "text": "Owners are strictly liable for injuries to people lawfully present who did not provoke the dog.",
+                "cite": "Okla. Stat. tit. 4, § 42.1"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Oklahoma",
+            "abbr": "OK",
+            "nb": [
+                "kansas",
+                "missouri",
+                "arkansas",
+                "texas",
+                "new-mexico",
+                "colorado"
+            ],
+            "fault": "bar51",
+            "fault_cite": "Okla. Stat. tit. 23, § 13",
+            "sol": 2,
+            "sol_cite": "Okla. Stat. tit. 12, § 95(A)",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "slug": "oklahoma"
+        },
+        "oregon": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 3,
+            "sol_wd_note": "",
+            "ins_note": "Oregon also requires $15,000 of PIP, but it is not a no-fault state.",
+            "ins_cite": "",
+            "um": true,
+            "nf": null,
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "limited",
+                "text": "Owners are strictly liable for economic damages (such as medical bills) from a dog bite. Pain and suffering requires the usual negligence or one-bite proof.",
+                "cite": "Or. Rev. Stat. § 31.360"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Oregon",
+            "abbr": "OR",
+            "nb": [
+                "washington",
+                "idaho",
+                "nevada",
+                "california"
+            ],
+            "fault": "bar51",
+            "fault_cite": "Or. Rev. Stat. § 31.600",
+            "sol": 2,
+            "sol_cite": "Or. Rev. Stat. § 12.110",
+            "ins": [
+                25000,
+                50000,
+                20000
+            ],
+            "slug": "oregon"
+        },
+        "pennsylvania": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 2,
+            "sol_wd_note": "",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": false,
+            "nf": {
+                "type": "choice",
+                "pip": 5000,
+                "pip_text": "$5,000 of first-party medical benefits",
+                "th": "verbal",
+                "th_text": "a serious injury: death, serious impairment of a body function or permanent serious disfigurement",
+                "choice_text": "This applies to drivers who chose “limited tort”. Drivers with “full tort” can sue for any injury.",
+                "cite": "75 Pa. Cons. Stat. § 1705"
+            },
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "limited",
+                "text": "Owners are strictly liable for a bite victim’s medical costs. Other damages need proof of negligence or that the owner knew the dog was dangerous.",
+                "cite": "3 Pa. Stat. § 459-502"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Pennsylvania",
+            "abbr": "PA",
+            "nb": [
+                "new-york",
+                "new-jersey",
+                "delaware",
+                "maryland",
+                "west-virginia",
+                "ohio"
+            ],
+            "fault": "bar51",
+            "fault_cite": "42 Pa. Cons. Stat. § 7102",
+            "sol": 2,
+            "sol_cite": "42 Pa. Cons. Stat. § 5524",
+            "ins": [
+                15000,
+                30000,
+                5000
+            ],
+            "slug": "pennsylvania"
+        },
+        "rhode-island": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 3,
+            "sol_wd_note": "",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": false,
+            "nf": null,
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "limited",
+                "text": "Owners are strictly liable for bites off the owner’s property. On the owner’s property, the one-bite rule applies.",
+                "cite": "R.I. Gen. Laws § 4-13-16"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Rhode Island",
+            "abbr": "RI",
+            "nb": [
+                "connecticut",
+                "massachusetts"
+            ],
+            "fault": "pure",
+            "fault_cite": "R.I. Gen. Laws § 9-20-4",
+            "sol": 3,
+            "sol_cite": "R.I. Gen. Laws § 9-1-14",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "slug": "rhode-island"
+        },
+        "south-carolina": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 3,
+            "sol_wd_note": "",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": true,
+            "nf": null,
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "strict",
+                "text": "Owners are strictly liable for bites and attacks on people lawfully present who did not provoke the dog.",
+                "cite": "S.C. Code § 47-3-110"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "South Carolina",
+            "abbr": "SC",
+            "nb": [
+                "north-carolina",
+                "georgia"
+            ],
+            "fault": "bar51",
+            "fault_cite": "Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)",
+            "sol": 3,
+            "sol_cite": "S.C. Code § 15-3-530",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "slug": "south-carolina"
+        },
+        "south-dakota": {
+            "short": "",
+            "fault_note": "You recover only if your negligence was slight compared with the other party’s. A jury decides what counts as slight, so even a modest share of fault can bar a claim.",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 3,
+            "sol_wd_note": "",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": true,
+            "nf": null,
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "common",
+                "text": "No dog bite statute. The owner is liable if they knew or should have known the dog was dangerous, or if they were negligent.",
+                "cite": ""
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "South Dakota",
+            "abbr": "SD",
+            "nb": [
+                "north-dakota",
+                "minnesota",
+                "iowa",
+                "nebraska",
+                "wyoming",
+                "montana"
+            ],
+            "fault": "slight_gross",
+            "fault_cite": "S.D. Codified Laws § 20-9-2",
+            "sol": 3,
+            "sol_cite": "S.D. Codified Laws § 15-2-14",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "slug": "south-dakota"
+        },
+        "tennessee": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "Two years if the other driver is criminally charged over the crash, such as for DUI or vehicular assault.",
+            "sol_prior": null,
+            "sol_wd": 1,
+            "sol_wd_note": "",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": false,
+            "nf": null,
+            "cap": {
+                "amount": 750000,
+                "cat": 1000000,
+                "text": "$750,000 on non-economic damages, or $1 million for catastrophic injuries such as paralysis, amputation or severe burns.",
+                "cite": "Tenn. Code § 29-39-102"
+            },
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "limited",
+                "text": "Owners are strictly liable when a dog running at large or not under control causes injury. On the owner’s property, the victim must prove the owner knew the dog was dangerous.",
+                "cite": "Tenn. Code § 44-8-413"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Tennessee",
+            "abbr": "TN",
+            "nb": [
+                "kentucky",
+                "virginia",
+                "north-carolina",
+                "georgia",
+                "alabama",
+                "mississippi",
+                "arkansas",
+                "missouri"
+            ],
+            "fault": "bar50",
+            "fault_cite": "McIntyre v. Balentine, 833 S.W.2d 52 (Tenn. 1992)",
+            "sol": 1,
+            "sol_cite": "Tenn. Code § 28-3-104",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "slug": "tennessee"
+        },
+        "texas": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 2,
+            "sol_wd_note": "",
+            "ins_note": "Insurers must offer PIP, which pays your own medical bills regardless of fault, unless you reject it in writing.",
+            "ins_cite": "Tex. Transp. Code § 601.072",
+            "um": false,
+            "nf": null,
+            "cap": null,
+            "cap_text": "None on injury damages. Medical malpractice and punitive damages have separate caps.",
+            "cap_cite": "Tex. Civ. Prac. & Rem. Code § 41.008",
+            "dog": {
+                "rule": "common",
+                "text": "No dog bite statute. The owner is liable if they knew the dog was dangerous (the one-bite rule) or were negligent, for example by breaking a leash law.",
+                "cite": "Marshall v. Ranne, 511 S.W.2d 255 (Tex. 1974)"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Texas",
+            "abbr": "TX",
+            "nb": [
+                "oklahoma",
+                "louisiana",
+                "new-mexico",
+                "arkansas"
+            ],
+            "fault": "bar51",
+            "fault_cite": "Tex. Civ. Prac. & Rem. Code § 33.001",
+            "sol": 2,
+            "sol_cite": "Tex. Civ. Prac. & Rem. Code § 16.003",
+            "ins": [
+                30000,
+                60000,
+                25000
+            ],
+            "slug": "texas"
+        },
+        "utah": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 2,
+            "sol_wd_note": "",
+            "ins_note": "Raised from 25/65/15 on January 1, 2025.",
+            "ins_cite": "",
+            "um": false,
+            "nf": {
+                "type": "yes",
+                "pip": 3000,
+                "th": "monetary",
+                "th_amount": 3000,
+                "th_text": "$3,000 in medical bills, or a fracture, permanent disability or impairment, permanent disfigurement, dismemberment or death",
+                "cite": "Utah Code § 31A-22-309"
+            },
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "strict",
+                "text": "Owners are strictly liable for injuries their dog causes, regardless of the dog’s history.",
+                "cite": "Utah Code § 18-1-1"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Utah",
+            "abbr": "UT",
+            "nb": [
+                "idaho",
+                "wyoming",
+                "colorado",
+                "arizona",
+                "nevada",
+                "new-mexico"
+            ],
+            "fault": "bar50",
+            "fault_cite": "Utah Code § 78B-5-818",
+            "sol": 4,
+            "sol_cite": "Utah Code § 78B-2-307",
+            "ins": [
+                30000,
+                65000,
+                25000
+            ],
+            "slug": "utah"
+        },
+        "vermont": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 2,
+            "sol_wd_note": "",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": true,
+            "nf": null,
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "common",
+                "text": "No dog bite statute. The owner is liable if they knew or should have known the dog was dangerous, or if they were negligent.",
+                "cite": ""
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Vermont",
+            "abbr": "VT",
+            "nb": [
+                "new-hampshire",
+                "massachusetts",
+                "new-york"
+            ],
+            "fault": "bar51",
+            "fault_cite": "Vt. Stat. tit. 12, § 1036",
+            "sol": 3,
+            "sol_cite": "Vt. Stat. tit. 12, § 512",
+            "ins": [
+                25000,
+                50000,
+                10000
+            ],
+            "slug": "vermont"
+        },
+        "virginia": {
+            "short": "",
+            "fault_note": "Narrow exceptions, such as the other driver’s gross or willful negligence and last clear chance, can still allow recovery.",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 2,
+            "sol_wd_note": "",
+            "ins_note": "Raised from 30/60/20 on January 1, 2025. Paying a fee to drive uninsured ended in 2024.",
+            "ins_cite": "",
+            "um": true,
+            "nf": null,
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "common",
+                "text": "No general dog bite statute. The owner is liable if they knew the dog was dangerous or were negligent, for example by breaking a leash law.",
+                "cite": ""
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Virginia",
+            "abbr": "VA",
+            "nb": [
+                "maryland",
+                "district-of-columbia",
+                "west-virginia",
+                "kentucky",
+                "tennessee",
+                "north-carolina"
+            ],
+            "fault": "contributory",
+            "fault_cite": "Virginia common law",
+            "sol": 2,
+            "sol_cite": "Va. Code § 8.01-243",
+            "ins": [
+                50000,
+                100000,
+                25000
+            ],
+            "slug": "virginia"
+        },
+        "washington": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 3,
+            "sol_wd_note": "",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": false,
+            "nf": null,
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "strict",
+                "text": "Owners are strictly liable for bites in public places or to people lawfully on private property.",
+                "cite": "Wash. Rev. Code § 16.08.040"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Washington",
+            "abbr": "WA",
+            "nb": [
+                "oregon",
+                "idaho"
+            ],
+            "fault": "pure",
+            "fault_cite": "Wash. Rev. Code § 4.22.005",
+            "sol": 3,
+            "sol_cite": "Wash. Rev. Code § 4.16.080",
+            "ins": [
+                25000,
+                50000,
+                10000
+            ],
+            "slug": "washington"
+        },
+        "west-virginia": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 2,
+            "sol_wd_note": "",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": true,
+            "nf": null,
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "limited",
+                "text": "Owners are strictly liable for injuries from a dog running at large. Bites on the owner’s property follow the negligence rules.",
+                "cite": "W. Va. Code § 19-20-13"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "West Virginia",
+            "abbr": "WV",
+            "nb": [
+                "ohio",
+                "pennsylvania",
+                "maryland",
+                "virginia",
+                "kentucky"
+            ],
+            "fault": "bar50",
+            "fault_cite": "W. Va. Code § 55-7-13a",
+            "sol": 2,
+            "sol_cite": "W. Va. Code § 55-2-12",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "slug": "west-virginia"
+        },
+        "wisconsin": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 3,
+            "sol_wd_note": "Two years when the death was caused by a motor vehicle crash.",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": true,
+            "nf": null,
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "strict",
+                "text": "Owners are strictly liable for injuries their dog causes. Damages double if the owner knew the dog had bitten before.",
+                "cite": "Wis. Stat. § 174.02"
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Wisconsin",
+            "abbr": "WI",
+            "nb": [
+                "michigan",
+                "minnesota",
+                "iowa",
+                "illinois"
+            ],
+            "fault": "bar51",
+            "fault_cite": "Wis. Stat. § 895.045",
+            "sol": 3,
+            "sol_cite": "Wis. Stat. § 893.54",
+            "ins": [
+                25000,
+                50000,
+                10000
+            ],
+            "slug": "wisconsin"
+        },
+        "wyoming": {
+            "short": "",
+            "fault_note": "",
+            "fault_note_cite": "",
+            "fault_prior": null,
+            "bar_scope": "all",
+            "sol_mv": 0,
+            "sol_note": "",
+            "sol_prior": null,
+            "sol_wd": 2,
+            "sol_wd_note": "",
+            "ins_note": "",
+            "ins_cite": "",
+            "um": false,
+            "nf": null,
+            "cap": null,
+            "cap_text": "",
+            "cap_cite": "",
+            "dog": {
+                "rule": "common",
+                "text": "No dog bite statute. The owner is liable if they knew or should have known the dog was dangerous, or if they were negligent.",
+                "cite": ""
+            },
+            "reviewer": {
+                "name": "",
+                "title": "",
+                "url": ""
+            },
+            "checked": "2026-10-13",
+            "name": "Wyoming",
+            "abbr": "WY",
+            "nb": [
+                "montana",
+                "south-dakota",
+                "nebraska",
+                "colorado",
+                "utah",
+                "idaho"
+            ],
+            "fault": "bar51",
+            "fault_cite": "Wyo. Stat. § 1-1-109",
+            "sol": 4,
+            "sol_cite": "Wyo. Stat. § 1-3-105",
+            "ins": [
+                25000,
+                50000,
+                20000
+            ],
+            "slug": "wyoming"
+        }
+    },
+    "forJs": {
+        "alabama": {
+            "slug": "alabama",
+            "name": "Alabama",
+            "short": "Alabama",
+            "fault": "contributory",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 2,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 2,
+            "solNote": "",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "nf": null,
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "limited",
+            "dogText": "Owners are strictly liable for bites on their own property and for bites elsewhere if they knew the dog was dangerous."
+        },
+        "alaska": {
+            "slug": "alaska",
+            "name": "Alaska",
+            "short": "Alaska",
+            "fault": "pure",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 2,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 2,
+            "solNote": "",
+            "ins": [
+                50000,
+                100000,
+                25000
+            ],
+            "nf": null,
+            "cap": {
+                "amount": 400000,
+                "cat": 1000000,
+                "formula": "ak"
+            },
+            "capText": "$400,000 or $8,000 times the injured person’s remaining life expectancy, whichever is greater. For severe permanent impairment or disfigurement, $1 million or $25,000 times life expectancy.",
+            "dog": "common",
+            "dogText": "No dog bite statute. The owner is liable if they knew or should have known the dog was dangerous, or if they were negligent."
+        },
+        "arizona": {
+            "slug": "arizona",
+            "name": "Arizona",
+            "short": "Arizona",
+            "fault": "pure",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 2,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 2,
+            "solNote": "",
+            "ins": [
+                25000,
+                50000,
+                15000
+            ],
+            "nf": null,
+            "cap": null,
+            "capText": "None. Arizona’s constitution bars limits on injury damages.",
+            "dog": "strict",
+            "dogText": "Owners are strictly liable for bites to people lawfully in a public or private place, unless the victim provoked the dog."
+        },
+        "arkansas": {
+            "slug": "arkansas",
+            "name": "Arkansas",
+            "short": "Arkansas",
+            "fault": "bar50",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 3,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 3,
+            "solNote": "",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "nf": null,
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "common",
+            "dogText": "No dog bite statute. The owner is liable if they knew or should have known the dog was dangerous, or if they were negligent."
+        },
+        "california": {
+            "slug": "california",
+            "name": "California",
+            "short": "California",
+            "fault": "pure",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 2,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 2,
+            "solNote": "",
+            "ins": [
+                30000,
+                60000,
+                15000
+            ],
+            "nf": null,
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "strict",
+            "dogText": "Owners are strictly liable for bites in a public place or to people lawfully on private property, even if the dog never bit before."
+        },
+        "colorado": {
+            "slug": "colorado",
+            "name": "Colorado",
+            "short": "Colorado",
+            "fault": "bar50",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 2,
+            "solMv": 3,
+            "solPrior": null,
+            "solWd": 2,
+            "solNote": "Three years for injuries from a motor vehicle crash; two years for most other injuries.",
+            "ins": [
+                25000,
+                50000,
+                15000
+            ],
+            "nf": null,
+            "cap": {
+                "amount": 1500000,
+                "cat": 0,
+                "formula": ""
+            },
+            "capText": "$1.5 million on non-economic damages for claims that arose on or after January 1, 2025.",
+            "dog": "limited",
+            "dogText": "Owners are strictly liable for economic damages when a dog causes serious bodily injury or death. Other bites follow the negligence rules."
+        },
+        "connecticut": {
+            "slug": "connecticut",
+            "name": "Connecticut",
+            "short": "Connecticut",
+            "fault": "bar51",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 2,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 2,
+            "solNote": "",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "nf": null,
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "strict",
+            "dogText": "Owners and keepers are strictly liable for any damage their dog causes, unless the victim was trespassing or teasing the dog."
+        },
+        "delaware": {
+            "slug": "delaware",
+            "name": "Delaware",
+            "short": "Delaware",
+            "fault": "bar51",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 2,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 2,
+            "solNote": "",
+            "ins": [
+                25000,
+                50000,
+                10000
+            ],
+            "nf": null,
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "strict",
+            "dogText": "Owners are strictly liable for injuries their dog causes, unless the victim was trespassing, committing a crime or provoking the dog."
+        },
+        "district-of-columbia": {
+            "slug": "district-of-columbia",
+            "name": "District of Columbia",
+            "short": "DC",
+            "fault": "contributory",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 3,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 2,
+            "solNote": "",
+            "ins": [
+                25000,
+                50000,
+                10000
+            ],
+            "nf": null,
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "common",
+            "dogText": "Liability usually turns on whether the owner knew the dog was dangerous or broke a leash or control law."
+        },
+        "florida": {
+            "slug": "florida",
+            "name": "Florida",
+            "short": "Florida",
+            "fault": "bar51",
+            "barScope": "all",
+            "faultPrior": {
+                "rule": "pure",
+                "until": "2023-03-24"
+            },
+            "sol": 2,
+            "solMv": 0,
+            "solPrior": {
+                "years": 4,
+                "until": "2023-03-24"
+            },
+            "solWd": 2,
+            "solNote": "Cut from four years to two for negligence claims that arose after March 24, 2023.",
+            "ins": [
+                0,
+                0,
+                10000
+            ],
+            "nf": {
+                "type": "yes",
+                "pip": 10000,
+                "th": "verbal",
+                "amount": 0,
+                "text": "a permanent injury, significant and permanent scarring or disfigurement, or death"
+            },
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "strict",
+            "dogText": "Owners are strictly liable for bites in public places or on private property where the victim was lawfully present. A “Bad Dog” sign can limit liability, except for children under six."
+        },
+        "georgia": {
+            "slug": "georgia",
+            "name": "Georgia",
+            "short": "Georgia",
+            "fault": "bar50",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 2,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 2,
+            "solNote": "",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "nf": null,
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "limited",
+            "dogText": "Owners are liable when they knew the dog was vicious or dangerous and let it run at large, including breaking a local leash law."
+        },
+        "hawaii": {
+            "slug": "hawaii",
+            "name": "Hawaii",
+            "short": "Hawaii",
+            "fault": "bar51",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 2,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 2,
+            "solNote": "",
+            "ins": [
+                40000,
+                80000,
+                20000
+            ],
+            "nf": {
+                "type": "yes",
+                "pip": 10000,
+                "th": "monetary",
+                "amount": 5000,
+                "text": "medical bills above $5,000, or death, significant permanent loss of a bodily function or permanent and serious disfigurement"
+            },
+            "cap": null,
+            "capText": "$375,000 on pain and suffering, with exceptions for many serious injuries, including disfigurement, loss of a bodily function and intentional or reckless conduct.",
+            "dog": "strict",
+            "dogText": "Owners are strictly liable for injuries their animal causes, unless the victim was trespassing or provoked it."
+        },
+        "idaho": {
+            "slug": "idaho",
+            "name": "Idaho",
+            "short": "Idaho",
+            "fault": "bar50",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 2,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 2,
+            "solNote": "",
+            "ins": [
+                25000,
+                50000,
+                15000
+            ],
+            "nf": null,
+            "cap": null,
+            "capText": "A cap on non-economic damages that started at $250,000 and is adjusted every July 1 for wage growth. It does not apply to willful or reckless conduct.",
+            "dog": "common",
+            "dogText": "No dog bite statute. The owner is liable if they knew or should have known the dog was dangerous, or if they were negligent."
+        },
+        "illinois": {
+            "slug": "illinois",
+            "name": "Illinois",
+            "short": "Illinois",
+            "fault": "bar51",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 2,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 2,
+            "solNote": "",
+            "ins": [
+                25000,
+                50000,
+                20000
+            ],
+            "nf": null,
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "strict",
+            "dogText": "Owners are strictly liable when a dog injures someone who was peaceably and lawfully where they had a right to be, without provoking it."
+        },
+        "indiana": {
+            "slug": "indiana",
+            "name": "Indiana",
+            "short": "Indiana",
+            "fault": "bar51",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 2,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 2,
+            "solNote": "",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "nf": null,
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "limited",
+            "dogText": "Strict liability covers bites to people carrying out a legal duty, such as mail carriers. Other bites usually follow the one-bite and negligence rules."
+        },
+        "iowa": {
+            "slug": "iowa",
+            "name": "Iowa",
+            "short": "Iowa",
+            "fault": "bar51",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 2,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 2,
+            "solNote": "",
+            "ins": [
+                20000,
+                40000,
+                15000
+            ],
+            "nf": null,
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "strict",
+            "dogText": "Owners are strictly liable for injuries their dog causes, unless the victim was doing something unlawful that contributed to the injury."
+        },
+        "kansas": {
+            "slug": "kansas",
+            "name": "Kansas",
+            "short": "Kansas",
+            "fault": "bar50",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 2,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 2,
+            "solNote": "",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "nf": {
+                "type": "yes",
+                "pip": 4500,
+                "th": "monetary",
+                "amount": 2000,
+                "text": "$2,000 in medical bills, or a permanent injury, fracture, permanent disfigurement or death"
+            },
+            "cap": null,
+            "capText": "None on injury damages. The Kansas Supreme Court struck down the non-economic cap in 2019.",
+            "dog": "common",
+            "dogText": "No dog bite statute. The owner is liable if they knew or should have known the dog was dangerous, or if they were negligent."
+        },
+        "kentucky": {
+            "slug": "kentucky",
+            "name": "Kentucky",
+            "short": "Kentucky",
+            "fault": "pure",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 1,
+            "solMv": 2,
+            "solPrior": null,
+            "solWd": 1,
+            "solNote": "Two years for motor vehicle injuries, counted from the crash or the last no-fault (PIP) payment, whichever is later. One year for most other injuries.",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "nf": {
+                "type": "choice",
+                "pip": 10000,
+                "th": "monetary",
+                "amount": 1000,
+                "text": "$1,000 in medical bills, or a fracture, permanent injury, permanent disfigurement or death"
+            },
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "strict",
+            "dogText": "Owners are strictly liable for any damage their dog causes."
+        },
+        "louisiana": {
+            "slug": "louisiana",
+            "name": "Louisiana",
+            "short": "Louisiana",
+            "fault": "bar51",
+            "barScope": "all",
+            "faultPrior": {
+                "rule": "pure",
+                "until": "2026-01-01"
+            },
+            "sol": 2,
+            "solMv": 0,
+            "solPrior": {
+                "years": 1,
+                "until": "2024-07-01"
+            },
+            "solWd": 1,
+            "solNote": "Two years for injuries on or after July 1, 2024. Earlier injuries had one year.",
+            "ins": [
+                15000,
+                30000,
+                25000
+            ],
+            "nf": null,
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "limited",
+            "dogText": "Owners are liable for injuries they could have prevented, unless the victim provoked the dog."
+        },
+        "maine": {
+            "slug": "maine",
+            "name": "Maine",
+            "short": "Maine",
+            "fault": "bar50",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 6,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 3,
+            "solNote": "",
+            "ins": [
+                50000,
+                100000,
+                25000
+            ],
+            "nf": null,
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "limited",
+            "dogText": "Owners are strictly liable for injuries their dog causes off the owner’s premises. Bites on the owner’s property follow the negligence rules."
+        },
+        "maryland": {
+            "slug": "maryland",
+            "name": "Maryland",
+            "short": "Maryland",
+            "fault": "contributory",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 3,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 3,
+            "solNote": "",
+            "ins": [
+                30000,
+                60000,
+                15000
+            ],
+            "nf": null,
+            "cap": {
+                "amount": 965000,
+                "cat": 0,
+                "formula": ""
+            },
+            "capText": "$965,000 on non-economic damages for injuries on or after October 1, 2026. The cap rises by $15,000 every October 1.",
+            "dog": "limited",
+            "dogText": "The law presumes the owner knew the dog was dangerous, which the owner can rebut. Owners are strictly liable for a dog running at large."
+        },
+        "massachusetts": {
+            "slug": "massachusetts",
+            "name": "Massachusetts",
+            "short": "Massachusetts",
+            "fault": "bar51",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 3,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 3,
+            "solNote": "",
+            "ins": [
+                25000,
+                50000,
+                30000
+            ],
+            "nf": {
+                "type": "yes",
+                "pip": 8000,
+                "th": "monetary",
+                "amount": 2000,
+                "text": "$2,000 in reasonable medical bills, or a fracture, permanent and serious disfigurement, loss of sight or hearing, or death"
+            },
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "strict",
+            "dogText": "Owners and keepers are strictly liable for any damage their dog causes, unless the victim was trespassing, committing a crime or teasing the dog."
+        },
+        "michigan": {
+            "slug": "michigan",
+            "name": "Michigan",
+            "short": "Michigan",
+            "fault": "bar51",
+            "barScope": "noneconomic",
+            "faultPrior": null,
+            "sol": 3,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 3,
+            "solNote": "",
+            "ins": [
+                50000,
+                100000,
+                10000
+            ],
+            "nf": {
+                "type": "yes",
+                "pip": 250000,
+                "th": "verbal",
+                "amount": 0,
+                "text": "death, serious impairment of a body function or permanent serious disfigurement"
+            },
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "strict",
+            "dogText": "Owners are strictly liable for bites to people lawfully on public or private property who did not provoke the dog."
+        },
+        "minnesota": {
+            "slug": "minnesota",
+            "name": "Minnesota",
+            "short": "Minnesota",
+            "fault": "bar51",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 6,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 3,
+            "solNote": "Six years for negligence. Two years for intentional injuries such as assault.",
+            "ins": [
+                30000,
+                60000,
+                10000
+            ],
+            "nf": {
+                "type": "yes",
+                "pip": 40000,
+                "th": "monetary",
+                "amount": 4000,
+                "text": "$4,000 in medical bills (not counting diagnostic X-rays and rehabilitation), or 60 days of disability, a permanent injury or disfigurement, or death"
+            },
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "strict",
+            "dogText": "Owners are strictly liable when a dog attacks or injures someone acting peaceably where they had a right to be, without provoking it."
+        },
+        "mississippi": {
+            "slug": "mississippi",
+            "name": "Mississippi",
+            "short": "Mississippi",
+            "fault": "pure",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 3,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 3,
+            "solNote": "",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "nf": null,
+            "cap": {
+                "amount": 1000000,
+                "cat": 0,
+                "formula": ""
+            },
+            "capText": "$1 million on non-economic damages ($500,000 in medical malpractice cases).",
+            "dog": "common",
+            "dogText": "No dog bite statute. The owner is liable if they knew or should have known the dog was dangerous, or if they were negligent."
+        },
+        "missouri": {
+            "slug": "missouri",
+            "name": "Missouri",
+            "short": "Missouri",
+            "fault": "pure",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 5,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 3,
+            "solNote": "",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "nf": null,
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "strict",
+            "dogText": "Owners are strictly liable for bites to people lawfully on public or private property. Damages are reduced by the victim’s share of fault."
+        },
+        "montana": {
+            "slug": "montana",
+            "name": "Montana",
+            "short": "Montana",
+            "fault": "bar51",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 3,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 3,
+            "solNote": "",
+            "ins": [
+                25000,
+                50000,
+                20000
+            ],
+            "nf": null,
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "limited",
+            "dogText": "Owners are strictly liable for bites inside incorporated cities and towns. Elsewhere the negligence rules apply."
+        },
+        "nebraska": {
+            "slug": "nebraska",
+            "name": "Nebraska",
+            "short": "Nebraska",
+            "fault": "bar50",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 4,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 2,
+            "solNote": "",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "nf": null,
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "strict",
+            "dogText": "Owners are strictly liable for injuries their dog causes, except to trespassers."
+        },
+        "nevada": {
+            "slug": "nevada",
+            "name": "Nevada",
+            "short": "Nevada",
+            "fault": "bar51",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 2,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 2,
+            "solNote": "",
+            "ins": [
+                25000,
+                50000,
+                20000
+            ],
+            "nf": null,
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "common",
+            "dogText": "No dog bite statute. The owner is liable if they knew or should have known the dog was dangerous, or if they were negligent."
+        },
+        "new-hampshire": {
+            "slug": "new-hampshire",
+            "name": "New Hampshire",
+            "short": "New Hampshire",
+            "fault": "bar51",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 3,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 3,
+            "solNote": "",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "nf": null,
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "strict",
+            "dogText": "Owners are strictly liable for damage their dog causes, unless the victim was trespassing or committing a tort."
+        },
+        "new-jersey": {
+            "slug": "new-jersey",
+            "name": "New Jersey",
+            "short": "New Jersey",
+            "fault": "bar51",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 2,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 2,
+            "solNote": "",
+            "ins": [
+                35000,
+                70000,
+                25000
+            ],
+            "nf": {
+                "type": "choice",
+                "pip": 15000,
+                "th": "verbal",
+                "amount": 0,
+                "text": "a permanent injury, displaced fracture, significant disfigurement or scarring, loss of a fetus, or death"
+            },
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "strict",
+            "dogText": "Owners are strictly liable for bites in public places or to people lawfully on private property, even if the dog never bit before."
+        },
+        "new-mexico": {
+            "slug": "new-mexico",
+            "name": "New Mexico",
+            "short": "New Mexico",
+            "fault": "pure",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 3,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 3,
+            "solNote": "",
+            "ins": [
+                25000,
+                50000,
+                10000
+            ],
+            "nf": null,
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "common",
+            "dogText": "No dog bite statute. The owner is liable if they knew or should have known the dog was dangerous, or if they were negligent."
+        },
+        "new-york": {
+            "slug": "new-york",
+            "name": "New York",
+            "short": "New York",
+            "fault": "pure",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 3,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 2,
+            "solNote": "",
+            "ins": [
+                25000,
+                50000,
+                10000
+            ],
+            "nf": {
+                "type": "yes",
+                "pip": 50000,
+                "th": "verbal",
+                "amount": 0,
+                "text": "a “serious injury”, such as a fracture, significant disfigurement, a permanent or significant limitation, or an injury that kept you from your usual activities for 90 of the first 180 days"
+            },
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "common",
+            "dogText": "Owners are liable for injuries if they knew or should have known the dog was vicious. Medical costs are covered without proof of fault if the dog was already declared dangerous."
+        },
+        "north-carolina": {
+            "slug": "north-carolina",
+            "name": "North Carolina",
+            "short": "North Carolina",
+            "fault": "contributory",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 3,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 2,
+            "solNote": "",
+            "ins": [
+                50000,
+                100000,
+                50000
+            ],
+            "nf": null,
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "limited",
+            "dogText": "Strict liability applies to dogs over six months old running at large at night and to dogs declared dangerous. Otherwise the one-bite rule applies."
+        },
+        "north-dakota": {
+            "slug": "north-dakota",
+            "name": "North Dakota",
+            "short": "North Dakota",
+            "fault": "bar50",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 6,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 2,
+            "solNote": "",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "nf": {
+                "type": "yes",
+                "pip": 30000,
+                "th": "monetary",
+                "amount": 2500,
+                "text": "$2,500 in medical bills, or a serious injury such as a fracture, permanent disability, disfigurement or 60 days of disability"
+            },
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "common",
+            "dogText": "No dog bite statute. The owner is liable if they knew or should have known the dog was dangerous, or if they were negligent."
+        },
+        "ohio": {
+            "slug": "ohio",
+            "name": "Ohio",
+            "short": "Ohio",
+            "fault": "bar51",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 2,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 2,
+            "solNote": "",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "nf": null,
+            "cap": {
+                "amount": 350000,
+                "cat": 0,
+                "formula": "oh"
+            },
+            "capText": "Non-economic damages are capped at the greater of $250,000 or three times economic damages, up to $350,000 per person. There is no cap for catastrophic injuries such as permanent loss of a limb or bodily function.",
+            "dog": "strict",
+            "dogText": "Owners, keepers and harborers are strictly liable for injuries their dog causes, unless the victim was trespassing, committing a crime or teasing the dog."
+        },
+        "oklahoma": {
+            "slug": "oklahoma",
+            "name": "Oklahoma",
+            "short": "Oklahoma",
+            "fault": "bar51",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 2,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 2,
+            "solNote": "",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "nf": null,
+            "cap": null,
+            "capText": "None on injury damages. The Oklahoma Supreme Court struck down the non-economic cap in 2019.",
+            "dog": "strict",
+            "dogText": "Owners are strictly liable for injuries to people lawfully present who did not provoke the dog."
+        },
+        "oregon": {
+            "slug": "oregon",
+            "name": "Oregon",
+            "short": "Oregon",
+            "fault": "bar51",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 2,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 3,
+            "solNote": "",
+            "ins": [
+                25000,
+                50000,
+                20000
+            ],
+            "nf": null,
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "limited",
+            "dogText": "Owners are strictly liable for economic damages (such as medical bills) from a dog bite. Pain and suffering requires the usual negligence or one-bite proof."
+        },
+        "pennsylvania": {
+            "slug": "pennsylvania",
+            "name": "Pennsylvania",
+            "short": "Pennsylvania",
+            "fault": "bar51",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 2,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 2,
+            "solNote": "",
+            "ins": [
+                15000,
+                30000,
+                5000
+            ],
+            "nf": {
+                "type": "choice",
+                "pip": 5000,
+                "th": "verbal",
+                "amount": 0,
+                "text": "a serious injury: death, serious impairment of a body function or permanent serious disfigurement"
+            },
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "limited",
+            "dogText": "Owners are strictly liable for a bite victim’s medical costs. Other damages need proof of negligence or that the owner knew the dog was dangerous."
+        },
+        "rhode-island": {
+            "slug": "rhode-island",
+            "name": "Rhode Island",
+            "short": "Rhode Island",
+            "fault": "pure",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 3,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 3,
+            "solNote": "",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "nf": null,
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "limited",
+            "dogText": "Owners are strictly liable for bites off the owner’s property. On the owner’s property, the one-bite rule applies."
+        },
+        "south-carolina": {
+            "slug": "south-carolina",
+            "name": "South Carolina",
+            "short": "South Carolina",
+            "fault": "bar51",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 3,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 3,
+            "solNote": "",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "nf": null,
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "strict",
+            "dogText": "Owners are strictly liable for bites and attacks on people lawfully present who did not provoke the dog."
+        },
+        "south-dakota": {
+            "slug": "south-dakota",
+            "name": "South Dakota",
+            "short": "South Dakota",
+            "fault": "slight_gross",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 3,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 3,
+            "solNote": "",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "nf": null,
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "common",
+            "dogText": "No dog bite statute. The owner is liable if they knew or should have known the dog was dangerous, or if they were negligent."
+        },
+        "tennessee": {
+            "slug": "tennessee",
+            "name": "Tennessee",
+            "short": "Tennessee",
+            "fault": "bar50",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 1,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 1,
+            "solNote": "Two years if the other driver is criminally charged over the crash, such as for DUI or vehicular assault.",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "nf": null,
+            "cap": {
+                "amount": 750000,
+                "cat": 1000000,
+                "formula": ""
+            },
+            "capText": "$750,000 on non-economic damages, or $1 million for catastrophic injuries such as paralysis, amputation or severe burns.",
+            "dog": "limited",
+            "dogText": "Owners are strictly liable when a dog running at large or not under control causes injury. On the owner’s property, the victim must prove the owner knew the dog was dangerous."
+        },
+        "texas": {
+            "slug": "texas",
+            "name": "Texas",
+            "short": "Texas",
+            "fault": "bar51",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 2,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 2,
+            "solNote": "",
+            "ins": [
+                30000,
+                60000,
+                25000
+            ],
+            "nf": null,
+            "cap": null,
+            "capText": "None on injury damages. Medical malpractice and punitive damages have separate caps.",
+            "dog": "common",
+            "dogText": "No dog bite statute. The owner is liable if they knew the dog was dangerous (the one-bite rule) or were negligent, for example by breaking a leash law."
+        },
+        "utah": {
+            "slug": "utah",
+            "name": "Utah",
+            "short": "Utah",
+            "fault": "bar50",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 4,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 2,
+            "solNote": "",
+            "ins": [
+                30000,
+                65000,
+                25000
+            ],
+            "nf": {
+                "type": "yes",
+                "pip": 3000,
+                "th": "monetary",
+                "amount": 3000,
+                "text": "$3,000 in medical bills, or a fracture, permanent disability or impairment, permanent disfigurement, dismemberment or death"
+            },
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "strict",
+            "dogText": "Owners are strictly liable for injuries their dog causes, regardless of the dog’s history."
+        },
+        "vermont": {
+            "slug": "vermont",
+            "name": "Vermont",
+            "short": "Vermont",
+            "fault": "bar51",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 3,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 2,
+            "solNote": "",
+            "ins": [
+                25000,
+                50000,
+                10000
+            ],
+            "nf": null,
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "common",
+            "dogText": "No dog bite statute. The owner is liable if they knew or should have known the dog was dangerous, or if they were negligent."
+        },
+        "virginia": {
+            "slug": "virginia",
+            "name": "Virginia",
+            "short": "Virginia",
+            "fault": "contributory",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 2,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 2,
+            "solNote": "",
+            "ins": [
+                50000,
+                100000,
+                25000
+            ],
+            "nf": null,
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "common",
+            "dogText": "No general dog bite statute. The owner is liable if they knew the dog was dangerous or were negligent, for example by breaking a leash law."
+        },
+        "washington": {
+            "slug": "washington",
+            "name": "Washington",
+            "short": "Washington",
+            "fault": "pure",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 3,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 3,
+            "solNote": "",
+            "ins": [
+                25000,
+                50000,
+                10000
+            ],
+            "nf": null,
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "strict",
+            "dogText": "Owners are strictly liable for bites in public places or to people lawfully on private property."
+        },
+        "west-virginia": {
+            "slug": "west-virginia",
+            "name": "West Virginia",
+            "short": "West Virginia",
+            "fault": "bar50",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 2,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 2,
+            "solNote": "",
+            "ins": [
+                25000,
+                50000,
+                25000
+            ],
+            "nf": null,
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "limited",
+            "dogText": "Owners are strictly liable for injuries from a dog running at large. Bites on the owner’s property follow the negligence rules."
+        },
+        "wisconsin": {
+            "slug": "wisconsin",
+            "name": "Wisconsin",
+            "short": "Wisconsin",
+            "fault": "bar51",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 3,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 3,
+            "solNote": "",
+            "ins": [
+                25000,
+                50000,
+                10000
+            ],
+            "nf": null,
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "strict",
+            "dogText": "Owners are strictly liable for injuries their dog causes. Damages double if the owner knew the dog had bitten before."
+        },
+        "wyoming": {
+            "slug": "wyoming",
+            "name": "Wyoming",
+            "short": "Wyoming",
+            "fault": "bar51",
+            "barScope": "all",
+            "faultPrior": null,
+            "sol": 4,
+            "solMv": 0,
+            "solPrior": null,
+            "solWd": 2,
+            "solNote": "",
+            "ins": [
+                25000,
+                50000,
+                20000
+            ],
+            "nf": null,
+            "cap": null,
+            "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
+            "dog": "common",
+            "dogText": "No dog bite statute. The owner is liable if they knew or should have known the dog was dangerous, or if they were negligent."
+        }
+    }
+}

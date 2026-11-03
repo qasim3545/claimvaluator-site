@@ -1,0 +1,706 @@
+{
+    "categories": {
+        "accident": {
+            "short": "Accidents and injuries",
+            "title": "Accident and Injury Settlement Calculators",
+            "desc": "Estimate a claim range in your state with the multiplier and per-diem methods adjusters use, with your state’s fault rule applied."
+        },
+        "money": {
+            "short": "Settlement money",
+            "title": "Settlement Money Tools",
+            "desc": "What you actually take home after fees, liens, taxes and payment schedules."
+        },
+        "offers": {
+            "short": "Offers",
+            "title": "Offers and Negotiation",
+            "desc": "Check an insurer’s offer and answer it in writing."
+        },
+        "deadlines": {
+            "short": "Deadlines and fault",
+            "title": "Deadlines and Fault Rules",
+            "desc": "The dates and rules that can end a claim before it starts."
+        },
+        "insurance": {
+            "short": "Insurance",
+            "title": "Insurance Coverage",
+            "desc": "How much can actually be collected, and from which policy."
+        },
+        "benefits": {
+            "short": "Workplace and benefits",
+            "title": "Workplace and Benefits Claims",
+            "desc": "Weekly benefits and lump sums for work injuries, disability and veterans’ claims."
+        },
+        "employment": {
+            "short": "Employment",
+            "title": "Employment Claims",
+            "desc": "Back pay and damage ranges for job-related claims."
+        }
+    },
+    "tools": {
+        "personal-injury-settlement-calculator": {
+            "name": "Personal Injury Settlement Calculator",
+            "short": "Personal injury",
+            "cat": "accident",
+            "type": "injury",
+            "variant": "pi",
+            "states": true,
+            "state_pages": true,
+            "icon": "plus",
+            "card": "Any injury someone else caused, valued under your state’s fault rule.",
+            "related": [
+                "pain-and-suffering-calculator",
+                "attorney-fee-calculator",
+                "statute-of-limitations-calculator",
+                "settlement-offer-calculator",
+                "comparative-fault-calculator"
+            ],
+            "slug": "personal-injury-settlement-calculator"
+        },
+        "car-accident-settlement-calculator": {
+            "name": "Car Accident Settlement Calculator",
+            "short": "Car accident",
+            "cat": "accident",
+            "type": "injury",
+            "variant": "car",
+            "states": true,
+            "state_pages": true,
+            "icon": "car",
+            "card": "Injury value plus your vehicle claim, with policy limits and no-fault rules.",
+            "related": [
+                "truck-accident-settlement-calculator",
+                "rideshare-accident-settlement-calculator",
+                "policy-limits-calculator",
+                "statute-of-limitations-calculator",
+                "settlement-offer-calculator"
+            ],
+            "slug": "car-accident-settlement-calculator"
+        },
+        "truck-accident-settlement-calculator": {
+            "name": "Truck Accident Settlement Calculator",
+            "short": "Truck accident",
+            "cat": "accident",
+            "type": "injury",
+            "variant": "truck",
+            "states": true,
+            "state_pages": true,
+            "icon": "truck",
+            "card": "Commercial policies carry far higher limits. See what that changes.",
+            "related": [
+                "car-accident-settlement-calculator",
+                "wrongful-death-settlement-calculator",
+                "lost-wages-calculator",
+                "statute-of-limitations-calculator",
+                "attorney-fee-calculator"
+            ],
+            "slug": "truck-accident-settlement-calculator"
+        },
+        "motorcycle-accident-settlement-calculator": {
+            "name": "Motorcycle Accident Settlement Calculator",
+            "short": "Motorcycle accident",
+            "cat": "accident",
+            "type": "injury",
+            "variant": "motorcycle",
+            "states": true,
+            "state_pages": false,
+            "icon": "moto",
+            "card": "Severe-injury ranges, fault disputes and the rider’s own coverage.",
+            "related": [
+                "car-accident-settlement-calculator",
+                "policy-limits-calculator",
+                "comparative-fault-calculator",
+                "statute-of-limitations-calculator",
+                "pain-and-suffering-calculator"
+            ],
+            "slug": "motorcycle-accident-settlement-calculator"
+        },
+        "pedestrian-accident-settlement-calculator": {
+            "name": "Pedestrian Accident Settlement Calculator",
+            "short": "Pedestrian accident",
+            "cat": "accident",
+            "type": "injury",
+            "variant": "pedestrian",
+            "states": true,
+            "state_pages": false,
+            "icon": "walk",
+            "card": "Hit on foot, including crosswalk fault and your own auto coverage.",
+            "related": [
+                "car-accident-settlement-calculator",
+                "bicycle-accident-settlement-calculator",
+                "policy-limits-calculator",
+                "comparative-fault-calculator",
+                "statute-of-limitations-calculator"
+            ],
+            "slug": "pedestrian-accident-settlement-calculator"
+        },
+        "bicycle-accident-settlement-calculator": {
+            "name": "Bicycle Accident Settlement Calculator",
+            "short": "Bicycle accident",
+            "cat": "accident",
+            "type": "injury",
+            "variant": "bicycle",
+            "states": true,
+            "state_pages": false,
+            "icon": "bike",
+            "card": "Cyclist claims under your state’s fault rule.",
+            "related": [
+                "pedestrian-accident-settlement-calculator",
+                "car-accident-settlement-calculator",
+                "policy-limits-calculator",
+                "comparative-fault-calculator",
+                "statute-of-limitations-calculator"
+            ],
+            "slug": "bicycle-accident-settlement-calculator"
+        },
+        "rideshare-accident-settlement-calculator": {
+            "name": "Rideshare Accident Settlement Calculator",
+            "short": "Rideshare accident",
+            "cat": "accident",
+            "type": "injury",
+            "variant": "rideshare",
+            "states": true,
+            "state_pages": false,
+            "icon": "phone",
+            "card": "Uber and Lyft layered coverage, by the driver’s app status.",
+            "related": [
+                "car-accident-settlement-calculator",
+                "policy-limits-calculator",
+                "statute-of-limitations-calculator",
+                "attorney-fee-calculator",
+                "settlement-offer-calculator"
+            ],
+            "slug": "rideshare-accident-settlement-calculator"
+        },
+        "slip-and-fall-settlement-calculator": {
+            "name": "Slip and Fall Settlement Calculator",
+            "short": "Slip and fall",
+            "cat": "accident",
+            "type": "injury",
+            "variant": "premises",
+            "states": true,
+            "state_pages": true,
+            "icon": "alert",
+            "card": "Premises claims, where proving the owner knew is half the case.",
+            "related": [
+                "personal-injury-settlement-calculator",
+                "pain-and-suffering-calculator",
+                "statute-of-limitations-calculator",
+                "comparative-fault-calculator",
+                "attorney-fee-calculator"
+            ],
+            "slug": "slip-and-fall-settlement-calculator"
+        },
+        "dog-bite-settlement-calculator": {
+            "name": "Dog Bite Settlement Calculator",
+            "short": "Dog bite",
+            "cat": "accident",
+            "type": "injury",
+            "variant": "dog",
+            "states": true,
+            "state_pages": true,
+            "icon": "paw",
+            "card": "Strict-liability and one-bite states, and the homeowner’s policy that pays.",
+            "related": [
+                "personal-injury-settlement-calculator",
+                "pain-and-suffering-calculator",
+                "statute-of-limitations-calculator",
+                "attorney-fee-calculator",
+                "settlement-offer-calculator"
+            ],
+            "slug": "dog-bite-settlement-calculator"
+        },
+        "wrongful-death-settlement-calculator": {
+            "name": "Wrongful Death Settlement Calculator",
+            "short": "Wrongful death",
+            "cat": "accident",
+            "type": "death",
+            "variant": "",
+            "states": true,
+            "state_pages": false,
+            "icon": "heart",
+            "card": "Lost support, household services and companionship, valued today.",
+            "related": [
+                "statute-of-limitations-calculator",
+                "structured-settlement-calculator",
+                "settlement-tax-calculator",
+                "attorney-fee-calculator",
+                "truck-accident-settlement-calculator"
+            ],
+            "slug": "wrongful-death-settlement-calculator"
+        },
+        "pain-and-suffering-calculator": {
+            "name": "Pain and Suffering Calculator",
+            "short": "Pain and suffering",
+            "cat": "accident",
+            "type": "pain",
+            "variant": "",
+            "states": true,
+            "state_pages": false,
+            "icon": "pulse",
+            "card": "Compare the multiplier and per-diem methods side by side.",
+            "related": [
+                "personal-injury-settlement-calculator",
+                "car-accident-settlement-calculator",
+                "settlement-offer-calculator",
+                "lost-wages-calculator",
+                "demand-letter-generator"
+            ],
+            "slug": "pain-and-suffering-calculator"
+        },
+        "attorney-fee-calculator": {
+            "name": "Attorney Fee and Net Payout Calculator",
+            "short": "Attorney fee and net payout",
+            "cat": "money",
+            "type": "fee",
+            "variant": "",
+            "states": false,
+            "state_pages": false,
+            "icon": "percent",
+            "card": "What you keep after the contingency fee, case costs and medical liens.",
+            "related": [
+                "medical-lien-calculator",
+                "settlement-tax-calculator",
+                "settlement-offer-calculator",
+                "structured-settlement-calculator",
+                "personal-injury-settlement-calculator"
+            ],
+            "slug": "attorney-fee-calculator"
+        },
+        "medical-lien-calculator": {
+            "name": "Medical Lien Calculator",
+            "short": "Medical lien",
+            "cat": "money",
+            "type": "lien",
+            "variant": "",
+            "states": false,
+            "state_pages": false,
+            "icon": "file",
+            "card": "Hospital, Medicare and health-plan liens, and how they get reduced.",
+            "related": [
+                "attorney-fee-calculator",
+                "medpay-calculator",
+                "settlement-tax-calculator",
+                "personal-injury-settlement-calculator",
+                "settlement-offer-calculator"
+            ],
+            "slug": "medical-lien-calculator"
+        },
+        "settlement-tax-calculator": {
+            "name": "Settlement Tax Calculator",
+            "short": "Settlement tax",
+            "cat": "money",
+            "type": "tax",
+            "variant": "",
+            "states": false,
+            "state_pages": false,
+            "icon": "receipt",
+            "card": "Which parts of a settlement the IRS can tax, and roughly how much.",
+            "related": [
+                "attorney-fee-calculator",
+                "structured-settlement-calculator",
+                "employment-discrimination-settlement-calculator",
+                "medical-lien-calculator",
+                "wrongful-death-settlement-calculator"
+            ],
+            "slug": "settlement-tax-calculator"
+        },
+        "structured-settlement-calculator": {
+            "name": "Structured Settlement Calculator",
+            "short": "Structured settlement",
+            "cat": "money",
+            "type": "structured",
+            "variant": "",
+            "states": false,
+            "state_pages": false,
+            "icon": "calendar",
+            "card": "Present value of future payments, next to a lump sum.",
+            "related": [
+                "settlement-tax-calculator",
+                "attorney-fee-calculator",
+                "wrongful-death-settlement-calculator",
+                "settlement-offer-calculator",
+                "long-term-disability-calculator"
+            ],
+            "slug": "structured-settlement-calculator"
+        },
+        "lost-wages-calculator": {
+            "name": "Lost Wages Calculator",
+            "short": "Lost wages",
+            "cat": "money",
+            "type": "wages",
+            "variant": "",
+            "states": false,
+            "state_pages": false,
+            "icon": "clock",
+            "card": "Hourly, salaried and self-employed income lost to an injury.",
+            "related": [
+                "personal-injury-settlement-calculator",
+                "car-accident-settlement-calculator",
+                "demand-letter-generator",
+                "workers-comp-weekly-benefit-calculator",
+                "pain-and-suffering-calculator"
+            ],
+            "slug": "lost-wages-calculator"
+        },
+        "settlement-offer-calculator": {
+            "name": "Is My Settlement Offer Fair?",
+            "short": "Settlement offer checker",
+            "cat": "offers",
+            "type": "offer",
+            "variant": "",
+            "states": true,
+            "state_pages": false,
+            "icon": "scale",
+            "card": "Place an insurer’s offer inside your state’s range.",
+            "related": [
+                "counteroffer-calculator",
+                "demand-letter-generator",
+                "attorney-fee-calculator",
+                "car-accident-settlement-calculator",
+                "pain-and-suffering-calculator"
+            ],
+            "slug": "settlement-offer-calculator"
+        },
+        "counteroffer-calculator": {
+            "name": "Counteroffer Calculator",
+            "short": "Counteroffer",
+            "cat": "offers",
+            "type": "counter",
+            "variant": "",
+            "states": false,
+            "state_pages": false,
+            "icon": "swap",
+            "card": "Your next counter and a walk-away floor, round by round.",
+            "related": [
+                "settlement-offer-calculator",
+                "demand-letter-generator",
+                "attorney-fee-calculator",
+                "pain-and-suffering-calculator",
+                "personal-injury-settlement-calculator"
+            ],
+            "slug": "counteroffer-calculator"
+        },
+        "demand-letter-generator": {
+            "name": "Demand Letter Generator",
+            "short": "Demand letter",
+            "cat": "offers",
+            "type": "demand",
+            "variant": "",
+            "states": true,
+            "state_pages": false,
+            "icon": "mail",
+            "card": "A ready-to-edit demand letter for the insurance adjuster.",
+            "related": [
+                "settlement-offer-calculator",
+                "counteroffer-calculator",
+                "pain-and-suffering-calculator",
+                "lost-wages-calculator",
+                "car-accident-settlement-calculator"
+            ],
+            "slug": "demand-letter-generator"
+        },
+        "statute-of-limitations-calculator": {
+            "name": "Statute of Limitations Calculator",
+            "short": "Filing deadline",
+            "cat": "deadlines",
+            "type": "sol",
+            "variant": "",
+            "states": true,
+            "state_pages": true,
+            "icon": "hourglass",
+            "card": "Your last day to file an injury lawsuit, by state and claim type.",
+            "related": [
+                "car-accident-settlement-calculator",
+                "personal-injury-settlement-calculator",
+                "wrongful-death-settlement-calculator",
+                "comparative-fault-calculator",
+                "demand-letter-generator"
+            ],
+            "slug": "statute-of-limitations-calculator"
+        },
+        "comparative-fault-calculator": {
+            "name": "Comparative Fault Calculator",
+            "short": "Comparative fault",
+            "cat": "deadlines",
+            "type": "fault",
+            "variant": "",
+            "states": true,
+            "state_pages": false,
+            "icon": "split",
+            "card": "How your share of fault changes the award under your state’s rule.",
+            "related": [
+                "car-accident-settlement-calculator",
+                "personal-injury-settlement-calculator",
+                "statute-of-limitations-calculator",
+                "settlement-offer-calculator",
+                "motorcycle-accident-settlement-calculator"
+            ],
+            "slug": "comparative-fault-calculator"
+        },
+        "policy-limits-calculator": {
+            "name": "Policy Limits and UM/UIM Gap Calculator",
+            "short": "Policy limits and UM/UIM gap",
+            "cat": "insurance",
+            "type": "uim",
+            "variant": "",
+            "states": true,
+            "state_pages": false,
+            "icon": "shield",
+            "card": "When the other driver’s policy runs out, and what your own covers.",
+            "related": [
+                "car-accident-settlement-calculator",
+                "no-fault-pip-calculator",
+                "medpay-calculator",
+                "settlement-offer-calculator",
+                "motorcycle-accident-settlement-calculator"
+            ],
+            "slug": "policy-limits-calculator"
+        },
+        "no-fault-pip-calculator": {
+            "name": "No-Fault and PIP Calculator",
+            "short": "No-fault and PIP",
+            "cat": "insurance",
+            "type": "pip",
+            "variant": "",
+            "states": true,
+            "state_pages": false,
+            "icon": "umbrella",
+            "card": "PIP benefits in the 12 no-fault states, and when you can sue.",
+            "related": [
+                "car-accident-settlement-calculator",
+                "policy-limits-calculator",
+                "medpay-calculator",
+                "lost-wages-calculator",
+                "statute-of-limitations-calculator"
+            ],
+            "slug": "no-fault-pip-calculator"
+        },
+        "medpay-calculator": {
+            "name": "MedPay Calculator",
+            "short": "MedPay",
+            "cat": "insurance",
+            "type": "medpay",
+            "variant": "",
+            "states": false,
+            "state_pages": false,
+            "icon": "cross",
+            "card": "What medical payments coverage pays, at any fault, and what you may repay.",
+            "related": [
+                "no-fault-pip-calculator",
+                "medical-lien-calculator",
+                "policy-limits-calculator",
+                "car-accident-settlement-calculator",
+                "attorney-fee-calculator"
+            ],
+            "slug": "medpay-calculator"
+        },
+        "total-loss-calculator": {
+            "name": "Total Loss Car Value Calculator",
+            "short": "Total loss",
+            "cat": "insurance",
+            "type": "totalloss",
+            "variant": "",
+            "states": false,
+            "state_pages": false,
+            "icon": "tag",
+            "card": "Actual cash value plus tax and fees, and any gap on your loan.",
+            "related": [
+                "diminished-value-calculator",
+                "rental-car-reimbursement-calculator",
+                "car-accident-settlement-calculator",
+                "policy-limits-calculator",
+                "settlement-offer-calculator"
+            ],
+            "slug": "total-loss-calculator"
+        },
+        "diminished-value-calculator": {
+            "name": "Diminished Value Calculator",
+            "short": "Diminished value",
+            "cat": "insurance",
+            "type": "dv",
+            "variant": "",
+            "states": false,
+            "state_pages": false,
+            "icon": "trend",
+            "card": "Resale value lost after repairs, with the 17c formula insurers use.",
+            "related": [
+                "total-loss-calculator",
+                "rental-car-reimbursement-calculator",
+                "car-accident-settlement-calculator",
+                "demand-letter-generator",
+                "policy-limits-calculator"
+            ],
+            "slug": "diminished-value-calculator"
+        },
+        "rental-car-reimbursement-calculator": {
+            "name": "Rental Car Reimbursement Calculator",
+            "short": "Rental car",
+            "cat": "insurance",
+            "type": "rental",
+            "variant": "",
+            "states": false,
+            "state_pages": false,
+            "icon": "key",
+            "card": "Loss-of-use days and daily rate, with or without a rental.",
+            "related": [
+                "total-loss-calculator",
+                "diminished-value-calculator",
+                "car-accident-settlement-calculator",
+                "demand-letter-generator",
+                "policy-limits-calculator"
+            ],
+            "slug": "rental-car-reimbursement-calculator"
+        },
+        "workers-comp-settlement-calculator": {
+            "name": "Workers’ Comp Settlement Calculator",
+            "short": "Workers’ comp settlement",
+            "cat": "benefits",
+            "type": "wcsettle",
+            "variant": "",
+            "states": false,
+            "state_pages": false,
+            "icon": "hardhat",
+            "card": "A lump-sum range from your wage, impairment rating and future care.",
+            "related": [
+                "workers-comp-weekly-benefit-calculator",
+                "personal-injury-settlement-calculator",
+                "attorney-fee-calculator",
+                "long-term-disability-calculator",
+                "ssdi-back-pay-calculator"
+            ],
+            "slug": "workers-comp-settlement-calculator"
+        },
+        "workers-comp-weekly-benefit-calculator": {
+            "name": "Workers’ Comp Weekly Benefit Calculator",
+            "short": "Workers’ comp weekly benefit",
+            "cat": "benefits",
+            "type": "wcweekly",
+            "variant": "",
+            "states": false,
+            "state_pages": false,
+            "icon": "wallet",
+            "card": "Temporary disability pay from your average weekly wage.",
+            "related": [
+                "workers-comp-settlement-calculator",
+                "lost-wages-calculator",
+                "long-term-disability-calculator",
+                "ssdi-back-pay-calculator",
+                "personal-injury-settlement-calculator"
+            ],
+            "slug": "workers-comp-weekly-benefit-calculator"
+        },
+        "ssdi-back-pay-calculator": {
+            "name": "SSDI Back Pay Calculator",
+            "short": "SSDI back pay",
+            "cat": "benefits",
+            "type": "ssdi",
+            "variant": "",
+            "states": false,
+            "state_pages": false,
+            "icon": "building",
+            "card": "Back pay from your onset date, after the waiting period and fee cap.",
+            "related": [
+                "long-term-disability-calculator",
+                "va-disability-calculator",
+                "workers-comp-settlement-calculator",
+                "settlement-tax-calculator",
+                "structured-settlement-calculator"
+            ],
+            "slug": "ssdi-back-pay-calculator"
+        },
+        "va-disability-calculator": {
+            "name": "VA Combined Disability Rating Calculator",
+            "short": "VA combined rating",
+            "cat": "benefits",
+            "type": "va",
+            "variant": "",
+            "states": false,
+            "state_pages": false,
+            "icon": "star",
+            "card": "Combine VA ratings the way the VA does, including the bilateral factor.",
+            "related": [
+                "ssdi-back-pay-calculator",
+                "long-term-disability-calculator",
+                "workers-comp-weekly-benefit-calculator",
+                "settlement-tax-calculator",
+                "structured-settlement-calculator"
+            ],
+            "slug": "va-disability-calculator"
+        },
+        "long-term-disability-calculator": {
+            "name": "Long-Term Disability Calculator",
+            "short": "Long-term disability",
+            "cat": "benefits",
+            "type": "ltd",
+            "variant": "",
+            "states": false,
+            "state_pages": false,
+            "icon": "chart",
+            "card": "Your monthly benefit after the policy maximum and offsets.",
+            "related": [
+                "ssdi-back-pay-calculator",
+                "workers-comp-weekly-benefit-calculator",
+                "settlement-tax-calculator",
+                "va-disability-calculator",
+                "lost-wages-calculator"
+            ],
+            "slug": "long-term-disability-calculator"
+        },
+        "employment-discrimination-settlement-calculator": {
+            "name": "Employment Discrimination Settlement Calculator",
+            "short": "Employment discrimination",
+            "cat": "employment",
+            "type": "discrim",
+            "variant": "",
+            "states": false,
+            "state_pages": false,
+            "icon": "briefcase",
+            "card": "Back pay and front pay plus the federal damage caps by employer size.",
+            "related": [
+                "wrongful-termination-back-pay-calculator",
+                "unpaid-overtime-calculator",
+                "settlement-tax-calculator",
+                "attorney-fee-calculator",
+                "counteroffer-calculator"
+            ],
+            "slug": "employment-discrimination-settlement-calculator"
+        },
+        "wrongful-termination-back-pay-calculator": {
+            "name": "Wrongful Termination Back Pay Calculator",
+            "short": "Wrongful termination back pay",
+            "cat": "employment",
+            "type": "backpay",
+            "variant": "",
+            "states": false,
+            "state_pages": false,
+            "icon": "door",
+            "card": "Lost pay and benefits from your last day to today, less new earnings.",
+            "related": [
+                "employment-discrimination-settlement-calculator",
+                "unpaid-overtime-calculator",
+                "settlement-tax-calculator",
+                "lost-wages-calculator",
+                "attorney-fee-calculator"
+            ],
+            "slug": "wrongful-termination-back-pay-calculator"
+        },
+        "unpaid-overtime-calculator": {
+            "name": "Unpaid Wages and Overtime Calculator",
+            "short": "Unpaid overtime",
+            "cat": "employment",
+            "type": "overtime",
+            "variant": "",
+            "states": false,
+            "state_pages": false,
+            "icon": "timer",
+            "card": "Overtime owed under federal law, plus liquidated damages.",
+            "related": [
+                "wrongful-termination-back-pay-calculator",
+                "employment-discrimination-settlement-calculator",
+                "lost-wages-calculator",
+                "settlement-tax-calculator",
+                "attorney-fee-calculator"
+            ],
+            "slug": "unpaid-overtime-calculator"
+        }
+    }
+}
