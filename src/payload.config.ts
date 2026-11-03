@@ -1,5 +1,6 @@
 import { sqliteAdapter } from '@payloadcms/db-sqlite'
 import { postgresAdapter } from '@payloadcms/db-postgres'
+import { nodemailerAdapter } from '@payloadcms/email-nodemailer'
 import sharp from 'sharp'
 import path from 'path'
 import { buildConfig, PayloadRequest } from 'payload'
@@ -70,6 +71,21 @@ export default buildConfig({
   db: (process.env.DATABASE_URL || '').startsWith('postgres')
     ? postgresAdapter({ pool: { connectionString: process.env.DATABASE_URL } })
     : sqliteAdapter({ client: { url: process.env.DATABASE_URL || 'file:./claimvaluator.db' } }),
+  // Outgoing mail (new-lead alerts, password resets) once SMTP is set, e.g. Hostinger: smtp.hostinger.com, port 465.
+  ...(process.env.SMTP_HOST
+    ? {
+        email: nodemailerAdapter({
+          defaultFromAddress: process.env.SMTP_FROM || process.env.SMTP_USER || 'no-reply@claimvaluator.com',
+          defaultFromName: 'ClaimValuator',
+          transportOptions: {
+            host: process.env.SMTP_HOST,
+            port: Number(process.env.SMTP_PORT || 465),
+            secure: Number(process.env.SMTP_PORT || 465) === 465,
+            auth: { user: process.env.SMTP_USER, pass: process.env.SMTP_PASS },
+          },
+        }),
+      }
+    : {}),
   collections: [Pages, Posts, Tools, States, StatePages, Lawyers, Settlements, Leads, Media, Categories, Users],
   cors: [getServerSideURL()].filter(Boolean),
   globals: [Header, Footer, SiteSettings],

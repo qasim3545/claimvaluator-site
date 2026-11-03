@@ -4,7 +4,7 @@ import { authenticatedOrPublished } from '../access/authenticatedOrPublished'
 import { revalidateDoc, revalidateDocDelete } from '../hooks/revalidateDoc'
 import { legacyHtmlField, seoTab } from '../fields/shared'
 
-const PRACTICE_AREAS = [
+export const PRACTICE_AREAS = [
   'Personal injury', 'Car accidents', 'Truck accidents', 'Motorcycle accidents', 'Pedestrian and bicycle accidents',
   'Premises liability', 'Dog bites', 'Medical malpractice', 'Nursing home abuse', 'Product liability', 'Wrongful death',
   "Workers' compensation", 'Social Security disability', 'Long-term disability', 'Employment law', 'Insurance disputes',

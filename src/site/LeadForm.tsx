@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 
-type Props = { kind?: 'case-review' | 'contact' | 'attorney-partner'; states: { slug: string; name: string }[]; disclosure?: string; defaultState?: string }
+type Props = { kind?: 'case-review' | 'contact' | 'attorney-partner' | 'listing-update'; states: { slug: string; name: string }[]; disclosure?: string; defaultState?: string }
 
 /** Case review / contact form. Sends to the Leads inbox in the editor. */
 export function LeadForm({ kind = 'case-review', states, disclosure, defaultState = '' }: Props) {
@@ -37,7 +37,9 @@ export function LeadForm({ kind = 'case-review', states, disclosure, defaultStat
         <span className="cv-ctabox__text">
           {kind === 'case-review'
             ? 'A participating law firm may contact you by phone or email. Keep your medical records and insurance letters handy.'
-            : 'Thanks. We read every message and reply by email.'}
+            : kind === 'listing-update'
+              ? 'Thanks. We check every change against the state bar record or the firm’s own site, then reply by email.'
+              : 'Thanks. We read every message and reply by email.'}
         </span>
       </div>
     )
@@ -71,7 +73,7 @@ export function LeadForm({ kind = 'case-review', states, disclosure, defaultStat
         </div>
         <div className="cv-field cv-field--wide">
           <label className="cv-label" htmlFor="lf-msg">
-            {kind === 'case-review' ? 'What happened?' : 'Your message'}
+            {kind === 'case-review' ? 'What happened?' : kind === 'listing-update' ? 'Profile link (if listed) and what should change' : 'Your message'}
           </label>
           <textarea className="cv-control cv-control--area" id="lf-msg" name="message" rows={5} maxLength={4000} required />
         </div>
@@ -91,7 +93,7 @@ export function LeadForm({ kind = 'case-review', states, disclosure, defaultStat
       {disclosure ? <p className="cv-fine">{disclosure}</p> : null}
       <div>
         <button className="cv-btn cv-btn--lg" type="submit" disabled={status === 'sending'}>
-          {status === 'sending' ? 'Sending…' : kind === 'case-review' ? 'Request my free case review' : 'Send message'}
+          {status === 'sending' ? 'Sending…' : kind === 'case-review' ? 'Request my free case review' : kind === 'listing-update' ? 'Send profile request' : 'Send message'}
         </button>
       </div>
       {status === 'error' ? (

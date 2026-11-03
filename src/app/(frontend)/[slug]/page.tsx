@@ -52,7 +52,7 @@ export default async function Page({ params }: Args) {
   if (hit.doc.template === 'laws') {
     extra.children = (await findAll('pages', 'title', 0)).filter((p) => (p.breadcrumbs || []).some((b: any) => b.url === `/${slug}`) && p.slug !== slug)
   }
-  if (hit.doc.template === 'directory') extra.lawyers = await findAll('lawyers', 'title', 0)
+  if (hit.doc.template === 'directory') extra.lawyers = await findAll('lawyers', 'last', 1)
   return <PageView doc={hit.doc} extra={extra} />
 }
 

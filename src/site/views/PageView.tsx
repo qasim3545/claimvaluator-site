@@ -6,7 +6,9 @@ import { Crumbs, type Crumb } from '../Crumbs'
 import { StateList, ToolGroups } from '../Directory'
 import { EngineScripts } from '../CalcBlock'
 import { Faq } from '../Faq'
+import { LawyerDirectory } from '../LawyerDirectory'
 import { LeadForm } from '../LeadForm'
+import { PRACTICE_AREAS } from '@/collections/Lawyers'
 import { Prose } from '../Prose'
 import { Sources } from '../Sources'
 import { Toc } from '../Toc'
@@ -71,14 +73,28 @@ export async function PageView({ doc, extra = {} }: { doc: any; extra?: Extra })
       {template === 'directory' && extra.lawyers ? (
         <section className="band" style={{ paddingTop: 24 }}>
           <div className="wrap">
-            <ul className="linkcols">
-              {extra.lawyers.map((l) => (
-                <li key={l.id}>
-                  <a href={docPath('lawyers', l)}>{l.title}</a>
-                  {l.firm ? <span className="cv-fine"> {l.firm}</span> : null}
-                </li>
-              ))}
-            </ul>
+            <LawyerDirectory
+              entries={extra.lawyers.map((l) => ({
+                slug: l.slug,
+                name: l.title,
+                firm: l.firm || undefined,
+                city: l.city || undefined,
+                state: typeof l.state === 'object' && l.state ? l.state.name : undefined,
+                stateSlug: typeof l.state === 'object' && l.state ? l.state.slug : undefined,
+                areas: Array.isArray(l.practiceAreas) ? l.practiceAreas : [],
+                verified: l.verified || undefined,
+              }))}
+              states={allStates().map((s) => ({ slug: s.slug, name: s.name }))}
+              areas={PRACTICE_AREAS}
+            />
+            <div className="dir__update" id="update">
+              <h2>Is a profile wrong or missing?</h2>
+              <p>
+                Profiles are built from state bar records and firm websites. Lawyers can ask for a correction or a new profile here; we check every change against
+                an official source before publishing it.
+              </p>
+              <LeadForm kind="listing-update" states={allStates().map((s) => ({ slug: s.slug, name: s.name }))} />
+            </div>
           </div>
         </section>
       ) : null}
@@ -88,7 +104,15 @@ export async function PageView({ doc, extra = {} }: { doc: any; extra?: Extra })
           <Prose data={doc.content} legacyHtml={doc.legacyHtml} />
           {template === 'form' ? (
             <LeadForm
-              kind={doc.slug === 'contact' ? 'contact' : doc.slug === 'for-attorneys' ? 'attorney-partner' : 'case-review'}
+              kind={
+                doc.slug === 'contact'
+                  ? 'contact'
+                  : doc.slug === 'for-attorneys'
+                    ? 'attorney-partner'
+                    : doc.slug === 'submit' || path.startsWith('/find-an-expert/')
+                      ? 'listing-update'
+                      : 'case-review'
+              }
               states={allStates().map((s) => ({ slug: s.slug, name: s.name }))}
               disclosure={doc.slug === 'free-case-review' ? settings?.disclosure : undefined}
             />

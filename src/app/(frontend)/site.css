@@ -1154,3 +1154,80 @@ p {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+/* Lawyer directory */
+.dir__filters {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) minmax(0, 1fr);
+  gap: 16px;
+  padding: 20px;
+  background: var(--ledger);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+}
+@media (max-width: 760px) {
+  .dir__filters {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+.dir__count {
+  margin: 18px 0 8px;
+  color: var(--ink-2);
+}
+.dir__clear {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--green);
+  text-decoration: underline;
+  font: inherit;
+  cursor: pointer;
+}
+.dir__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+  column-gap: 32px;
+  border-top: 2px solid var(--ink);
+}
+.dir__item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--rule);
+  min-width: 0;
+}
+.dir__item[hidden] {
+  display: none;
+}
+.dir__name {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+}
+.dir__name:hover {
+  color: var(--green);
+  text-decoration: underline;
+}
+.dir__meta,
+.dir__areas {
+  font-size: 0.92rem;
+  color: var(--ink-2);
+}
+.dir__check {
+  font-size: 0.85rem;
+  color: var(--green-ink);
+}
+.dir__update {
+  margin-top: 56px;
+  max-width: 760px;
+}
+.dir__update > p {
+  color: var(--ink-2);
+}
+.dir__update .leadform { margin-top: 20px; }

@@ -55,7 +55,10 @@ export function LawyerView({ doc }: { doc: any }) {
               {doc.sourceChecked ? `, checked ${doc.sourceChecked}` : ''}.
             </p>
           ) : null}
-          <p className="cv-fine">ClaimValuator does not endorse or rank lawyers. Check a lawyer’s standing with the state bar before you hire them.</p>
+          <p className="cv-fine">
+            ClaimValuator does not endorse or rank lawyers. Check a lawyer’s standing with the state bar before you hire them. Is something on this profile
+            wrong? <a href="/find-an-expert/#update">Ask for a correction</a>.
+          </p>
         </div>
         <aside className="article__aside" />
       </div>

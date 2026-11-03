@@ -29,9 +29,14 @@ export const findOne = cache(async (collection: CollectionSlug, field: string, v
   return (res.docs[0] as any) ?? null
 })
 
+/** Collections with drafts: public lists show only published documents. */
+const WITH_DRAFTS: string[] = ['pages', 'posts', 'tools', 'states', 'state-pages', 'lawyers', 'settlements']
+
 export const findAll = cache(async (collection: CollectionSlug, sort = 'title', depth = 0, whereJson = '') => {
   const payload = await getClient()
-  const where = whereJson ? (JSON.parse(whereJson) as Where) : undefined
+  const given = whereJson ? (JSON.parse(whereJson) as Where) : undefined
+  const publishedOnly = WITH_DRAFTS.includes(collection) && !(await isDraft())
+  const where: Where | undefined = publishedOnly ? { and: [...(given ? [given] : []), { _status: { equals: 'published' } }] } : given
   const res = await payload.find({ collection, limit: 2000, depth, sort, where, pagination: false })
   return res.docs as any[]
 })
