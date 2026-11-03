@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@payloadcms/admin-bar": "3.92.1",
+    "@payloadcms/db-postgres": "^3.92.1",
     "@payloadcms/db-sqlite": "3.92.1",
     "@payloadcms/live-preview-react": "3.92.1",
     "@payloadcms/next": "3.92.1",
@@ -56,6 +57,8 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",
+    "@fontsource-variable/public-sans": "^5.3.0",
+    "@fontsource-variable/source-serif-4": "^5.3.1",
     "@playwright/test": "1.63.0",
     "@tailwindcss/postcss": "^4.1.18",
     "@tailwindcss/typography": "^0.5.19",

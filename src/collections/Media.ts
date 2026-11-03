@@ -27,7 +27,8 @@ export const Media: CollectionConfig = {
     {
       name: 'alt',
       type: 'text',
-      //required: true,
+      required: true,
+      admin: { description: 'Describe what the image shows (read aloud by screen readers and used by Google Images).' },
     },
     {
       name: 'caption',
@@ -44,38 +45,14 @@ export const Media: CollectionConfig = {
     staticDir: path.resolve(dirname, '../../public/media'),
     adminThumbnail: 'thumbnail',
     focalPoint: true,
+    // Every upload is stored as WebP; sizes are generated for responsive images.
+    formatOptions: { format: 'webp', options: { quality: 82 } },
     imageSizes: [
-      {
-        name: 'thumbnail',
-        width: 300,
-      },
-      {
-        name: 'square',
-        width: 500,
-        height: 500,
-      },
-      {
-        name: 'small',
-        width: 600,
-      },
-      {
-        name: 'medium',
-        width: 900,
-      },
-      {
-        name: 'large',
-        width: 1400,
-      },
-      {
-        name: 'xlarge',
-        width: 1920,
-      },
-      {
-        name: 'og',
-        width: 1200,
-        height: 630,
-        crop: 'center',
-      },
+      { name: 'thumbnail', width: 400, formatOptions: { format: 'webp', options: { quality: 80 } } },
+      { name: 'card', width: 768, formatOptions: { format: 'webp', options: { quality: 80 } } },
+      { name: 'wide', width: 1280, formatOptions: { format: 'webp', options: { quality: 82 } } },
+      { name: 'og', width: 1200, height: 630, crop: 'center', formatOptions: { format: 'jpeg', options: { quality: 82 } } },
     ],
+    mimeTypes: ['image/*', 'application/pdf'],
   },
 }

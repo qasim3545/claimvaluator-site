@@ -1,30 +1,14 @@
 import type { CollectionConfig } from 'payload'
 
-import {
-  BlocksFeature,
-  FixedToolbarFeature,
-  HeadingFeature,
-  HorizontalRuleFeature,
-  InlineToolbarFeature,
-  lexicalEditor,
-} from '@payloadcms/richtext-lexical'
+import { articleEditor } from '../../fields/articleEditor'
 
 import { authenticated } from '../../access/authenticated'
 import { authenticatedOrPublished } from '../../access/authenticatedOrPublished'
-import { Banner } from '../../blocks/Banner/config'
-import { Code } from '../../blocks/Code/config'
-import { MediaBlock } from '../../blocks/MediaBlock/config'
 import { generatePreviewPath } from '../../utilities/generatePreviewPath'
 import { populateAuthors } from './hooks/populateAuthors'
 import { revalidateDelete, revalidatePost } from './hooks/revalidatePost'
 
-import {
-  MetaDescriptionField,
-  MetaImageField,
-  MetaTitleField,
-  OverviewField,
-  PreviewField,
-} from '@payloadcms/plugin-seo/fields'
+import { faqsField, legacyHtmlField, seoTab, sourcesField } from '../../fields/shared'
 import { slugField } from 'payload'
 
 export const Posts: CollectionConfig<'posts'> = {
@@ -51,18 +35,10 @@ export const Posts: CollectionConfig<'posts'> = {
     defaultColumns: ['title', 'slug', 'updatedAt'],
     livePreview: {
       url: ({ data, req }) =>
-        generatePreviewPath({
-          slug: data?.slug,
-          collection: 'posts',
-          req,
-        }),
+        generatePreviewPath({ collection: 'posts', doc: data, req }),
     },
     preview: (data, { req }) =>
-      generatePreviewPath({
-        slug: data?.slug as string,
-        collection: 'posts',
-        req,
-      }),
+      generatePreviewPath({ collection: 'posts', doc: data, req }),
     useAsTitle: 'title',
   },
   fields: [
@@ -84,21 +60,19 @@ export const Posts: CollectionConfig<'posts'> = {
             {
               name: 'content',
               type: 'richText',
-              editor: lexicalEditor({
-                features: ({ rootFeatures }) => {
-                  return [
-                    ...rootFeatures,
-                    HeadingFeature({ enabledHeadingSizes: ['h1', 'h2', 'h3', 'h4'] }),
-                    BlocksFeature({ blocks: [Banner, Code, MediaBlock] }),
-                    FixedToolbarFeature(),
-                    InlineToolbarFeature(),
-                    HorizontalRuleFeature(),
-                  ]
-                },
-              }),
+              editor: articleEditor,
               label: false,
-              required: true,
+              required: false,
             },
+            {
+              name: 'inlineImage',
+              type: 'upload',
+              relationTo: 'media',
+              admin: { description: 'In-article illustration (every post gets a featured image and one in-content image).' },
+            },
+            legacyHtmlField(),
+            faqsField(),
+            sourcesField(),
           ],
           label: 'Content',
         },
@@ -129,36 +103,28 @@ export const Posts: CollectionConfig<'posts'> = {
               hasMany: true,
               relationTo: 'categories',
             },
+            {
+              name: 'relatedTools',
+              type: 'relationship',
+              relationTo: 'tools',
+              hasMany: true,
+              label: 'Calculators shown with this post',
+              admin: { position: 'sidebar' },
+            },
+            {
+              type: 'collapsible',
+              label: 'Expert reviewer (only when a real reviewer has reviewed this post)',
+              admin: { initCollapsed: true },
+              fields: [
+                { name: 'reviewerName', type: 'text' },
+                { name: 'reviewerTitle', type: 'text' },
+                { name: 'reviewerUrl', type: 'text', admin: { description: 'Public bar or firm profile that confirms the reviewer.' } },
+              ],
+            },
           ],
           label: 'Meta',
         },
-        {
-          name: 'meta',
-          label: 'SEO',
-          fields: [
-            OverviewField({
-              titlePath: 'meta.title',
-              descriptionPath: 'meta.description',
-              imagePath: 'meta.image',
-            }),
-            MetaTitleField({
-              hasGenerateFn: true,
-            }),
-            MetaImageField({
-              relationTo: 'media',
-            }),
-
-            MetaDescriptionField({}),
-            PreviewField({
-              // if the `generateUrl` function is configured
-              hasGenerateFn: true,
-
-              // field paths to match the target field for data
-              titlePath: 'meta.title',
-              descriptionPath: 'meta.description',
-            }),
-          ],
-        },
+        seoTab(),
       ],
     },
     {
@@ -214,6 +180,13 @@ export const Posts: CollectionConfig<'posts'> = {
         },
       ],
     },
+    {
+      name: 'reviewLine',
+      type: 'text',
+      defaultValue: 'Fact-checked by the ClaimValuator Editorial Team',
+      admin: { position: 'sidebar' },
+    },
+    { name: 'reviewedAt', type: 'date', label: 'Last reviewed', admin: { position: 'sidebar' } },
     slugField(),
   ],
   hooks: {

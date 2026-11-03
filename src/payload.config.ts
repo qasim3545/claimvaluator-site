@@ -1,4 +1,5 @@
 import { sqliteAdapter } from '@payloadcms/db-sqlite'
+import { postgresAdapter } from '@payloadcms/db-postgres'
 import sharp from 'sharp'
 import path from 'path'
 import { buildConfig, PayloadRequest } from 'payload'
@@ -9,6 +10,13 @@ import { Media } from './collections/Media'
 import { Pages } from './collections/Pages'
 import { Posts } from './collections/Posts'
 import { Users } from './collections/Users'
+import { Tools } from './collections/Tools'
+import { States } from './collections/States'
+import { StatePages } from './collections/StatePages'
+import { Lawyers } from './collections/Lawyers'
+import { Leads } from './collections/Leads'
+import { Settlements } from './collections/Settlements'
+import { SiteSettings } from './globals/SiteSettings'
 import { Footer } from './Footer/config'
 import { Header } from './Header/config'
 import { plugins } from './plugins'
@@ -57,14 +65,13 @@ export default buildConfig({
   },
   // This config helps us configure global or default features that the other editors can inherit
   editor: defaultLexical,
-  db: sqliteAdapter({
-    client: {
-      url: process.env.DATABASE_URL || '',
-    },
-  }),
-  collections: [Pages, Posts, Media, Categories, Users],
+  // PostgreSQL in production (DATABASE_URL=postgres://…); a local SQLite file for development.
+  db: (process.env.DATABASE_URL || '').startsWith('postgres')
+    ? postgresAdapter({ pool: { connectionString: process.env.DATABASE_URL } })
+    : sqliteAdapter({ client: { url: process.env.DATABASE_URL || 'file:./claimvaluator.db' } }),
+  collections: [Pages, Posts, Tools, States, StatePages, Lawyers, Settlements, Leads, Media, Categories, Users],
   cors: [getServerSideURL()].filter(Boolean),
-  globals: [Header, Footer],
+  globals: [Header, Footer, SiteSettings],
   plugins,
   secret: process.env.PAYLOAD_SECRET,
   sharp,

@@ -1,18 +1,18 @@
-import Link from 'next/link'
-import React from 'react'
-
-import { Button } from '@/components/ui/button'
+import { ToolGroups } from '@/site/Directory'
 
 export default function NotFound() {
   return (
-    <div className="container py-28">
-      <div className="prose max-w-none">
-        <h1 style={{ marginBottom: 0 }}>404</h1>
-        <p className="mb-4">This page could not be found.</p>
+    <>
+      <div className="wrap notfound">
+        <h1>This page is not here</h1>
+        <p className="lead">The address may have a typo, or the page may have moved. These calculators are a good place to start.</p>
+        <p>
+          <a className="cv-btn" href="/">Go to the home page</a>
+        </p>
       </div>
-      <Button asChild variant="default">
-        <Link href="/">Go home</Link>
-      </Button>
-    </div>
+      <div className="wrap" style={{ paddingBottom: 64 }}>
+        <ToolGroups />
+      </div>
+    </>
   )
 }

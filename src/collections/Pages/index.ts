@@ -2,24 +2,13 @@ import type { CollectionConfig } from 'payload'
 
 import { authenticated } from '../../access/authenticated'
 import { authenticatedOrPublished } from '../../access/authenticatedOrPublished'
-import { Archive } from '../../blocks/ArchiveBlock/config'
-import { CallToAction } from '../../blocks/CallToAction/config'
-import { Content } from '../../blocks/Content/config'
-import { FormBlock } from '../../blocks/Form/config'
-import { MediaBlock } from '../../blocks/MediaBlock/config'
-import { hero } from '@/heros/config'
 import { slugField } from 'payload'
+import { articleEditor } from '../../fields/articleEditor'
 import { populatePublishedAt } from '../../hooks/populatePublishedAt'
 import { generatePreviewPath } from '../../utilities/generatePreviewPath'
 import { revalidateDelete, revalidatePage } from './hooks/revalidatePage'
 
-import {
-  MetaDescriptionField,
-  MetaImageField,
-  MetaTitleField,
-  OverviewField,
-  PreviewField,
-} from '@payloadcms/plugin-seo/fields'
+import { faqsField, legacyHtmlField, reviewFields, seoTab, sourcesField } from '../../fields/shared'
 
 export const Pages: CollectionConfig<'pages'> = {
   slug: 'pages',
@@ -40,18 +29,10 @@ export const Pages: CollectionConfig<'pages'> = {
     defaultColumns: ['title', 'slug', 'updatedAt'],
     livePreview: {
       url: ({ data, req }) =>
-        generatePreviewPath({
-          slug: data?.slug,
-          collection: 'pages',
-          req,
-        }),
+        generatePreviewPath({ collection: 'pages', doc: data, req }),
     },
     preview: (data, { req }) =>
-      generatePreviewPath({
-        slug: data?.slug as string,
-        collection: 'pages',
-        req,
-      }),
+      generatePreviewPath({ collection: 'pages', doc: data, req }),
     useAsTitle: 'title',
   },
   fields: [
@@ -64,50 +45,17 @@ export const Pages: CollectionConfig<'pages'> = {
       type: 'tabs',
       tabs: [
         {
-          fields: [hero],
-          label: 'Hero',
-        },
-        {
-          fields: [
-            {
-              name: 'layout',
-              type: 'blocks',
-              blocks: [CallToAction, Content, MediaBlock, Archive, FormBlock],
-              required: true,
-              admin: {
-                initCollapsed: true,
-              },
-            },
-          ],
           label: 'Content',
-        },
-        {
-          name: 'meta',
-          label: 'SEO',
           fields: [
-            OverviewField({
-              titlePath: 'meta.title',
-              descriptionPath: 'meta.description',
-              imagePath: 'meta.image',
-            }),
-            MetaTitleField({
-              hasGenerateFn: true,
-            }),
-            MetaImageField({
-              relationTo: 'media',
-            }),
-
-            MetaDescriptionField({}),
-            PreviewField({
-              // if the `generateUrl` function is configured
-              hasGenerateFn: true,
-
-              // field paths to match the target field for data
-              titlePath: 'meta.title',
-              descriptionPath: 'meta.description',
-            }),
+            { name: 'excerpt', type: 'textarea', label: 'Lead (under the title)' },
+            { name: 'content', type: 'richText', label: false, editor: articleEditor },
           ],
         },
+        {
+          label: 'Migrated, FAQs and sources',
+          fields: [legacyHtmlField(), faqsField(), sourcesField()],
+        },
+        seoTab(),
       ],
     },
     {
@@ -117,6 +65,25 @@ export const Pages: CollectionConfig<'pages'> = {
         position: 'sidebar',
       },
     },
+    {
+      name: 'template',
+      type: 'select',
+      defaultValue: 'default',
+      admin: { position: 'sidebar', description: 'Layout used to show this page.' },
+      options: [
+        { label: 'Standard article', value: 'default' },
+        { label: 'Wide (no sidebar)', value: 'wide' },
+        { label: 'Home', value: 'home' },
+        { label: 'All calculators', value: 'tools' },
+        { label: 'All states', value: 'states' },
+        { label: 'Law tables index', value: 'laws' },
+        { label: 'Law table', value: 'laws-table' },
+        { label: 'Directory', value: 'directory' },
+        { label: 'Blog index', value: 'blog' },
+        { label: 'Contact / case review form', value: 'form' },
+      ],
+    },
+    ...reviewFields(),
     slugField(),
   ],
   hooks: {
