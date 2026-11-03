@@ -25,3 +25,8 @@ node_modules/
 *.db
 *.db-journal
 tsconfig.tsbuildinfo
+
+# Migrated WordPress uploads are deployed separately (large)
+public/wp-content/
+migration/old-urls.json
+migration/*.json
