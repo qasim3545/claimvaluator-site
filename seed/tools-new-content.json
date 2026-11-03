@@ -351,5 +351,56 @@
     "url": "https://www.cms.gov/Medicare/Coordination-of-Benefits-and-Recovery/Attorney-Services/Conditional-Payment-Information/Conditional-Payment-Information"
    }
   ]
+ },
+ "medical-malpractice-settlement-calculator": {
+  "title": "Medical Malpractice Settlement Calculator",
+  "metaTitle": "Medical Malpractice Settlement Calculator (All 50 States)",
+  "metaDescription": "Estimate a medical malpractice claim with your state’s damage limits applied, from California’s MICRA cap to states with no cap at all.",
+  "excerpt": "Estimate a medical malpractice claim from the costs of the error and how serious the harm is. Your state’s malpractice damage limits, which are often different from its general injury rules, are applied.",
+  "html": "<h2>How this calculator values a malpractice claim</h2>\n<p>A malpractice claim is valued from the same building blocks as other injury claims: the extra medical care the error caused, the income lost because of it, and an amount for pain, suffering and lasting harm that rises with how serious the injury is. The difference is the law around it. More than half the states limit what a malpractice patient can recover, and the limits are often stricter than the state’s rules for car crashes or falls.</p>\n<p>The calculator builds the range first, then applies your state’s limit. Some states cap only non-economic damages (pain, suffering and loss of enjoyment of life), some cap total damages, and some have no cap at all. The full list, with the law behind each figure, is below the calculator.</p>\n<h2>Only the harm the error caused</h2>\n<p>Enter the medical bills and lost income caused by the mistake, not the cost of treating the condition you went in with. If surgery was needed anyway but a surgical error added a second operation and months of recovery, the second operation and the added recovery are the claim.</p>\n<h2>What makes malpractice claims different</h2>\n<ul>\n<li><strong>Proof needs an expert.</strong> You have to show the care fell below what a reasonably careful provider would have done, and that this caused the harm. That almost always takes a doctor in the same field to say so.</li>\n<li><strong>Extra steps before suing.</strong> Many states require an affidavit or certificate of merit, a notice of intent, or a review panel before or soon after filing.</li>\n<li><strong>Shorter and stricter deadlines.</strong> Malpractice deadlines often differ from the general injury deadline. Many run from when the harm was discovered, but many also have an outer limit (a statute of repose) that can end the claim even if you didn’t know.</li>\n<li><strong>Higher costs.</strong> Expert reviews and testimony are expensive, so lawyers screen cases carefully, and the case costs in the take-home figure are higher than for other injury claims.</li>\n</ul>\n<h2>Several defendants</h2>\n<p>In most states the limit applies to the whole case, however many doctors and hospitals are sued. California, Texas and South Carolina are exceptions: a separate limit can apply to a hospital, so a case against a doctor and a hospital can reach a higher total. Pick “A doctor and a hospital” to see that.</p>\n<h2>If the patient died</h2>\n<p>A death caused by malpractice is usually a wrongful death claim, which some states limit differently. Use the <a href=\"/wrongful-death-settlement-calculator/\">wrongful death calculator</a> for that case, and see the notes for your state below.</p>",
+  "faqs": [
+   {
+    "question": "How much is a medical malpractice settlement worth?",
+    "answer": "It depends on the cost of the harm the error caused, how serious and lasting the injury is, and your state’s damage limits. A claim with lasting disability can be worth hundreds of thousands or more, but a state cap can hold the pain and suffering part far below what a jury would award. Start from your own figures in the calculator."
+   },
+   {
+    "question": "Does my state cap medical malpractice damages?",
+    "answer": "28 states limit malpractice damages in some way. The other 22 states and the District of Columbia have no cap, often because their courts struck caps down or their constitutions forbid them. The table on this page lists every state, with the law behind each figure."
+   },
+   {
+    "question": "Do malpractice caps limit medical bills and lost wages?",
+    "answer": "Usually not. Most caps apply only to non-economic damages such as pain and suffering. A few states, including Indiana, Louisiana, Nebraska, New Mexico and Virginia, cap total damages, and Louisiana and New Mexico leave some or all medical care outside the cap."
+   },
+   {
+    "question": "How long do I have to file a medical malpractice claim?",
+    "answer": "Often one to three years, depending on the state, and many deadlines run from when you discovered or should have discovered the harm. Many states also have an outer limit regardless of discovery, and pre-suit notice or expert steps can take months, so talk to a lawyer early."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Missouri Department of Commerce and Insurance: medical malpractice limits",
+    "url": "https://insurance.mo.gov/industry/medmal.php"
+   },
+   {
+    "label": "Michigan Treasury: 2026 limitation on noneconomic damages",
+    "url": "https://www.michigan.gov/treasury/-/media/Project/Websites/treasury/ORTA/Economic-Reports-Notices/FY-2026/Notice_01302026_NonEconomicLimitation_Signed.pdf"
+   },
+   {
+    "label": "NC Office of State Budget and Management: noneconomic damages limit",
+    "url": "https://osbm.nc.gov/facts-figures/economy/liability-limit-noneconomic-damages-medical-malpractice"
+   },
+   {
+    "label": "Colorado HB24-1472 (enrolled)",
+    "url": "https://legiscan.com/CO/text/HB1472/id/3001857/Colorado-2024-HB1472-Enrolled.pdf"
+   },
+   {
+    "label": "Nevada AB 404 (2023)",
+    "url": "https://archive.leg.state.nv.us/Session/82nd2023/Bills/AB/AB404_EN.pdf"
+   },
+   {
+    "label": "Virginia Code § 8.01-581.15",
+    "url": "https://law.lis.virginia.gov/vacode/title8.01/chapter21.1/8.01-581.15/"
+   }
+  ]
  }
 }

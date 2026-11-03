@@ -7,6 +7,7 @@ import { Crumbs } from '../Crumbs'
 import { StateList } from '../Directory'
 import { Faq } from '../Faq'
 import { JsonLd } from '../JsonLd'
+import { MedmalTable } from '../MedmalTable'
 import { StatePicker } from '../Picker'
 import { Prose } from '../Prose'
 import { Sources } from '../Sources'
@@ -16,7 +17,10 @@ import { hasLexical, lexicalToc, prepareHtml } from '../text'
 /** A calculator page: /{tool}/ */
 export function ToolView({ doc }: { doc: any }) {
   const tool = getTool(doc.slug)
-  const toc = hasLexical(doc.content) ? lexicalToc(doc.content) : prepareHtml(doc.legacyHtml || '').toc
+  const toc = [
+    ...(hasLexical(doc.content) ? lexicalToc(doc.content) : prepareHtml(doc.legacyHtml || '').toc),
+    ...(tool?.type === 'medmal' ? [{ id: 'mm-title', text: 'Damage limits by state' }] : []),
+  ]
   const related = ((doc.related as any[]) || []).filter((r) => r && typeof r === 'object')
   const path = docPath('tools', doc)
   return (
@@ -47,6 +51,7 @@ export function ToolView({ doc }: { doc: any }) {
       <div className="wrap article">
         <div className="article__main">
           <Prose data={doc.content} legacyHtml={doc.legacyHtml} />
+          {tool?.type === 'medmal' ? <MedmalTable /> : null}
           <Faq items={doc.faqs || []} />
           <Sources items={doc.sources} />
           {related.length ? (

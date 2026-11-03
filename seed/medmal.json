@@ -1,0 +1,394 @@
+{
+ "checked": "2026-11-04",
+ "states": {
+  "alaska": {
+   "status": "cap",
+   "non": 250000,
+   "cat": 400000,
+   "catFrom": "catastrophic",
+   "note": "Alaska limits non-economic damages against a health care provider to $250,000, or $400,000 for wrongful death or a severe permanent impairment more than 70% disabling (AS 09.55.549).",
+   "src": []
+  },
+  "california": {
+   "status": "cap",
+   "non": 470000,
+   "multi": 940000,
+   "note": "MICRA limits non-economic damages to $470,000 for injuries from care on or after January 1, 2026 ($650,000 in a death case), rising each year to $750,000 in 2033. Since 2023 a separate limit can apply to providers, to institutions and to unaffiliated defendants, so a case against a doctor and a hospital can reach two limits (Civil Code § 3333.2).",
+   "src": [
+    [
+     "California Civil Code § 3333.2",
+     "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=3333.2"
+    ]
+   ]
+  },
+  "colorado": {
+   "status": "cap",
+   "non": 530000,
+   "note": "For care on or after January 1, 2026, Colorado limits non-economic damages to $530,000, rising each year to $875,000 in 2029. Total damages are also capped at about $1 million, which a court can exceed for economic losses when the limit would be unfair (C.R.S. 13-64-302, as amended by HB24-1472).",
+   "src": [
+    [
+     "Colorado HB24-1472 (enrolled)",
+     "https://legiscan.com/CO/text/HB1472/id/3001857/Colorado-2024-HB1472-Enrolled.pdf"
+    ]
+   ]
+  },
+  "hawaii": {
+   "status": "cap",
+   "non": 375000,
+   "note": "Hawaii limits pain and suffering damages to $375,000 in most tort cases, including malpractice, with some exceptions (HRS § 663-8.7).",
+   "src": []
+  },
+  "idaho": {
+   "status": "cap",
+   "non": 538425,
+   "note": "Idaho’s non-economic damages limit is $538,425 for claims from July 1, 2026, adjusted each July with the state’s average wage. It applies to all injury claims, not just malpractice (Idaho Code § 6-1603).",
+   "src": [
+    [
+     "Idaho Industrial Commission: non-economic damages cap effective July 1, 2026",
+     "https://iic.idaho.gov/wp-content/uploads/2026/06/Benefits-Non-economic-caps-effective-07_01_26.pdf"
+    ]
+   ]
+  },
+  "indiana": {
+   "status": "cap",
+   "total": 1800000,
+   "note": "Indiana caps total damages at $1.8 million for malpractice after June 30, 2019, if the provider is qualified under the Medical Malpractice Act. The provider pays up to $500,000 and the Patient’s Compensation Fund pays the rest (IC 34-18-14-3).",
+   "src": [
+    [
+     "Amundsen Davis: Indiana Medical Malpractice Act damage caps",
+     "https://www.amundsendavislaw.com/alert-IndianaMedicalMalpracticeActDamageCapsSettoGoUpJuly1"
+    ]
+   ]
+  },
+  "iowa": {
+   "status": "cap",
+   "non": 250000,
+   "cat": 1000000,
+   "catFrom": "severe",
+   "catMulti": 2000000,
+   "note": "Iowa limits non-economic damages to $250,000, rising to $1 million (or $2 million when a hospital is a defendant) if the jury finds substantial or permanent loss of a bodily function, substantial disfigurement, loss of pregnancy or death. The limits start rising 2.1% a year in 2028 (2023 HF 161).",
+   "src": [
+    [
+     "Iowa HF 161 (2023)",
+     "https://www.legis.iowa.gov/docs/publications/LGE/90/attachments/HF161.html"
+    ]
+   ]
+  },
+  "louisiana": {
+   "status": "cap",
+   "total": 500000,
+   "totalExcl": "futmed",
+   "note": "Louisiana caps total damages at $500,000 plus interest and costs against qualified providers, not counting future medical care, which is paid as it is incurred. The provider pays up to $100,000 and the Patient’s Compensation Fund the rest (La. R.S. 40:1231.2).",
+   "src": []
+  },
+  "maryland": {
+   "status": "cap",
+   "non": 920000,
+   "note": "Maryland limits non-economic damages to $920,000 for causes of action arising in 2026. The limit rises $15,000 each January 1, and a death case with two or more beneficiaries can reach 125% of it (Courts and Judicial Proceedings § 3-2A-09).",
+   "src": [
+    [
+     "Maryland Courts and Judicial Proceedings § 3-2A-09",
+     "https://mgaleg.maryland.gov/2026RS/Statute_Web/gcj/3-2A-09.pdf"
+    ]
+   ]
+  },
+  "massachusetts": {
+   "status": "cap",
+   "non": 500000,
+   "cat": 0,
+   "catFrom": "severe",
+   "note": "Massachusetts limits pain and suffering to $500,000 unless the jury finds substantial or permanent loss or impairment of a bodily function, substantial disfigurement or other special circumstances, in which case there is no limit (M.G.L. c. 231, § 60H).",
+   "src": []
+  },
+  "michigan": {
+   "status": "cap",
+   "non": 596400,
+   "cat": 1065000,
+   "catFrom": "catastrophic",
+   "note": "Michigan limits non-economic damages to $596,400 in 2026, or $1,065,000 for paralysis, permanently impaired cognitive capacity or loss of reproductive ability. Both are adjusted each year (MCL 600.1483).",
+   "src": [
+    [
+     "Michigan Treasury: 2026 limitation on noneconomic damages",
+     "https://www.michigan.gov/treasury/-/media/Project/Websites/treasury/ORTA/Economic-Reports-Notices/FY-2026/Notice_01302026_NonEconomicLimitation_Signed.pdf"
+    ]
+   ]
+  },
+  "mississippi": {
+   "status": "cap",
+   "non": 500000,
+   "note": "Mississippi limits non-economic damages in malpractice cases to $500,000 (Miss. Code § 11-1-60).",
+   "src": []
+  },
+  "missouri": {
+   "status": "cap",
+   "non": 481493,
+   "cat": 842614,
+   "catFrom": "catastrophic",
+   "note": "Missouri limits non-economic damages to $481,493 in 2026, or $842,614 for catastrophic injury or death. Both rise 1.7% a year (RSMo 538.210).",
+   "src": [
+    [
+     "Missouri Department of Commerce and Insurance: medical malpractice limits",
+     "https://insurance.mo.gov/industry/medmal.php"
+    ]
+   ]
+  },
+  "montana": {
+   "status": "cap",
+   "non": 250000,
+   "note": "Montana limits non-economic damages in malpractice cases to $250,000 (MCA 25-9-411).",
+   "src": []
+  },
+  "nebraska": {
+   "status": "cap",
+   "total": 2250000,
+   "note": "Nebraska caps total damages at $2.25 million for qualified providers. The provider pays up to $500,000 and the Excess Liability Fund the rest (Neb. Rev. Stat. § 44-2825).",
+   "src": []
+  },
+  "nevada": {
+   "status": "cap",
+   "non": 590000,
+   "note": "Nevada limits non-economic damages to $590,000 in 2026, whatever the number of defendants. The limit rises $80,000 each January to $750,000 in 2028, then 2.1% a year (NRS 41A.035, as amended by AB 404).",
+   "src": [
+    [
+     "Nevada AB 404 (2023)",
+     "https://archive.leg.state.nv.us/Session/82nd2023/Bills/AB/AB404_EN.pdf"
+    ]
+   ]
+  },
+  "new-mexico": {
+   "status": "cap",
+   "total": 900000,
+   "totalExcl": "med",
+   "note": "New Mexico caps damages other than medical care and punitive damages at about $900,000 for independent doctors (a $750,000 limit adjusted for inflation since 2023). Hospitals and the outpatient facilities they control have a separate $6 million limit in 2026 (NMSA 41-5-6).",
+   "src": [
+    [
+     "New Mexico SB 176 (2025), text of NMSA 41-5-6",
+     "https://www.nmlegis.gov/Sessions/25%20Regular/bills/senate/SB0176.HTML"
+    ]
+   ]
+  },
+  "north-carolina": {
+   "status": "cap",
+   "non": 712847,
+   "note": "North Carolina limits non-economic damages to $712,847 from January 1, 2026, reset every three years. The limit does not apply if the injury is a permanent disfigurement or loss of use and the provider acted recklessly, maliciously or with gross negligence (G.S. 90-21.19).",
+   "src": [
+    [
+     "NC Office of State Budget and Management: liability limit on noneconomic damages",
+     "https://osbm.nc.gov/facts-figures/economy/liability-limit-noneconomic-damages-medical-malpractice"
+    ]
+   ]
+  },
+  "north-dakota": {
+   "status": "cap",
+   "non": 500000,
+   "note": "North Dakota limits non-economic damages to $500,000 (NDCC 32-42-02). A 2025 bill to raise it to $1 million failed in the House.",
+   "src": [
+    [
+     "North Dakota HB 1349 (2025) history",
+     "https://open.pluralpolicy.com/nd/bills/69/HB1349"
+    ]
+   ]
+  },
+  "ohio": {
+   "status": "cap",
+   "cat": 500000,
+   "catFrom": "catastrophic",
+   "formula": "oh",
+   "note": "Ohio limits non-economic damages to the greater of $250,000 or three times economic damages, up to $350,000 per plaintiff ($500,000 per occurrence). For permanent and substantial deformity, loss of a limb or organ system, or an injury that prevents self-care, the limit is $500,000 per plaintiff. The limits don’t apply to wrongful death (ORC 2323.43).",
+   "src": []
+  },
+  "south-carolina": {
+   "status": "cap",
+   "non": 596001,
+   "multi": 1192002,
+   "note": "South Carolina limits non-economic damages to $596,001 per provider or institution in 2026, and $1,788,002 against all defendants together. The limits don’t apply to gross negligence, fraud or altered records (S.C. Code § 15-32-220).",
+   "src": [
+    [
+     "SC Revenue and Fiscal Affairs: inflation adjustments for legal proceedings",
+     "https://rfa.sc.gov/resources/inflation-adjustments-legal-proceedings"
+    ],
+    [
+     "Roden Law: South Carolina malpractice limits (2026 figures)",
+     "https://rodenlaw.com/blog/medical-malpractice-limits-south-carolina/"
+    ]
+   ]
+  },
+  "south-dakota": {
+   "status": "cap",
+   "non": 500000,
+   "note": "South Dakota limits general (non-economic) damages in malpractice cases to $500,000 (SDCL 21-3-11).",
+   "src": []
+  },
+  "tennessee": {
+   "status": "cap",
+   "non": 750000,
+   "cat": 1000000,
+   "catFrom": "catastrophic",
+   "note": "Tennessee limits non-economic damages to $750,000, or $1 million for catastrophic losses such as paraplegia or quadriplegia, the loss of both hands or both feet, or severe burns (T.C.A. 29-39-102).",
+   "src": []
+  },
+  "texas": {
+   "status": "cap",
+   "non": 250000,
+   "multi": 500000,
+   "note": "Texas limits non-economic damages to $250,000 against all doctors and other providers combined, plus $250,000 per hospital or other institution, up to $500,000 for all institutions. A case against a doctor and one hospital can reach $500,000 (Tex. Civ. Prac. & Rem. Code § 74.301).",
+   "src": []
+  },
+  "utah": {
+   "status": "cap",
+   "non": 450000,
+   "note": "Utah limits non-economic damages in malpractice cases to $450,000 (Utah Code § 78B-3-410).",
+   "src": []
+  },
+  "virginia": {
+   "status": "cap",
+   "total": 2750000,
+   "note": "Virginia caps total damages at $2.75 million for malpractice from July 1, 2026, to June 30, 2027 ($2.70 million the year before). The cap rises $50,000 each July until it reaches $3 million in 2031 (Va. Code § 8.01-581.15).",
+   "src": [
+    [
+     "Virginia Code § 8.01-581.15",
+     "https://law.lis.virginia.gov/vacode/title8.01/chapter21.1/8.01-581.15/"
+    ]
+   ]
+  },
+  "west-virginia": {
+   "status": "cap",
+   "non": 375000,
+   "cat": 750000,
+   "catFrom": "catastrophic",
+   "note": "West Virginia’s limits are $250,000 and $500,000 (for death, loss of a limb or organ system, or an injury that prevents self-care), raised with inflation up to 150%. Inflation since 2004 has passed that ceiling, so the figures used here are $375,000 and $750,000. The limits apply only if the provider carries at least $1 million of coverage (W. Va. Code § 55-7B-8).",
+   "src": [
+    [
+     "W. Va. Code § 55-7B-8",
+     "https://code.wvlegislature.gov/pdf/55-7B-8"
+    ]
+   ]
+  },
+  "wisconsin": {
+   "status": "cap",
+   "non": 750000,
+   "note": "Wisconsin limits non-economic damages to $750,000. Amounts above the provider’s coverage are paid by the Injured Patients and Families Compensation Fund (Wis. Stat. § 893.55).",
+   "src": []
+  },
+  "alabama": {
+   "status": "none",
+   "note": "Alabama has no cap on malpractice damages. The state supreme court struck down the earlier limit in 1991 (Moore v. Mobile Infirmary).",
+   "src": []
+  },
+  "arizona": {
+   "status": "none",
+   "note": "Arizona’s constitution bars limits on damages for injury or death, so there is no malpractice cap.",
+   "src": []
+  },
+  "arkansas": {
+   "status": "none",
+   "note": "Arkansas’s constitution bars limits on damages for injury or death outside employment, so there is no malpractice cap.",
+   "src": []
+  },
+  "connecticut": {
+   "status": "none",
+   "note": "Connecticut has no cap on malpractice damages.",
+   "src": []
+  },
+  "delaware": {
+   "status": "none",
+   "note": "Delaware has no cap on malpractice damages.",
+   "src": []
+  },
+  "district-of-columbia": {
+   "status": "none",
+   "note": "The District of Columbia has no cap on malpractice damages.",
+   "src": []
+  },
+  "florida": {
+   "status": "none",
+   "note": "Florida has no cap on malpractice damages. The state supreme court struck down the limits in death cases in 2014 and in injury cases in 2017 (North Broward Hospital District v. Kalitan).",
+   "src": []
+  },
+  "georgia": {
+   "status": "none",
+   "note": "Georgia has no cap on malpractice damages. The state supreme court struck down the $350,000 limit in 2010 (Atlanta Oculoplastic Surgery v. Nestlehutt).",
+   "src": []
+  },
+  "illinois": {
+   "status": "none",
+   "note": "Illinois has no cap on malpractice damages. The state supreme court struck down the limits in 2010 (Lebron v. Gottlieb Memorial Hospital).",
+   "src": []
+  },
+  "kansas": {
+   "status": "disputed",
+   "note": "The Kansas Supreme Court struck down the state’s non-economic damages cap in 2019 (Hilburn v. Enerpipe). That case was not about malpractice, and defendants may still argue the cap applies to malpractice claims, so no cap is applied here.",
+   "src": [
+    [
+     "Matthiesen, Wickert & Lehrer: Kansas declares damage caps unconstitutional",
+     "https://www.mwl-law.com/kansas-declares-damage-caps-unconstitutional/"
+    ]
+   ]
+  },
+  "kentucky": {
+   "status": "none",
+   "note": "Kentucky’s constitution bars limits on damages for injury or death, so there is no malpractice cap.",
+   "src": []
+  },
+  "maine": {
+   "status": "none",
+   "note": "Maine has no cap on malpractice damages for injuries. Wrongful death claims have their own limits.",
+   "src": []
+  },
+  "minnesota": {
+   "status": "none",
+   "note": "Minnesota has no cap on malpractice damages.",
+   "src": []
+  },
+  "new-hampshire": {
+   "status": "none",
+   "note": "New Hampshire has no cap on malpractice damages. The state supreme court struck down the earlier limit in 1991 (Brannigan v. Usitalo).",
+   "src": []
+  },
+  "new-jersey": {
+   "status": "none",
+   "note": "New Jersey has no cap on malpractice compensatory damages. Punitive damages are limited separately.",
+   "src": []
+  },
+  "new-york": {
+   "status": "none",
+   "note": "New York has no cap on malpractice damages.",
+   "src": []
+  },
+  "oklahoma": {
+   "status": "none",
+   "note": "Oklahoma has no enforceable cap. The state supreme court struck down the $350,000 non-economic limit in 2019 (Beason v. I.E. Miller Services).",
+   "src": []
+  },
+  "oregon": {
+   "status": "none",
+   "note": "Oregon has no enforceable cap on injury claims. The state supreme court struck down the limit for personal injury cases in 2020 (Busch v. McInnis Waste Systems). Death cases can differ.",
+   "src": []
+  },
+  "pennsylvania": {
+   "status": "none",
+   "note": "Pennsylvania’s constitution bars limits on damages for injury or death, so there is no malpractice cap.",
+   "src": []
+  },
+  "rhode-island": {
+   "status": "none",
+   "note": "Rhode Island has no cap on malpractice damages.",
+   "src": []
+  },
+  "vermont": {
+   "status": "none",
+   "note": "Vermont has no cap on malpractice damages.",
+   "src": []
+  },
+  "washington": {
+   "status": "none",
+   "note": "Washington has no cap on malpractice damages. The state supreme court struck down the limit in 1989 (Sofie v. Fibreboard).",
+   "src": []
+  },
+  "wyoming": {
+   "status": "none",
+   "note": "Wyoming’s constitution bars limits on damages for injury or death, so there is no malpractice cap.",
+   "src": []
+  }
+ }
+}

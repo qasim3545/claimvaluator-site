@@ -1496,6 +1496,134 @@
 	};
 
 	/**
+	 * Medical malpractice. Uses each state's malpractice limits (st.mm), which differ from its general injury caps:
+	 * a non-economic limit (sometimes higher for the worst injuries or several defendants), or a cap on total damages.
+	 */
+	var SEV_ORDER = ['minor', 'moderate', 'severe', 'catastrophic'];
+	T.medmal = function (v, ctx) {
+		var st = ctx.state;
+		var mm = st && st.mm ? st.mm : null;
+		var sev = SEV[v.sev] ? v.sev : 'moderate';
+		var m = SEV[sev];
+		var several = v.defs === 'several';
+		var pm = num(v.pastMed), fm = num(v.futMed), w = num(v.wages), fw = num(v.futWages);
+		var econ = pm + fm + w + fw;
+		var nonLo = econ * m[0], nonHi = econ * m[1];
+
+		// Non-economic limit for this case, or null when none applies.
+		var limit = null;
+		var higher = false;
+		if (mm && mm.status === 'cap') {
+			var worst = mm.catFrom && SEV_ORDER.indexOf(sev) >= SEV_ORDER.indexOf(mm.catFrom);
+			if (worst && mm.cat !== undefined) {
+				limit = mm.cat === 0 ? null : (several && mm.catMulti ? mm.catMulti : mm.cat);
+				higher = true;
+			} else if (mm.formula === 'oh') {
+				limit = Math.min(Math.max(250000, 3 * econ), 350000);
+			} else if (mm.non) {
+				limit = several && mm.multi ? mm.multi : mm.non;
+			}
+		}
+		var capLo = limit !== null && nonLo > limit, capHi = limit !== null && nonHi > limit;
+		if (limit !== null) {
+			nonLo = Math.min(nonLo, limit);
+			nonHi = Math.min(nonHi, limit);
+		}
+		var valLo = econ + nonLo, valHi = econ + nonHi;
+
+		// Total-damages caps (Indiana, Louisiana, Nebraska, New Mexico, Virginia), with what they leave out.
+		var totalApplied = false;
+		if (mm && mm.total) {
+			var outside = mm.totalExcl === 'futmed' ? fm : (mm.totalExcl === 'med' ? pm + fm : 0);
+			var capTotal = function (x) {
+				var within = x - outside;
+				if (within > mm.total) {
+					totalApplied = true;
+					return mm.total + outside;
+				}
+				return x;
+			};
+			valLo = capTotal(valLo);
+			valHi = capTotal(valHi);
+		}
+		var mid = (valLo + valHi) / 2;
+
+		var cov = limitValue(v.bi, st);
+		var chips = [];
+		if (!st) {
+			chips.push(chip('Pick your state to apply its malpractice limits', 'info'));
+		} else if (!mm || mm.status === 'none') {
+			chips.push(chip(stateName(st) + ' has no cap on malpractice damages', 'good'));
+		} else if (mm.status === 'disputed') {
+			chips.push(chip(stateName(st) + '’s cap was struck down; whether it reaches malpractice is disputed', 'warn'));
+		} else if (capHi) {
+			chips.push(chip(stateName(st) + ' limits non-economic damages here to ' + money(limit), 'warn'));
+		} else if (limit !== null) {
+			chips.push(chip('Below ' + poss(st) + ' ' + money(limit) + ' non-economic limit', 'good'));
+		} else if (higher) {
+			chips.push(chip('For an injury this serious, ' + poss(st) + ' usual limit may not apply', 'good'));
+		}
+		if (totalApplied) {
+			chips.push(chip(stateName(st) + ' caps total damages at ' + money(mm.total) + (mm.totalExcl === 'futmed' ? ' plus future medical care' : (mm.totalExcl === 'med' ? ' plus medical care' : '')), 'warn'));
+		} else if (mm && mm.total && st) {
+			chips.push(chip('Within ' + poss(st) + ' ' + money(mm.total) + ' total cap', 'good'));
+		}
+		if (cov === null) {
+			chips.push(chip('Coverage unknown: many doctors carry $1 million per claim', 'info'));
+		} else if (valHi > cov) {
+			chips.push(chip('High end exceeds the ' + money(cov) + ' of coverage', 'warn'));
+		}
+		chips.push(chip('Malpractice deadlines are often shorter and need early expert review', 'info'));
+
+		var rows = [
+			row('Medical bills, past and future', money(pm + fm)),
+			row('Lost income, past and future', money(w + fw)),
+			row('Economic damages', money(econ), true),
+			row('Pain and suffering (' + m[0] + '× – ' + m[1] + '×)', moneyRange(econ * m[0], econ * m[1]))
+		];
+		if (capLo || capHi) {
+			rows.push(row(poss(st) + ' non-economic limit', 'Limited to ' + money(limit)));
+		}
+		if (totalApplied) {
+			rows.push(row(poss(st) + ' total damages cap', money(mm.total) + (mm.totalExcl ? ' + medical care left outside it' : '')));
+		}
+		rows.push(row('Malpractice claim value', moneyRange(valLo, valHi), true));
+
+		var notes = [];
+		if (mm && mm.note) {
+			notes.push(mm.note);
+		}
+		notes.push('A malpractice claim has to show that the care fell below the accepted standard and caused the harm, which almost always takes a medical expert. Many states also require an expert affidavit, a notice of intent or a review panel before or soon after filing.');
+		notes.push('Some states limit lawyers’ fees in malpractice cases, including California, Florida, New York and New Jersey, so your fee may be lower than the figure below.');
+
+		var fee = feeShare(v.fee);
+		var base = cov === null ? mid : Math.min(mid, cov);
+		var feeAmt = base * fee;
+		var costs = fee > 0 ? Math.max(10000, round(base * 0.06, 500)) : 0;
+		var owed = pm;
+		var take = Math.max(0, base - feeAmt - costs - owed);
+		return {
+			label: 'Estimated malpractice claim value',
+			headline: moneyRange(valLo, valHi),
+			sub: 'Midpoint ' + money(mid),
+			bar: econ > 0 ? { low: valLo, high: valHi, mid: mid, cov: cov, covLabel: 'Malpractice coverage' } : null,
+			chips: chips,
+			rows: rows,
+			notes: notes,
+			net: {
+				title: 'Estimated take-home at the midpoint',
+				value: money(take),
+				rows: [
+					row(cov !== null && mid > cov ? 'Midpoint, capped at the coverage' : 'Midpoint value', money(base)),
+					row(feeLabel(v.fee), minus(feeAmt)),
+					row('Case costs, mostly expert fees (estimate)', minus(costs)),
+					row('Medical bills still owed or liens, before any reduction', minus(owed))
+				]
+			}
+		};
+	};
+
+	/**
 	 * Settlement timeline: how long until the check, stage by stage.
 	 * Week ranges follow the stage table in the site's settlement timeline guide.
 	 */

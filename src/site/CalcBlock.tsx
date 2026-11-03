@@ -3,16 +3,32 @@ import { Calculator } from '@/calculators/Calculator'
 import { getTool } from '@/calculators/data'
 import { EngineLoader } from './EngineLoader'
 import statesJson from '../../seed/states.json'
+import medmalJson from '../../seed/medmal.json'
 
 /** Per-request flag so the state rules are printed once even with several calculators on a page. */
 const pageFlags = cache(() => ({ statesData: false, engine: false }))
 
-/** State rules the engine reads (all 51, about 5 KB compressed). */
+/** State rules the engine reads, with each state's malpractice limits (`mm`) added. */
+const statesForEngine = (() => {
+  const out: Record<string, any> = {}
+  const mm = (medmalJson as any).states as Record<string, any>
+  for (const [slug, s] of Object.entries((statesJson as any).forJs as Record<string, any>)) {
+    if (!mm[slug]) {
+      out[slug] = s
+      continue
+    }
+    const { src: _sources, ...limits } = mm[slug] // sources are shown on the page, not needed by the engine
+    out[slug] = { ...s, mm: limits }
+  }
+  return out
+})()
+
+/** State rules the engine reads (all 51, about 6 KB compressed). */
 export function StatesData() {
   const flags = pageFlags()
   if (flags.statesData) return null
   flags.statesData = true
-  const json = JSON.stringify((statesJson as any).forJs).replace(/</g, '\\u003c')
+  const json = JSON.stringify(statesForEngine).replace(/</g, '\\u003c')
   return <script type="application/json" id="cv-states-data" dangerouslySetInnerHTML={{ __html: json }} />
 }
 

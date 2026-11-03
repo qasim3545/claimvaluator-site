@@ -198,6 +198,25 @@
    ],
    "slug": "soft-tissue-injury-settlement-calculator"
   },
+  "medical-malpractice-settlement-calculator": {
+   "name": "Medical Malpractice Settlement Calculator",
+   "short": "Medical malpractice",
+   "cat": "accident",
+   "type": "medmal",
+   "variant": "",
+   "states": true,
+   "state_pages": false,
+   "icon": "",
+   "card": "Doctor and hospital errors, with each state’s malpractice damage limits applied.",
+   "related": [
+    "wrongful-death-settlement-calculator",
+    "pain-and-suffering-calculator",
+    "statute-of-limitations-calculator",
+    "medical-lien-calculator",
+    "attorney-fee-calculator"
+   ],
+   "slug": "medical-malpractice-settlement-calculator"
+  },
   "settlement-timeline-calculator": {
    "name": "Settlement Timeline Calculator",
    "short": "Settlement timeline",
@@ -1897,6 +1916,172 @@
      [
       "1000000",
       "$1,000,000 (common business policy)"
+     ],
+     [
+      "unknown",
+      "Not sure"
+     ]
+    ]
+   },
+   {
+    "name": "fee",
+    "type": "choice",
+    "style": "pills",
+    "label": "Attorney fee for the take-home figure",
+    "default": "33",
+    "options": [
+     [
+      "0",
+      "No lawyer"
+     ],
+     [
+      "33",
+      "33⅓%"
+     ],
+     [
+      "40",
+      "40% (if it goes to trial)"
+     ]
+    ]
+   }
+  ],
+  "medical-malpractice-settlement-calculator": [
+   {
+    "name": "date",
+    "type": "date",
+    "label": "Date of the treatment",
+    "default": "2026-04-03",
+    "agoMonths": 7
+   },
+   {
+    "name": "state",
+    "type": "state",
+    "label": "State where it happened",
+    "default": ""
+   },
+   {
+    "name": "pastMed",
+    "type": "money",
+    "label": "Medical bills caused by the error",
+    "hint": "",
+    "default": "68000"
+   },
+   {
+    "name": "futMed",
+    "type": "money",
+    "label": "Future medical care",
+    "hint": "(if known)",
+    "default": "45000"
+   },
+   {
+    "name": "wages",
+    "type": "money",
+    "label": "Income lost so far",
+    "hint": "",
+    "default": "22000"
+   },
+   {
+    "name": "futWages",
+    "type": "money",
+    "label": "Future lost income",
+    "hint": "(if any)",
+    "default": "60000"
+   },
+   {
+    "name": "sev",
+    "type": "choice",
+    "style": "cards",
+    "label": "How serious is the injury?",
+    "default": "severe",
+    "options": [
+     [
+      "minor",
+      [
+       "Minor",
+       "1.5× – 2×"
+      ]
+     ],
+     [
+      "moderate",
+      [
+       "Moderate",
+       "2× – 3×"
+      ]
+     ],
+     [
+      "severe",
+      [
+       "Severe",
+       "3× – 4×"
+      ]
+     ],
+     [
+      "catastrophic",
+      [
+       "Catastrophic",
+       "4× – 5×"
+      ]
+     ]
+    ],
+    "notes": {
+     "minor": "Extra treatment or a longer recovery, with no lasting harm.",
+     "moderate": "Another surgery or months of added treatment, with some lasting effect.",
+     "severe": "Permanent impairment, loss of an organ’s function or a major disfigurement.",
+     "catastrophic": "Brain damage, paralysis, loss of a limb or a need for lifelong care."
+    },
+    "notesPairs": [
+     [
+      "minor",
+      "Extra treatment or a longer recovery, with no lasting harm."
+     ],
+     [
+      "moderate",
+      "Another surgery or months of added treatment, with some lasting effect."
+     ],
+     [
+      "severe",
+      "Permanent impairment, loss of an organ’s function or a major disfigurement."
+     ],
+     [
+      "catastrophic",
+      "Brain damage, paralysis, loss of a limb or a need for lifelong care."
+     ]
+    ]
+   },
+   {
+    "name": "defs",
+    "type": "choice",
+    "style": "pills",
+    "label": "Who made the mistake?",
+    "default": "one",
+    "options": [
+     [
+      "one",
+      "One doctor or provider"
+     ],
+     [
+      "several",
+      "A doctor and a hospital"
+     ]
+    ]
+   },
+   {
+    "name": "bi",
+    "type": "select",
+    "label": "Malpractice coverage that can pay",
+    "default": "1000000",
+    "options": [
+     [
+      "1000000",
+      "$1,000,000 per claim (common)"
+     ],
+     [
+      "2000000",
+      "$2,000,000"
+     ],
+     [
+      "3000000",
+      "$3,000,000"
      ],
      [
       "unknown",

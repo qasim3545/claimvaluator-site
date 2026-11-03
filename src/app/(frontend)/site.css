@@ -1104,3 +1104,53 @@ p {
     display: none;
   }
 }
+
+/* Malpractice limits by state: one ledger row per state */
+.mm-table {
+  margin-top: 48px;
+}
+.mm-table > p {
+  color: var(--ink-2);
+  max-width: 68ch;
+}
+.mm-rows {
+  margin-top: 20px;
+  border-top: 2px solid var(--ink);
+}
+.mm-row {
+  padding: 14px 0 16px;
+  border-bottom: 1px solid var(--rule);
+}
+.mm-row__head {
+  display: grid;
+  grid-template-columns: minmax(0, 11rem) minmax(0, 1fr);
+  gap: 4px 20px;
+  align-items: baseline;
+}
+.mm-row__state {
+  font-weight: 600;
+}
+.mm-row__limit {
+  font-family: var(--serif);
+  font-variant-numeric: tabular-nums;
+  font-size: 1.05rem;
+}
+.mm-row__limit.is-none {
+  color: var(--green-ink);
+}
+.mm-row__note {
+  margin: 6px 0 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--ink-2);
+}
+@media (min-width: 720px) {
+  .mm-row__note {
+    margin-left: calc(11rem + 20px);
+  }
+}
+@media (max-width: 560px) {
+  .mm-row__head {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
