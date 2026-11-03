@@ -6,6 +6,7 @@ import { faqsField, legacyHtmlField, reviewFields, seoTab, sourcesField } from '
 
 export const TOOL_CATEGORIES = [
   { label: 'Accidents and injuries', value: 'accident' },
+  { label: 'Injury types', value: 'injuries' },
   { label: 'Settlement money', value: 'money' },
   { label: 'Offers', value: 'offers' },
   { label: 'Deadlines and fault', value: 'deadlines' },

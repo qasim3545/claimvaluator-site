@@ -569,6 +569,7 @@ export interface Tool {
   card?: string | null;
   category:
     | 'accident'
+    | 'injuries'
     | 'money'
     | 'offers'
     | 'deadlines'

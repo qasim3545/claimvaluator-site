@@ -1,0 +1,2068 @@
+{
+ "categories": {
+  "injuries": {
+   "short": "Injury types",
+   "title": "Settlement Calculators by Injury",
+   "desc": "Ranges for common injuries, with what moves a claim from one severity band to the next."
+  }
+ },
+ "categoryAfter": "accident",
+ "tools": {
+  "nursing-home-abuse-settlement-calculator": {
+   "name": "Nursing Home Abuse Settlement Calculator",
+   "short": "Nursing home abuse",
+   "cat": "accident",
+   "type": "injury",
+   "variant": "nursing",
+   "states": true,
+   "state_pages": false,
+   "icon": "",
+   "card": "Neglect and abuse claims against a care facility, with arbitration and cap warnings.",
+   "related": [
+    "wrongful-death-settlement-calculator",
+    "pain-and-suffering-calculator",
+    "statute-of-limitations-calculator",
+    "medical-lien-calculator",
+    "attorney-fee-calculator"
+   ],
+   "slug": "nursing-home-abuse-settlement-calculator"
+  },
+  "construction-accident-settlement-calculator": {
+   "name": "Construction Accident Settlement Calculator",
+   "short": "Construction accident",
+   "cat": "accident",
+   "type": "injury",
+   "variant": "construction",
+   "states": true,
+   "state_pages": false,
+   "icon": "",
+   "card": "Third-party claims for job site injuries, with the workers’ comp lien taken out.",
+   "related": [
+    "workers-comp-settlement-calculator",
+    "workers-comp-weekly-benefit-calculator",
+    "personal-injury-settlement-calculator",
+    "comparative-fault-calculator",
+    "attorney-fee-calculator"
+   ],
+   "slug": "construction-accident-settlement-calculator"
+  },
+  "drunk-driving-accident-settlement-calculator": {
+   "name": "Drunk Driving Accident Settlement Calculator",
+   "short": "Drunk driving crash",
+   "cat": "accident",
+   "type": "injury",
+   "variant": "dui",
+   "states": true,
+   "state_pages": false,
+   "icon": "",
+   "card": "Crashes caused by an impaired driver, with dram shop and punitive damage notes.",
+   "related": [
+    "car-accident-settlement-calculator",
+    "policy-limits-calculator",
+    "pain-and-suffering-calculator",
+    "statute-of-limitations-calculator",
+    "no-fault-pip-calculator"
+   ],
+   "slug": "drunk-driving-accident-settlement-calculator"
+  },
+  "uninsured-motorist-claim-calculator": {
+   "name": "Uninsured Motorist Claim Calculator",
+   "short": "Uninsured motorist claim",
+   "cat": "insurance",
+   "type": "injury",
+   "variant": "um",
+   "states": true,
+   "state_pages": false,
+   "icon": "",
+   "card": "Hit-and-run and no-insurance crashes, paid from your own UM coverage.",
+   "related": [
+    "policy-limits-calculator",
+    "car-accident-settlement-calculator",
+    "no-fault-pip-calculator",
+    "medpay-calculator",
+    "statute-of-limitations-calculator"
+   ],
+   "slug": "uninsured-motorist-claim-calculator"
+  },
+  "back-injury-settlement-calculator": {
+   "name": "Back Injury Settlement Calculator",
+   "short": "Back injury",
+   "cat": "injuries",
+   "type": "injury",
+   "variant": "back",
+   "states": true,
+   "state_pages": false,
+   "icon": "",
+   "card": "Strains to spinal surgery, valued by treatment and lasting limits.",
+   "related": [
+    "herniated-disc-settlement-calculator",
+    "personal-injury-settlement-calculator",
+    "car-accident-settlement-calculator",
+    "pain-and-suffering-calculator",
+    "settlement-offer-calculator"
+   ],
+   "slug": "back-injury-settlement-calculator"
+  },
+  "knee-injury-settlement-calculator": {
+   "name": "Knee Injury Settlement Calculator",
+   "short": "Knee injury",
+   "cat": "injuries",
+   "type": "injury",
+   "variant": "knee",
+   "states": true,
+   "state_pages": false,
+   "icon": "",
+   "card": "Sprains, meniscus and ligament tears, and knee surgery.",
+   "related": [
+    "slip-and-fall-settlement-calculator",
+    "personal-injury-settlement-calculator",
+    "car-accident-settlement-calculator",
+    "pain-and-suffering-calculator",
+    "settlement-offer-calculator"
+   ],
+   "slug": "knee-injury-settlement-calculator"
+  },
+  "traumatic-brain-injury-settlement-calculator": {
+   "name": "Brain Injury and Concussion Settlement Calculator",
+   "short": "Brain injury (TBI)",
+   "cat": "injuries",
+   "type": "injury",
+   "variant": "tbi",
+   "states": true,
+   "state_pages": false,
+   "icon": "",
+   "card": "Concussion to severe TBI, where proof often comes from testing, not scans.",
+   "related": [
+    "personal-injury-settlement-calculator",
+    "car-accident-settlement-calculator",
+    "pain-and-suffering-calculator",
+    "settlement-offer-calculator",
+    "wrongful-death-settlement-calculator"
+   ],
+   "slug": "traumatic-brain-injury-settlement-calculator"
+  },
+  "herniated-disc-settlement-calculator": {
+   "name": "Herniated Disc Settlement Calculator",
+   "short": "Herniated disc",
+   "cat": "injuries",
+   "type": "injury",
+   "variant": "disc",
+   "states": true,
+   "state_pages": false,
+   "icon": "",
+   "card": "Bulging and herniated discs, with and without surgery.",
+   "related": [
+    "back-injury-settlement-calculator",
+    "personal-injury-settlement-calculator",
+    "car-accident-settlement-calculator",
+    "pain-and-suffering-calculator",
+    "settlement-offer-calculator"
+   ],
+   "slug": "herniated-disc-settlement-calculator"
+  },
+  "whiplash-settlement-calculator": {
+   "name": "Whiplash Settlement Calculator",
+   "short": "Whiplash",
+   "cat": "injuries",
+   "type": "injury",
+   "variant": "whiplash",
+   "states": true,
+   "state_pages": false,
+   "icon": "",
+   "card": "Neck strain claims, and the records that keep them from being lowballed.",
+   "related": [
+    "soft-tissue-injury-settlement-calculator",
+    "personal-injury-settlement-calculator",
+    "car-accident-settlement-calculator",
+    "pain-and-suffering-calculator",
+    "settlement-offer-calculator"
+   ],
+   "slug": "whiplash-settlement-calculator"
+  },
+  "soft-tissue-injury-settlement-calculator": {
+   "name": "Soft Tissue Injury Settlement Calculator",
+   "short": "Soft-tissue injury",
+   "cat": "injuries",
+   "type": "injury",
+   "variant": "soft",
+   "states": true,
+   "state_pages": false,
+   "icon": "",
+   "card": "Sprains, strains and bruising, where treatment records carry the claim.",
+   "related": [
+    "whiplash-settlement-calculator",
+    "personal-injury-settlement-calculator",
+    "car-accident-settlement-calculator",
+    "pain-and-suffering-calculator",
+    "settlement-offer-calculator"
+   ],
+   "slug": "soft-tissue-injury-settlement-calculator"
+  },
+  "settlement-timeline-calculator": {
+   "name": "Settlement Timeline Calculator",
+   "short": "Settlement timeline",
+   "cat": "money",
+   "type": "timeline",
+   "variant": "",
+   "states": true,
+   "state_pages": false,
+   "icon": "",
+   "card": "When the check is likely to arrive, stage by stage, with your filing deadline checked.",
+   "related": [
+    "statute-of-limitations-calculator",
+    "demand-letter-generator",
+    "settlement-offer-calculator",
+    "medical-lien-calculator",
+    "attorney-fee-calculator"
+   ],
+   "slug": "settlement-timeline-calculator"
+  }
+ },
+ "fields": {
+  "nursing-home-abuse-settlement-calculator": [
+   {
+    "name": "date",
+    "type": "date",
+    "label": "Date of the injury",
+    "default": "2026-04-03",
+    "agoMonths": 7
+   },
+   {
+    "name": "state",
+    "type": "state",
+    "label": "State where it happened",
+    "default": ""
+   },
+   {
+    "name": "pastMed",
+    "type": "money",
+    "label": "Medical bills from the harm",
+    "hint": "",
+    "default": "18500"
+   },
+   {
+    "name": "futMed",
+    "type": "money",
+    "label": "Future care costs",
+    "hint": "(if known)",
+    "default": "7500"
+   },
+   {
+    "name": "sev",
+    "type": "choice",
+    "style": "cards",
+    "label": "How serious is the injury?",
+    "default": "moderate",
+    "options": [
+     [
+      "minor",
+      [
+       "Minor",
+       "1.5× – 2×"
+      ]
+     ],
+     [
+      "moderate",
+      [
+       "Moderate",
+       "2× – 3×"
+      ]
+     ],
+     [
+      "severe",
+      [
+       "Severe",
+       "3× – 4×"
+      ]
+     ],
+     [
+      "catastrophic",
+      [
+       "Catastrophic",
+       "4× – 5×"
+      ]
+     ]
+    ],
+    "notes": {
+     "minor": "Bruising, a fall without a fracture, or an early bedsore that healed.",
+     "moderate": "A fracture from a fall, a stage 3 bedsore, or dehydration or infection needing a hospital stay.",
+     "severe": "A stage 4 bedsore, surgery, or a lasting loss of mobility or independence.",
+     "catastrophic": "Brain injury, sepsis with lasting damage, or permanent dependence on care."
+    },
+    "notesPairs": [
+     [
+      "minor",
+      "Bruising, a fall without a fracture, or an early bedsore that healed."
+     ],
+     [
+      "moderate",
+      "A fracture from a fall, a stage 3 bedsore, or dehydration or infection needing a hospital stay."
+     ],
+     [
+      "severe",
+      "A stage 4 bedsore, surgery, or a lasting loss of mobility or independence."
+     ],
+     [
+      "catastrophic",
+      "Brain injury, sepsis with lasting damage, or permanent dependence on care."
+     ]
+    ]
+   },
+   {
+    "name": "bi",
+    "type": "select",
+    "label": "Facility liability insurance",
+    "default": "1000000",
+    "options": [
+     [
+      "250000",
+      "$250,000"
+     ],
+     [
+      "500000",
+      "$500,000"
+     ],
+     [
+      "1000000",
+      "$1,000,000 (common facility policy)"
+     ],
+     [
+      "3000000",
+      "$3,000,000"
+     ],
+     [
+      "unknown",
+      "Not sure"
+     ]
+    ]
+   },
+   {
+    "name": "fee",
+    "type": "choice",
+    "style": "pills",
+    "label": "Attorney fee for the take-home figure",
+    "default": "33",
+    "options": [
+     [
+      "0",
+      "No lawyer"
+     ],
+     [
+      "33",
+      "33⅓%"
+     ],
+     [
+      "40",
+      "40% (if it goes to trial)"
+     ]
+    ]
+   }
+  ],
+  "construction-accident-settlement-calculator": [
+   {
+    "name": "date",
+    "type": "date",
+    "label": "Date of the injury",
+    "default": "2026-04-03",
+    "agoMonths": 7
+   },
+   {
+    "name": "state",
+    "type": "state",
+    "label": "State where it happened",
+    "default": ""
+   },
+   {
+    "name": "pastMed",
+    "type": "money",
+    "label": "Medical bills so far",
+    "hint": "",
+    "default": "42000"
+   },
+   {
+    "name": "futMed",
+    "type": "money",
+    "label": "Future medical care",
+    "hint": "(if known)",
+    "default": "15000"
+   },
+   {
+    "name": "wages",
+    "type": "money",
+    "label": "Income lost so far",
+    "hint": "",
+    "default": "21000"
+   },
+   {
+    "name": "futWages",
+    "type": "money",
+    "label": "Future lost income",
+    "hint": "(if any)",
+    "default": "0"
+   },
+   {
+    "name": "sev",
+    "type": "choice",
+    "style": "cards",
+    "label": "How serious is the injury?",
+    "default": "severe",
+    "options": [
+     [
+      "minor",
+      [
+       "Minor",
+       "1.5× – 2×"
+      ]
+     ],
+     [
+      "moderate",
+      [
+       "Moderate",
+       "2× – 3×"
+      ]
+     ],
+     [
+      "severe",
+      [
+       "Severe",
+       "3× – 4×"
+      ]
+     ],
+     [
+      "catastrophic",
+      [
+       "Catastrophic",
+       "4× – 5×"
+      ]
+     ]
+    ],
+    "notes": {
+     "minor": "A sprain, cuts or a minor fracture, back at work within weeks.",
+     "moderate": "A fracture needing a cast or pins, or months away from work.",
+     "severe": "Surgery, a fall from height with lasting impairment, or a career-changing injury.",
+     "catastrophic": "A spinal cord or brain injury, amputation or severe burns."
+    },
+    "notesPairs": [
+     [
+      "minor",
+      "A sprain, cuts or a minor fracture, back at work within weeks."
+     ],
+     [
+      "moderate",
+      "A fracture needing a cast or pins, or months away from work."
+     ],
+     [
+      "severe",
+      "Surgery, a fall from height with lasting impairment, or a career-changing injury."
+     ],
+     [
+      "catastrophic",
+      "A spinal cord or brain injury, amputation or severe burns."
+     ]
+    ]
+   },
+   {
+    "name": "fault",
+    "type": "range",
+    "label": "Your share of the fault",
+    "default": 0
+   },
+   {
+    "name": "wc",
+    "type": "choice",
+    "style": "pills",
+    "label": "Were you working for an employer when you were hurt?",
+    "default": "yes",
+    "options": [
+     [
+      "yes",
+      "Yes, I have a comp claim"
+     ],
+     [
+      "no",
+      "No"
+     ]
+    ]
+   },
+   {
+    "name": "wcPaid",
+    "type": "money",
+    "label": "Workers’ comp benefits paid so far",
+    "hint": "(medical and wage checks)",
+    "default": "30000",
+    "show": "wc=yes"
+   },
+   {
+    "name": "bi",
+    "type": "select",
+    "label": "Liability insurance of the company at fault",
+    "default": "1000000",
+    "options": [
+     [
+      "500000",
+      "$500,000"
+     ],
+     [
+      "1000000",
+      "$1,000,000"
+     ],
+     [
+      "2000000",
+      "$2,000,000"
+     ],
+     [
+      "5000000",
+      "$5,000,000"
+     ],
+     [
+      "unknown",
+      "Not sure"
+     ]
+    ]
+   },
+   {
+    "name": "fee",
+    "type": "choice",
+    "style": "pills",
+    "label": "Attorney fee for the take-home figure",
+    "default": "33",
+    "options": [
+     [
+      "0",
+      "No lawyer"
+     ],
+     [
+      "33",
+      "33⅓%"
+     ],
+     [
+      "40",
+      "40% (if it goes to trial)"
+     ]
+    ]
+   }
+  ],
+  "drunk-driving-accident-settlement-calculator": [
+   {
+    "name": "date",
+    "type": "date",
+    "label": "Date of the crash",
+    "default": "2026-04-03",
+    "agoMonths": 7
+   },
+   {
+    "name": "state",
+    "type": "state",
+    "label": "State where it happened",
+    "default": ""
+   },
+   {
+    "name": "vehicle",
+    "type": "money",
+    "label": "Vehicle repair or value",
+    "hint": "",
+    "default": "9500"
+   },
+   {
+    "name": "pastMed",
+    "type": "money",
+    "label": "Medical bills so far",
+    "hint": "",
+    "default": "14200"
+   },
+   {
+    "name": "futMed",
+    "type": "money",
+    "label": "Future medical care",
+    "hint": "(if known)",
+    "default": "6000"
+   },
+   {
+    "name": "wages",
+    "type": "money",
+    "label": "Income lost so far",
+    "hint": "",
+    "default": "4800"
+   },
+   {
+    "name": "futWages",
+    "type": "money",
+    "label": "Future lost income",
+    "hint": "(if any)",
+    "default": "0"
+   },
+   {
+    "name": "sev",
+    "type": "choice",
+    "style": "cards",
+    "label": "How serious is the injury?",
+    "default": "moderate",
+    "options": [
+     [
+      "minor",
+      [
+       "Minor",
+       "1.5× – 2×"
+      ]
+     ],
+     [
+      "moderate",
+      [
+       "Moderate",
+       "2× – 3×"
+      ]
+     ],
+     [
+      "severe",
+      [
+       "Severe",
+       "3× – 4×"
+      ]
+     ],
+     [
+      "catastrophic",
+      [
+       "Catastrophic",
+       "4× – 5×"
+      ]
+     ]
+    ],
+    "notes": {
+     "minor": "Soft-tissue injury, full recovery within a few months.",
+     "moderate": "Fracture or months of treatment, with some lasting effect.",
+     "severe": "Surgery, permanent impairment or long-term care.",
+     "catastrophic": "Brain or spinal injury, amputation or lifelong disability."
+    },
+    "notesPairs": [
+     [
+      "minor",
+      "Soft-tissue injury, full recovery within a few months."
+     ],
+     [
+      "moderate",
+      "Fracture or months of treatment, with some lasting effect."
+     ],
+     [
+      "severe",
+      "Surgery, permanent impairment or long-term care."
+     ],
+     [
+      "catastrophic",
+      "Brain or spinal injury, amputation or lifelong disability."
+     ]
+    ]
+   },
+   {
+    "name": "fault",
+    "type": "range",
+    "label": "Your share of the fault",
+    "default": 0
+   },
+   {
+    "name": "threshold",
+    "type": "choice",
+    "style": "pills",
+    "label": "Does the injury meet the no-fault threshold to sue?",
+    "default": "yes",
+    "show": "nf",
+    "options": [
+     [
+      "yes",
+      "Yes"
+     ],
+     [
+      "no",
+      "No"
+     ],
+     [
+      "unsure",
+      "Not sure"
+     ]
+    ]
+   },
+   {
+    "name": "bi",
+    "type": "select",
+    "label": "Other driver’s injury limit",
+    "default": "min",
+    "options": [
+     [
+      "min",
+      "State minimum"
+     ],
+     [
+      "50000",
+      "$50,000"
+     ],
+     [
+      "100000",
+      "$100,000"
+     ],
+     [
+      "250000",
+      "$250,000"
+     ],
+     [
+      "500000",
+      "$500,000"
+     ],
+     [
+      "unknown",
+      "Not sure"
+     ]
+    ]
+   },
+   {
+    "name": "uim",
+    "type": "select",
+    "label": "Your UM/UIM coverage",
+    "default": "50000",
+    "options": [
+     [
+      "0",
+      "None"
+     ],
+     [
+      "25000",
+      "$25,000"
+     ],
+     [
+      "50000",
+      "$50,000"
+     ],
+     [
+      "100000",
+      "$100,000"
+     ],
+     [
+      "250000",
+      "$250,000"
+     ],
+     [
+      "500000",
+      "$500,000"
+     ]
+    ]
+   },
+   {
+    "name": "fee",
+    "type": "choice",
+    "style": "pills",
+    "label": "Attorney fee for the take-home figure",
+    "default": "33",
+    "options": [
+     [
+      "0",
+      "No lawyer"
+     ],
+     [
+      "33",
+      "33⅓%"
+     ],
+     [
+      "40",
+      "40% (if it goes to trial)"
+     ]
+    ]
+   }
+  ],
+  "uninsured-motorist-claim-calculator": [
+   {
+    "name": "date",
+    "type": "date",
+    "label": "Date of the crash",
+    "default": "2026-04-03",
+    "agoMonths": 7
+   },
+   {
+    "name": "state",
+    "type": "state",
+    "label": "State where it happened",
+    "default": ""
+   },
+   {
+    "name": "pastMed",
+    "type": "money",
+    "label": "Medical bills so far",
+    "hint": "",
+    "default": "14200"
+   },
+   {
+    "name": "futMed",
+    "type": "money",
+    "label": "Future medical care",
+    "hint": "(if known)",
+    "default": "6000"
+   },
+   {
+    "name": "wages",
+    "type": "money",
+    "label": "Income lost so far",
+    "hint": "",
+    "default": "4800"
+   },
+   {
+    "name": "futWages",
+    "type": "money",
+    "label": "Future lost income",
+    "hint": "(if any)",
+    "default": "0"
+   },
+   {
+    "name": "kind",
+    "type": "choice",
+    "style": "pills",
+    "label": "What happened?",
+    "default": "uninsured",
+    "options": [
+     [
+      "uninsured",
+      "The driver had no insurance"
+     ],
+     [
+      "hitrun",
+      "Hit-and-run"
+     ]
+    ]
+   },
+   {
+    "name": "sev",
+    "type": "choice",
+    "style": "cards",
+    "label": "How serious is the injury?",
+    "default": "moderate",
+    "options": [
+     [
+      "minor",
+      [
+       "Minor",
+       "1.5× – 2×"
+      ]
+     ],
+     [
+      "moderate",
+      [
+       "Moderate",
+       "2× – 3×"
+      ]
+     ],
+     [
+      "severe",
+      [
+       "Severe",
+       "3× – 4×"
+      ]
+     ],
+     [
+      "catastrophic",
+      [
+       "Catastrophic",
+       "4× – 5×"
+      ]
+     ]
+    ],
+    "notes": {
+     "minor": "Soft-tissue injury, full recovery within a few months.",
+     "moderate": "Fracture or months of treatment, with some lasting effect.",
+     "severe": "Surgery, permanent impairment or long-term care.",
+     "catastrophic": "Brain or spinal injury, amputation or lifelong disability."
+    },
+    "notesPairs": [
+     [
+      "minor",
+      "Soft-tissue injury, full recovery within a few months."
+     ],
+     [
+      "moderate",
+      "Fracture or months of treatment, with some lasting effect."
+     ],
+     [
+      "severe",
+      "Surgery, permanent impairment or long-term care."
+     ],
+     [
+      "catastrophic",
+      "Brain or spinal injury, amputation or lifelong disability."
+     ]
+    ]
+   },
+   {
+    "name": "fault",
+    "type": "range",
+    "label": "Your share of the fault",
+    "default": 0
+   },
+   {
+    "name": "threshold",
+    "type": "choice",
+    "style": "pills",
+    "label": "Does the injury meet the no-fault threshold to sue?",
+    "default": "yes",
+    "show": "nf",
+    "options": [
+     [
+      "yes",
+      "Yes"
+     ],
+     [
+      "no",
+      "No"
+     ],
+     [
+      "unsure",
+      "Not sure"
+     ]
+    ]
+   },
+   {
+    "name": "um",
+    "type": "select",
+    "label": "Your uninsured motorist (UM) limit",
+    "default": "50000",
+    "options": [
+     [
+      "25000",
+      "$25,000"
+     ],
+     [
+      "30000",
+      "$30,000"
+     ],
+     [
+      "50000",
+      "$50,000"
+     ],
+     [
+      "100000",
+      "$100,000"
+     ],
+     [
+      "250000",
+      "$250,000"
+     ],
+     [
+      "500000",
+      "$500,000"
+     ],
+     [
+      "unknown",
+      "Not sure"
+     ]
+    ]
+   },
+   {
+    "name": "fee",
+    "type": "choice",
+    "style": "pills",
+    "label": "Attorney fee for the take-home figure",
+    "default": "33",
+    "options": [
+     [
+      "0",
+      "No lawyer"
+     ],
+     [
+      "33",
+      "33⅓%"
+     ],
+     [
+      "40",
+      "40% (if it goes to trial)"
+     ]
+    ]
+   }
+  ],
+  "back-injury-settlement-calculator": [
+   {
+    "name": "date",
+    "type": "date",
+    "label": "Date of the injury",
+    "default": "2026-04-03",
+    "agoMonths": 7
+   },
+   {
+    "name": "state",
+    "type": "state",
+    "label": "State where it happened",
+    "default": ""
+   },
+   {
+    "name": "pastMed",
+    "type": "money",
+    "label": "Medical bills so far",
+    "hint": "",
+    "default": "16800"
+   },
+   {
+    "name": "futMed",
+    "type": "money",
+    "label": "Future medical care",
+    "hint": "(if known)",
+    "default": "6000"
+   },
+   {
+    "name": "wages",
+    "type": "money",
+    "label": "Income lost so far",
+    "hint": "",
+    "default": "5200"
+   },
+   {
+    "name": "futWages",
+    "type": "money",
+    "label": "Future lost income",
+    "hint": "(if any)",
+    "default": "0"
+   },
+   {
+    "name": "sev",
+    "type": "choice",
+    "style": "cards",
+    "label": "How serious is the injury?",
+    "default": "moderate",
+    "options": [
+     [
+      "minor",
+      [
+       "Minor",
+       "1.5× – 2×"
+      ]
+     ],
+     [
+      "moderate",
+      [
+       "Moderate",
+       "2× – 3×"
+      ]
+     ],
+     [
+      "severe",
+      [
+       "Severe",
+       "3× – 4×"
+      ]
+     ],
+     [
+      "catastrophic",
+      [
+       "Catastrophic",
+       "4× – 5×"
+      ]
+     ]
+    ],
+    "notes": {
+     "minor": "A strain or sprain that clears up with rest and therapy within weeks.",
+     "moderate": "Months of therapy or injections, or a disc injury treated without surgery.",
+     "severe": "Spine surgery, or lasting pain that limits work.",
+     "catastrophic": "Spinal cord damage, paralysis, or a failed fusion with permanent disability."
+    },
+    "notesPairs": [
+     [
+      "minor",
+      "A strain or sprain that clears up with rest and therapy within weeks."
+     ],
+     [
+      "moderate",
+      "Months of therapy or injections, or a disc injury treated without surgery."
+     ],
+     [
+      "severe",
+      "Spine surgery, or lasting pain that limits work."
+     ],
+     [
+      "catastrophic",
+      "Spinal cord damage, paralysis, or a failed fusion with permanent disability."
+     ]
+    ]
+   },
+   {
+    "name": "fault",
+    "type": "range",
+    "label": "Your share of the fault",
+    "default": 0
+   },
+   {
+    "name": "bi",
+    "type": "select",
+    "label": "Liability insurance that can pay",
+    "default": "100000",
+    "options": [
+     [
+      "100000",
+      "$100,000"
+     ],
+     [
+      "300000",
+      "$300,000"
+     ],
+     [
+      "500000",
+      "$500,000"
+     ],
+     [
+      "1000000",
+      "$1,000,000 (common business policy)"
+     ],
+     [
+      "unknown",
+      "Not sure"
+     ]
+    ]
+   },
+   {
+    "name": "fee",
+    "type": "choice",
+    "style": "pills",
+    "label": "Attorney fee for the take-home figure",
+    "default": "33",
+    "options": [
+     [
+      "0",
+      "No lawyer"
+     ],
+     [
+      "33",
+      "33⅓%"
+     ],
+     [
+      "40",
+      "40% (if it goes to trial)"
+     ]
+    ]
+   }
+  ],
+  "knee-injury-settlement-calculator": [
+   {
+    "name": "date",
+    "type": "date",
+    "label": "Date of the injury",
+    "default": "2026-04-03",
+    "agoMonths": 7
+   },
+   {
+    "name": "state",
+    "type": "state",
+    "label": "State where it happened",
+    "default": ""
+   },
+   {
+    "name": "pastMed",
+    "type": "money",
+    "label": "Medical bills so far",
+    "hint": "",
+    "default": "23500"
+   },
+   {
+    "name": "futMed",
+    "type": "money",
+    "label": "Future medical care",
+    "hint": "(if known)",
+    "default": "4000"
+   },
+   {
+    "name": "wages",
+    "type": "money",
+    "label": "Income lost so far",
+    "hint": "",
+    "default": "6400"
+   },
+   {
+    "name": "futWages",
+    "type": "money",
+    "label": "Future lost income",
+    "hint": "(if any)",
+    "default": "0"
+   },
+   {
+    "name": "sev",
+    "type": "choice",
+    "style": "cards",
+    "label": "How serious is the injury?",
+    "default": "moderate",
+    "options": [
+     [
+      "minor",
+      [
+       "Minor",
+       "1.5× – 2×"
+      ]
+     ],
+     [
+      "moderate",
+      [
+       "Moderate",
+       "2× – 3×"
+      ]
+     ],
+     [
+      "severe",
+      [
+       "Severe",
+       "3× – 4×"
+      ]
+     ],
+     [
+      "catastrophic",
+      [
+       "Catastrophic",
+       "4× – 5×"
+      ]
+     ]
+    ],
+    "notes": {
+     "minor": "A sprain or bruised knee, healed with rest and therapy.",
+     "moderate": "A meniscus or ligament tear treated with therapy, or arthroscopy.",
+     "severe": "Ligament reconstruction, fracture surgery or lasting instability.",
+     "catastrophic": "Knee replacement, or permanent loss of normal walking."
+    },
+    "notesPairs": [
+     [
+      "minor",
+      "A sprain or bruised knee, healed with rest and therapy."
+     ],
+     [
+      "moderate",
+      "A meniscus or ligament tear treated with therapy, or arthroscopy."
+     ],
+     [
+      "severe",
+      "Ligament reconstruction, fracture surgery or lasting instability."
+     ],
+     [
+      "catastrophic",
+      "Knee replacement, or permanent loss of normal walking."
+     ]
+    ]
+   },
+   {
+    "name": "fault",
+    "type": "range",
+    "label": "Your share of the fault",
+    "default": 0
+   },
+   {
+    "name": "bi",
+    "type": "select",
+    "label": "Liability insurance that can pay",
+    "default": "100000",
+    "options": [
+     [
+      "100000",
+      "$100,000"
+     ],
+     [
+      "300000",
+      "$300,000"
+     ],
+     [
+      "500000",
+      "$500,000"
+     ],
+     [
+      "1000000",
+      "$1,000,000 (common business policy)"
+     ],
+     [
+      "unknown",
+      "Not sure"
+     ]
+    ]
+   },
+   {
+    "name": "fee",
+    "type": "choice",
+    "style": "pills",
+    "label": "Attorney fee for the take-home figure",
+    "default": "33",
+    "options": [
+     [
+      "0",
+      "No lawyer"
+     ],
+     [
+      "33",
+      "33⅓%"
+     ],
+     [
+      "40",
+      "40% (if it goes to trial)"
+     ]
+    ]
+   }
+  ],
+  "traumatic-brain-injury-settlement-calculator": [
+   {
+    "name": "date",
+    "type": "date",
+    "label": "Date of the injury",
+    "default": "2026-04-03",
+    "agoMonths": 7
+   },
+   {
+    "name": "state",
+    "type": "state",
+    "label": "State where it happened",
+    "default": ""
+   },
+   {
+    "name": "pastMed",
+    "type": "money",
+    "label": "Medical bills so far",
+    "hint": "",
+    "default": "12800"
+   },
+   {
+    "name": "futMed",
+    "type": "money",
+    "label": "Future medical care",
+    "hint": "(if known)",
+    "default": "9000"
+   },
+   {
+    "name": "wages",
+    "type": "money",
+    "label": "Income lost so far",
+    "hint": "",
+    "default": "7500"
+   },
+   {
+    "name": "futWages",
+    "type": "money",
+    "label": "Future lost income",
+    "hint": "(if any)",
+    "default": "0"
+   },
+   {
+    "name": "sev",
+    "type": "choice",
+    "style": "cards",
+    "label": "How serious is the injury?",
+    "default": "moderate",
+    "options": [
+     [
+      "minor",
+      [
+       "Minor",
+       "1.5× – 2×"
+      ]
+     ],
+     [
+      "moderate",
+      [
+       "Moderate",
+       "2× – 3×"
+      ]
+     ],
+     [
+      "severe",
+      [
+       "Severe",
+       "3× – 4×"
+      ]
+     ],
+     [
+      "catastrophic",
+      [
+       "Catastrophic",
+       "4× – 5×"
+      ]
+     ]
+    ],
+    "notes": {
+     "minor": "A concussion with symptoms that clear up within weeks.",
+     "moderate": "Post-concussion symptoms lasting months, with therapy for memory, vision or balance.",
+     "severe": "A brain bleed, surgery, or lasting memory and concentration problems.",
+     "catastrophic": "Permanent cognitive disability or a need for lifelong care."
+    },
+    "notesPairs": [
+     [
+      "minor",
+      "A concussion with symptoms that clear up within weeks."
+     ],
+     [
+      "moderate",
+      "Post-concussion symptoms lasting months, with therapy for memory, vision or balance."
+     ],
+     [
+      "severe",
+      "A brain bleed, surgery, or lasting memory and concentration problems."
+     ],
+     [
+      "catastrophic",
+      "Permanent cognitive disability or a need for lifelong care."
+     ]
+    ]
+   },
+   {
+    "name": "fault",
+    "type": "range",
+    "label": "Your share of the fault",
+    "default": 0
+   },
+   {
+    "name": "bi",
+    "type": "select",
+    "label": "Liability insurance that can pay",
+    "default": "100000",
+    "options": [
+     [
+      "100000",
+      "$100,000"
+     ],
+     [
+      "300000",
+      "$300,000"
+     ],
+     [
+      "500000",
+      "$500,000"
+     ],
+     [
+      "1000000",
+      "$1,000,000 (common business policy)"
+     ],
+     [
+      "unknown",
+      "Not sure"
+     ]
+    ]
+   },
+   {
+    "name": "fee",
+    "type": "choice",
+    "style": "pills",
+    "label": "Attorney fee for the take-home figure",
+    "default": "33",
+    "options": [
+     [
+      "0",
+      "No lawyer"
+     ],
+     [
+      "33",
+      "33⅓%"
+     ],
+     [
+      "40",
+      "40% (if it goes to trial)"
+     ]
+    ]
+   }
+  ],
+  "herniated-disc-settlement-calculator": [
+   {
+    "name": "date",
+    "type": "date",
+    "label": "Date of the injury",
+    "default": "2026-04-03",
+    "agoMonths": 7
+   },
+   {
+    "name": "state",
+    "type": "state",
+    "label": "State where it happened",
+    "default": ""
+   },
+   {
+    "name": "pastMed",
+    "type": "money",
+    "label": "Medical bills so far",
+    "hint": "",
+    "default": "19600"
+   },
+   {
+    "name": "futMed",
+    "type": "money",
+    "label": "Future medical care",
+    "hint": "(if known)",
+    "default": "12000"
+   },
+   {
+    "name": "wages",
+    "type": "money",
+    "label": "Income lost so far",
+    "hint": "",
+    "default": "6000"
+   },
+   {
+    "name": "futWages",
+    "type": "money",
+    "label": "Future lost income",
+    "hint": "(if any)",
+    "default": "0"
+   },
+   {
+    "name": "sev",
+    "type": "choice",
+    "style": "cards",
+    "label": "How serious is the injury?",
+    "default": "moderate",
+    "options": [
+     [
+      "minor",
+      [
+       "Minor",
+       "1.5× – 2×"
+      ]
+     ],
+     [
+      "moderate",
+      [
+       "Moderate",
+       "2× – 3×"
+      ]
+     ],
+     [
+      "severe",
+      [
+       "Severe",
+       "3× – 4×"
+      ]
+     ],
+     [
+      "catastrophic",
+      [
+       "Catastrophic",
+       "4× – 5×"
+      ]
+     ]
+    ],
+    "notes": {
+     "minor": "A bulging disc that improves with therapy within a few months.",
+     "moderate": "A herniation with nerve symptoms, treated with injections or therapy.",
+     "severe": "A discectomy, laminectomy or fusion.",
+     "catastrophic": "A multi-level fusion, failed surgery or permanent nerve damage."
+    },
+    "notesPairs": [
+     [
+      "minor",
+      "A bulging disc that improves with therapy within a few months."
+     ],
+     [
+      "moderate",
+      "A herniation with nerve symptoms, treated with injections or therapy."
+     ],
+     [
+      "severe",
+      "A discectomy, laminectomy or fusion."
+     ],
+     [
+      "catastrophic",
+      "A multi-level fusion, failed surgery or permanent nerve damage."
+     ]
+    ]
+   },
+   {
+    "name": "fault",
+    "type": "range",
+    "label": "Your share of the fault",
+    "default": 0
+   },
+   {
+    "name": "bi",
+    "type": "select",
+    "label": "Liability insurance that can pay",
+    "default": "100000",
+    "options": [
+     [
+      "100000",
+      "$100,000"
+     ],
+     [
+      "300000",
+      "$300,000"
+     ],
+     [
+      "500000",
+      "$500,000"
+     ],
+     [
+      "1000000",
+      "$1,000,000 (common business policy)"
+     ],
+     [
+      "unknown",
+      "Not sure"
+     ]
+    ]
+   },
+   {
+    "name": "fee",
+    "type": "choice",
+    "style": "pills",
+    "label": "Attorney fee for the take-home figure",
+    "default": "33",
+    "options": [
+     [
+      "0",
+      "No lawyer"
+     ],
+     [
+      "33",
+      "33⅓%"
+     ],
+     [
+      "40",
+      "40% (if it goes to trial)"
+     ]
+    ]
+   }
+  ],
+  "whiplash-settlement-calculator": [
+   {
+    "name": "date",
+    "type": "date",
+    "label": "Date of the injury",
+    "default": "2026-04-03",
+    "agoMonths": 7
+   },
+   {
+    "name": "state",
+    "type": "state",
+    "label": "State where it happened",
+    "default": ""
+   },
+   {
+    "name": "pastMed",
+    "type": "money",
+    "label": "Medical bills so far",
+    "hint": "",
+    "default": "5400"
+   },
+   {
+    "name": "futMed",
+    "type": "money",
+    "label": "Future medical care",
+    "hint": "(if known)",
+    "default": "0"
+   },
+   {
+    "name": "wages",
+    "type": "money",
+    "label": "Income lost so far",
+    "hint": "",
+    "default": "1800"
+   },
+   {
+    "name": "futWages",
+    "type": "money",
+    "label": "Future lost income",
+    "hint": "(if any)",
+    "default": "0"
+   },
+   {
+    "name": "sev",
+    "type": "choice",
+    "style": "cards",
+    "label": "How serious is the injury?",
+    "default": "minor",
+    "options": [
+     [
+      "minor",
+      [
+       "Minor",
+       "1.5× – 2×"
+      ]
+     ],
+     [
+      "moderate",
+      [
+       "Moderate",
+       "2× – 3×"
+      ]
+     ],
+     [
+      "severe",
+      [
+       "Severe",
+       "3× – 4×"
+      ]
+     ],
+     [
+      "catastrophic",
+      [
+       "Catastrophic",
+       "4× – 5×"
+      ]
+     ]
+    ],
+    "notes": {
+     "minor": "Neck strain, recovered within a few months.",
+     "moderate": "Symptoms lasting past six months, with imaging or specialist care.",
+     "severe": "A disc injury, injections or surgery after the crash.",
+     "catastrophic": "Permanent nerve damage, or chronic pain that ends a career."
+    },
+    "notesPairs": [
+     [
+      "minor",
+      "Neck strain, recovered within a few months."
+     ],
+     [
+      "moderate",
+      "Symptoms lasting past six months, with imaging or specialist care."
+     ],
+     [
+      "severe",
+      "A disc injury, injections or surgery after the crash."
+     ],
+     [
+      "catastrophic",
+      "Permanent nerve damage, or chronic pain that ends a career."
+     ]
+    ]
+   },
+   {
+    "name": "fault",
+    "type": "range",
+    "label": "Your share of the fault",
+    "default": 0
+   },
+   {
+    "name": "bi",
+    "type": "select",
+    "label": "Liability insurance that can pay",
+    "default": "100000",
+    "options": [
+     [
+      "100000",
+      "$100,000"
+     ],
+     [
+      "300000",
+      "$300,000"
+     ],
+     [
+      "500000",
+      "$500,000"
+     ],
+     [
+      "1000000",
+      "$1,000,000 (common business policy)"
+     ],
+     [
+      "unknown",
+      "Not sure"
+     ]
+    ]
+   },
+   {
+    "name": "fee",
+    "type": "choice",
+    "style": "pills",
+    "label": "Attorney fee for the take-home figure",
+    "default": "33",
+    "options": [
+     [
+      "0",
+      "No lawyer"
+     ],
+     [
+      "33",
+      "33⅓%"
+     ],
+     [
+      "40",
+      "40% (if it goes to trial)"
+     ]
+    ]
+   }
+  ],
+  "soft-tissue-injury-settlement-calculator": [
+   {
+    "name": "date",
+    "type": "date",
+    "label": "Date of the injury",
+    "default": "2026-04-03",
+    "agoMonths": 7
+   },
+   {
+    "name": "state",
+    "type": "state",
+    "label": "State where it happened",
+    "default": ""
+   },
+   {
+    "name": "pastMed",
+    "type": "money",
+    "label": "Medical bills so far",
+    "hint": "",
+    "default": "3900"
+   },
+   {
+    "name": "futMed",
+    "type": "money",
+    "label": "Future medical care",
+    "hint": "(if known)",
+    "default": "0"
+   },
+   {
+    "name": "wages",
+    "type": "money",
+    "label": "Income lost so far",
+    "hint": "",
+    "default": "1200"
+   },
+   {
+    "name": "futWages",
+    "type": "money",
+    "label": "Future lost income",
+    "hint": "(if any)",
+    "default": "0"
+   },
+   {
+    "name": "sev",
+    "type": "choice",
+    "style": "cards",
+    "label": "How serious is the injury?",
+    "default": "minor",
+    "options": [
+     [
+      "minor",
+      [
+       "Minor",
+       "1.5× – 2×"
+      ]
+     ],
+     [
+      "moderate",
+      [
+       "Moderate",
+       "2× – 3×"
+      ]
+     ],
+     [
+      "severe",
+      [
+       "Severe",
+       "3× – 4×"
+      ]
+     ],
+     [
+      "catastrophic",
+      [
+       "Catastrophic",
+       "4× – 5×"
+      ]
+     ]
+    ],
+    "notes": {
+     "minor": "A sprain, strain or bruising, healed within weeks.",
+     "moderate": "Months of therapy, a partial tear or lasting stiffness.",
+     "severe": "Surgery for a torn tendon or ligament.",
+     "catastrophic": "Permanent loss of function or chronic pain."
+    },
+    "notesPairs": [
+     [
+      "minor",
+      "A sprain, strain or bruising, healed within weeks."
+     ],
+     [
+      "moderate",
+      "Months of therapy, a partial tear or lasting stiffness."
+     ],
+     [
+      "severe",
+      "Surgery for a torn tendon or ligament."
+     ],
+     [
+      "catastrophic",
+      "Permanent loss of function or chronic pain."
+     ]
+    ]
+   },
+   {
+    "name": "fault",
+    "type": "range",
+    "label": "Your share of the fault",
+    "default": 0
+   },
+   {
+    "name": "bi",
+    "type": "select",
+    "label": "Liability insurance that can pay",
+    "default": "100000",
+    "options": [
+     [
+      "100000",
+      "$100,000"
+     ],
+     [
+      "300000",
+      "$300,000"
+     ],
+     [
+      "500000",
+      "$500,000"
+     ],
+     [
+      "1000000",
+      "$1,000,000 (common business policy)"
+     ],
+     [
+      "unknown",
+      "Not sure"
+     ]
+    ]
+   },
+   {
+    "name": "fee",
+    "type": "choice",
+    "style": "pills",
+    "label": "Attorney fee for the take-home figure",
+    "default": "33",
+    "options": [
+     [
+      "0",
+      "No lawyer"
+     ],
+     [
+      "33",
+      "33⅓%"
+     ],
+     [
+      "40",
+      "40% (if it goes to trial)"
+     ]
+    ]
+   }
+  ],
+  "settlement-timeline-calculator": [
+   {
+    "name": "date",
+    "type": "date",
+    "label": "Date of the injury",
+    "default": "2026-04-03",
+    "agoMonths": 7
+   },
+   {
+    "name": "state",
+    "type": "state",
+    "label": "State where it happened",
+    "default": ""
+   },
+   {
+    "name": "kind",
+    "type": "choice",
+    "style": "pills",
+    "label": "Type of claim",
+    "default": "crash",
+    "options": [
+     [
+      "crash",
+      "Vehicle crash"
+     ],
+     [
+      "other",
+      "Other injury"
+     ]
+    ]
+   },
+   {
+    "name": "stage",
+    "type": "choice",
+    "style": "cards",
+    "label": "Where is the claim now?",
+    "default": "treating",
+    "options": [
+     [
+      "treating",
+      [
+       "Still treating",
+       "Recovery not finished"
+      ]
+     ],
+     [
+      "demand",
+      [
+       "Preparing a demand",
+       "Treatment is done"
+      ]
+     ],
+     [
+      "negotiating",
+      [
+       "Negotiating",
+       "Offers going back and forth"
+      ]
+     ],
+     [
+      "lawsuit",
+      [
+       "Lawsuit filed",
+       "In court"
+      ]
+     ],
+     [
+      "agreed",
+      [
+       "Settlement agreed",
+       "Waiting for the money"
+      ]
+     ]
+    ]
+   },
+   {
+    "name": "sev",
+    "type": "choice",
+    "style": "pills",
+    "label": "How serious is the injury?",
+    "default": "moderate",
+    "options": [
+     [
+      "minor",
+      "Minor"
+     ],
+     [
+      "moderate",
+      "Moderate"
+     ],
+     [
+      "severe",
+      "Severe"
+     ],
+     [
+      "catastrophic",
+      "Catastrophic"
+     ]
+    ]
+   },
+   {
+    "name": "lawyer",
+    "type": "choice",
+    "style": "pills",
+    "label": "Do you have a lawyer?",
+    "default": "yes",
+    "options": [
+     [
+      "yes",
+      "Yes"
+     ],
+     [
+      "no",
+      "No"
+     ]
+    ]
+   },
+   {
+    "name": "liens",
+    "type": "select",
+    "label": "Who else has to be repaid from the settlement?",
+    "default": "health",
+    "options": [
+     [
+      "none",
+      "No one"
+     ],
+     [
+      "health",
+      "Health insurer or hospital"
+     ],
+     [
+      "medicare",
+      "Medicare or Medicaid"
+     ]
+    ]
+   }
+  ]
+ }
+}

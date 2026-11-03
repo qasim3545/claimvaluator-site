@@ -40,8 +40,24 @@
 		contributory: 'contributory negligence rule',
 		slight_gross: 'slight/gross negligence rule'
 	};
-	var MOTOR = ['car', 'truck', 'motorcycle', 'rideshare', 'pedestrian', 'bicycle'];
-	var NO_FAULT_VARIANTS = ['car', 'truck', 'rideshare', 'pedestrian', 'bicycle'];
+	var MOTOR = ['car', 'truck', 'motorcycle', 'rideshare', 'pedestrian', 'bicycle', 'dui', 'um'];
+	var NO_FAULT_VARIANTS = ['car', 'truck', 'rideshare', 'pedestrian', 'bicycle', 'dui', 'um'];
+	/** What the result calls the claim, by variant. */
+	var CLAIM_NAME = {
+		dog: 'dog bite claim',
+		nursing: 'nursing home claim',
+		construction: 'construction injury claim',
+		dui: 'drunk driving injury claim',
+		um: 'uninsured motorist claim',
+		back: 'back injury claim',
+		knee: 'knee injury claim',
+		tbi: 'brain injury claim',
+		disc: 'herniated disc claim',
+		whiplash: 'whiplash claim',
+		soft: 'soft-tissue injury claim'
+	};
+	/** Injury-type calculators: no vehicle or no-fault inputs, so point crash victims in no-fault states to the car tool. */
+	var INJURY_TYPES = ['back', 'knee', 'tbi', 'disc', 'whiplash', 'soft'];
 
 	function num(v) {
 		if (typeof v === 'number') {
@@ -322,13 +338,15 @@
 		var mid = (valLo + valHi) / 2;
 		var barred = lo.barred;
 
-		var cov = limitValue(v.bi, st);
-		var uim = num(v.uim);
+		var cov = limitValue(variant === 'um' ? v.um : v.bi, st);
+		var uim = variant === 'um' ? 0 : num(v.uim);
 		if (cov !== null && uim && MOTOR.indexOf(variant) !== -1) {
 			cov += uim;
 		}
+		var wcClaim = variant === 'construction' && v.wc === 'yes';
+		var wcPaid = wcClaim ? num(v.wcPaid) : 0;
 
-		var chips = [faultChip(st, fr, f, lo)];
+		var chips = v.fault === undefined ? [] : [faultChip(st, fr, f, lo)];
 		if (nf) {
 			chips.push(chip(stateName(st) + ' is a no-fault state: your PIP pays first', 'info'));
 			if (v.threshold === 'unsure') {
@@ -354,7 +372,25 @@
 		if (variant === 'premises') {
 			chips.push(chip('You must show the owner knew or should have known about the hazard', 'info'));
 		}
+		if (variant === 'nursing') {
+			chips.push(chip('Some states treat nursing home claims as medical malpractice, with tighter caps and expert rules', 'info'));
+		}
+		if (variant === 'construction') {
+			chips.push(chip(wcClaim ? 'Workers’ comp bars suing your employer: this claim is against another company on the site' : 'A claim against the property owner, a contractor or an equipment maker', 'info'));
+			if (st && st.slug === 'new-york') {
+				chips.push(chip('New York’s Scaffold Law can make owners and contractors fully liable for falls from height', 'good'));
+			}
+		}
+		if (variant === 'dui') {
+			chips.push(chip('The range leaves out punitive damages, which many states allow against drunk drivers', 'info'));
+		}
+		if (variant === 'um') {
+			chips.push(chip(v.kind === 'hitrun' ? 'Hit-and-run: most policies need a police report and prompt notice' : 'A claim on your own policy, up to your UM limit', 'info'));
+		}
 		var dl = deadlineChip(st, date, MOTOR.indexOf(variant) !== -1 ? 'mv' : 'injury');
+		if (dl && variant === 'um' && dl.tone === 'warn') {
+			dl = chip(dl.text.replace('File suit by', 'Injury-suit deadline:') + ' (your policy may set its own)', 'warn');
+		}
 		if (dl) {
 			chips.push(dl);
 		}
@@ -393,6 +429,40 @@
 		if (variant === 'rideshare') {
 			notes.push('Uber and Lyft carry $1 million of liability coverage from the moment a driver accepts a trip until the rider gets out. With the app on but no trip accepted, lower contingent limits apply.');
 		}
+		if (variant === 'nursing') {
+			notes.push('Admission papers often include an arbitration clause. Federal rules bar nursing homes that take Medicare or Medicaid from making arbitration a condition of admission, and a resident can cancel such an agreement within 30 days of signing.');
+			notes.push('If the resident died, the family’s claim is usually a wrongful death claim. Use the <a href="/wrongful-death-settlement-calculator/">wrongful death calculator</a> instead.');
+		}
+		if (variant === 'construction') {
+			notes.push(wcClaim
+				? 'Your workers’ comp insurer usually has a lien on this settlement for the benefits it paid. Many states reduce that lien by its share of the attorney fee; the take-home figure assumes no reduction.'
+				: 'If you were working for an employer when you were hurt, workers’ comp is usually your only claim against that employer. Answer “Yes” above to see the comp lien.');
+		}
+		if (variant === 'dui') {
+			notes.push('Many states also allow a claim against a bar or store that served or sold alcohol to a visibly drunk or underage driver (dram shop laws). That can bring a second insurance policy into the claim.');
+			notes.push('Punitive damages are not in this range. Some states cap them, and some don’t let insurance pay them.');
+		}
+		if (variant === 'um') {
+			notes.push('Your insurer stands in for the at-fault driver, so the same fault rules apply. The claim pays up to your UM limit, whatever the other driver carried.');
+			if (v.kind === 'hitrun') {
+				notes.push('Hit-and-run claims usually need a police report made soon after the crash, and some states require physical contact with the other vehicle or an independent witness.');
+			}
+		}
+		if (INJURY_TYPES.indexOf(variant) !== -1) {
+			if (variant === 'back' || variant === 'disc') {
+				notes.push('Insurers often point to age-related disc changes on an MRI. Records showing no complaints before the accident, and a doctor linking the new symptoms to it, usually matter most.');
+			}
+			if (variant === 'tbi') {
+				notes.push('A concussion often doesn’t show on a CT or MRI. Neuropsychological testing and accounts from people who saw the change in you carry much of the weight.');
+			}
+			if (variant === 'whiplash' || variant === 'soft') {
+				notes.push('Insurers often value soft-tissue claims low. Prompt treatment, no long gaps in care and a doctor’s note on lasting limits raise the value most.');
+			}
+			if (variant === 'knee') {
+				notes.push('Surgery such as ligament reconstruction usually moves a knee claim into the severe band, especially with lasting instability or a higher risk of arthritis.');
+			}
+			notes.push('Hurt in a car crash in a no-fault state? The <a href="/car-accident-settlement-calculator/">car accident calculator</a> applies PIP and the injury threshold.');
+		}
 		if (fr.note) {
 			notes.push(fr.note);
 		}
@@ -401,11 +471,21 @@
 		var base = cov === null ? mid : Math.min(mid, cov);
 		var feeAmt = base * fee;
 		var costs = caseCosts(base, fee);
-		var owed = Math.max(0, pm - pip);
-		var take = Math.max(0, base - feeAmt - costs - owed);
+		var owed = wcClaim ? 0 : Math.max(0, pm - pip);
+		var take = Math.max(0, base - feeAmt - costs - owed - wcPaid);
+		var netRows = [
+			row(cov !== null && mid > cov ? 'Midpoint, capped at available insurance' : 'Midpoint value', money(base)),
+			row(feeLabel(v.fee), minus(feeAmt)),
+			row('Case costs (estimate)', minus(costs))
+		];
+		if (wcClaim) {
+			netRows.push(row('Workers’ comp lien, before any reduction', minus(wcPaid)));
+		} else {
+			netRows.push(row('Medical bills still owed, before any reduction', minus(owed)));
+		}
 
 		return {
-			label: variant === 'dog' ? 'Estimated dog bite claim value' : 'Estimated injury claim value',
+			label: 'Estimated ' + (CLAIM_NAME[variant] || 'injury claim') + ' value',
 			headline: barred ? '$0' : moneyRange(valLo, valHi),
 			tone: barred ? 'bad' : '',
 			sub: barred
@@ -418,12 +498,7 @@
 			net: barred ? null : {
 				title: 'Estimated take-home at the midpoint',
 				value: money(take),
-				rows: [
-					row(cov !== null && mid > cov ? 'Midpoint, capped at available insurance' : 'Midpoint value', money(base)),
-					row(feeLabel(v.fee), minus(feeAmt)),
-					row('Case costs (estimate)', minus(costs)),
-					row('Medical bills still owed, before any reduction', minus(owed))
-				]
+				rows: netRows
 			}
 		};
 	};
@@ -1417,6 +1492,110 @@
 				row('Total', money(owed + liq), true)
 			].filter(Boolean),
 			notes: ['The Fair Labor Standards Act requires 1.5 times the regular rate for hours over 40 in a workweek, for non-exempt workers (29 U.S.C. §§ 207, 216, 255).']
+		};
+	};
+
+	/**
+	 * Settlement timeline: how long until the check, stage by stage.
+	 * Week ranges follow the stage table in the site's settlement timeline guide.
+	 */
+	var TREAT_WEEKS = { minor: [4, 12], moderate: [12, 36], severe: [36, 78], catastrophic: [52, 104] };
+	var NEGOTIATE_WEEKS = { minor: [2, 6], moderate: [3, 10], severe: [4, 16], catastrophic: [6, 24] };
+	var STAGE_ORDER = ['treating', 'demand', 'negotiating', 'lawsuit', 'agreed'];
+	function weeksText(r) {
+		var a = Math.round(r[0]), b = Math.round(r[1]);
+		if (b === 0) {
+			return 'Done';
+		}
+		if (a === 0) {
+			return 'Up to ' + b + (b === 1 ? ' week' : ' weeks');
+		}
+		return (a === b ? a : a + ' – ' + b) + (b === 1 ? ' week' : ' weeks');
+	}
+	function spanText(lo, hi) {
+		if (hi <= 8) {
+			return weeksText([lo, hi]);
+		}
+		var a = Math.max(0, Math.round(lo / 4.345)), b = Math.max(1, Math.round(hi / 4.345));
+		if (a === b) {
+			return 'About ' + b + (b === 1 ? ' month' : ' months');
+		}
+		return a + ' – ' + b + ' months';
+	}
+	function addWeeks(d, w) {
+		return new Date(d.getTime() + Math.round(w * 7) * 86400000);
+	}
+	T.timeline = function (v, ctx) {
+		var st = ctx.state;
+		var date = parseDate(v.date);
+		var sev = SEV[v.sev] ? v.sev : 'moderate';
+		var stage = STAGE_ORDER.indexOf(v.stage) !== -1 ? v.stage : 'treating';
+		var now = today();
+		var elapsed = date ? Math.max(0, daysBetween(date, now) / 7) : 0;
+		var steps = [];
+		if (stage === 'treating') {
+			var t = TREAT_WEEKS[sev];
+			var tLo = Math.max(0, t[0] - elapsed);
+			var tHi = Math.max(4, t[1] - elapsed);
+			steps.push({ label: 'Finish treatment or reach maximum medical improvement', w: [tLo, tHi] });
+		}
+		if (stage === 'treating' || stage === 'demand') {
+			steps.push({ label: 'Gather records and bills, send the demand', w: [2, 8] });
+			steps.push({ label: 'Insurer reviews the demand and responds', w: [4, 9] });
+		}
+		if (stage === 'treating' || stage === 'demand' || stage === 'negotiating') {
+			steps.push({ label: 'Negotiate to an agreed number', w: NEGOTIATE_WEEKS[sev] });
+		}
+		if (stage === 'lawsuit') {
+			steps.push({ label: 'Discovery, mediation and settlement (or trial)', w: [52, 156] });
+		}
+		steps.push({ label: 'Sign the release; insurer issues payment', w: [2, 6] });
+		if (v.lawyer === 'yes') {
+			steps.push({ label: 'Funds clear the lawyer’s trust account; fee and costs paid', w: [1, 2] });
+		}
+		if (v.liens === 'health') {
+			steps.push({ label: 'Health insurer or hospital lien settled', w: [0, 4] });
+		} else if (v.liens === 'medicare') {
+			steps.push({ label: 'Medicare or Medicaid lien finalized', w: [4, 12] });
+		}
+		var lo = 0, hi = 0;
+		steps.forEach(function (s) {
+			lo += s.w[0];
+			hi += s.w[1];
+		});
+		var first = addWeeks(now, lo), last = addWeeks(now, hi);
+		var chips = [];
+		var notes = [];
+		if (st && date && stage !== 'lawsuit' && stage !== 'agreed') {
+			var ctype = v.kind === 'crash' ? 'mv' : 'injury';
+			var deadline = addYears(date, deadlineYears(st, date, ctype));
+			if (deadline < now) {
+				chips.push(chip('The usual filing deadline passed on ' + fmtDate(deadline), 'bad'));
+			} else if (deadline < last) {
+				chips.push(chip('Filing deadline ' + fmtDate(deadline) + ' falls inside this range', 'warn'));
+				notes.push('Negotiating doesn’t stop the clock. If the claim isn’t settled before ' + fmtDate(deadline) + ', a lawsuit has to be filed by then to keep it alive, which adds the lawsuit stage to this timeline.');
+			} else {
+				chips.push(chip('Filing deadline ' + fmtDate(deadline) + ' is after the latest estimate', 'good'));
+			}
+		} else if (!st && stage !== 'lawsuit' && stage !== 'agreed') {
+			chips.push(chip('Pick your state to check the filing deadline', 'info'));
+		}
+		if (stage === 'treating' && sev !== 'minor') {
+			chips.push(chip('Treatment is the longest wait, and settling before it ends risks leaving money behind', 'info'));
+		}
+		if (v.liens === 'medicare') {
+			notes.push('Medicare has to be repaid from the settlement before you get your share. Your lawyer reports the settlement and waits for Medicare’s final demand, which is often the slowest step.');
+		}
+		notes.push('These are planning ranges built from the usual length of each stage, not a promise. Disputed fault, very large damages and court schedules can make any stage longer.');
+		return {
+			label: 'Estimated time until you’re paid',
+			headline: spanText(lo, hi),
+			sub: 'Check likely between ' + fmtDate(first) + ' and ' + fmtDate(last),
+			chips: chips,
+			rows: steps.map(function (s) {
+				return row(s.label, weeksText(s.w));
+			}).concat([row('Total from today', spanText(lo, hi), true)]),
+			notes: notes
 		};
 	};
 

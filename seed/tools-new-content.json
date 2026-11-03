@@ -1,0 +1,355 @@
+{
+ "nursing-home-abuse-settlement-calculator": {
+  "title": "Nursing Home Abuse Settlement Calculator",
+  "metaTitle": "Nursing Home Abuse Settlement Calculator | ClaimValuator",
+  "metaDescription": "Estimate a nursing home neglect or abuse claim from care costs and how serious the harm was, with your state’s fault rule, deadline and caps applied.",
+  "excerpt": "Estimate a nursing home neglect or abuse claim from the medical costs, how serious the harm was and the facility’s insurance. Your state’s deadline and any damages cap are applied.",
+  "html": "<h2>How this calculator values a nursing home claim</h2>\n<p>A claim for harm in a nursing home is valued like other injury claims: the medical and care costs the neglect or abuse caused, plus an amount for pain, suffering and loss of dignity. Most residents are retired, so lost income rarely plays a part. The care costs and how serious the harm was drive the number.</p>\n<p>The calculator multiplies those costs by a range that rises with severity, then applies your state’s rules, including any cap on non-economic damages. Treat the result as a starting point. Nursing home cases often turn on staffing records, care plans and state inspection reports that only come out once a claim is made.</p>\n<h2>What counts as abuse or neglect</h2>\n<ul>\n<li>Pressure injuries (bedsores) that develop or worsen because a resident wasn’t turned, cleaned or fed properly</li>\n<li>Falls caused by missing supervision, alarms or help with moving</li>\n<li>Dehydration, malnutrition and infections left untreated</li>\n<li>Medication errors, including drugs used to sedate a resident rather than treat them</li>\n<li>Physical, emotional, sexual or financial abuse by staff or other residents</li>\n</ul>\n<p>Federal rules for facilities that take Medicare or Medicaid (42 CFR Part 483) give every resident the right to be free from abuse and neglect, a written care plan and the care that plan calls for. A breach of those duties is often the center of the claim.</p>\n<h2>Why some states cap these claims</h2>\n<p>In some states a nursing home counts as a health care provider, so a neglect claim is handled as a medical malpractice (health care liability) claim. That can bring a lower cap on non-economic damages, an expert report or certificate early in the case, and a different deadline. Texas, for example, lists nursing homes as health care providers in its medical liability law. Check how your state classifies the claim before relying on the general injury deadline in the result.</p>\n<h2>Arbitration agreements</h2>\n<p>Admission paperwork often includes an agreement to settle disputes in private arbitration instead of court. Under a 2019 federal rule, a facility that takes Medicare or Medicaid can’t make signing one a condition of admission or of continued care, has to explain it, and has to let the resident or their representative cancel it within 30 calendar days. If one was signed, a lawyer will check whether those rules were followed.</p>\n<h2>When the resident has died</h2>\n<p>If neglect or abuse caused a resident’s death, the claim usually becomes a wrongful death claim brought by the family or the estate, sometimes alongside a survival claim for what the resident went through before death. Use the <a href=\"/wrongful-death-settlement-calculator/\">wrongful death calculator</a> for that case.</p>\n<h2>What to do now</h2>\n<ul>\n<li>Photograph injuries and keep a dated log of what you see and who you spoke to.</li>\n<li>Ask for the resident’s care plan and medical records in writing.</li>\n<li>Report suspected abuse to your state’s survey agency or the long-term care ombudsman.</li>\n<li>Look up the facility’s inspection results and staffing on Medicare’s Care Compare.</li>\n</ul>\n<p>More detail is in our guide to <a href=\"/blog/nursing-home-abuse-lawyer/\">nursing home abuse claims and lawyers</a>.</p>",
+  "faqs": [
+   {
+    "question": "How much is a nursing home abuse settlement worth?",
+    "answer": "It depends mostly on how serious the harm was and the care costs that followed. A fall injury that healed may settle for a modest amount, while a stage 4 bedsore, a fracture that leads to lasting decline or a death can be worth far more. State caps on non-economic damages, and whether your state treats the claim as medical malpractice, can lower the top of the range."
+   },
+   {
+    "question": "Can we still make a claim if my parent signed an arbitration agreement?",
+    "answer": "Usually yes, but the claim may go to arbitration instead of court. Federal rules say the agreement can’t have been a condition of admission and the resident had 30 days to cancel it. A lawyer can check whether those rules and your state’s contract law were followed."
+   },
+   {
+    "question": "How long do we have to file?",
+    "answer": "Most states give two or three years for an injury claim. If your state treats nursing home claims as medical malpractice, that deadline and its notice rules apply instead. If the resident died, the wrongful death deadline usually runs from the date of death."
+   },
+   {
+    "question": "Who pays a nursing home settlement?",
+    "answer": "Usually the facility’s liability insurer. Some facilities carry low limits or are owned through several related companies, which is one reason these cases need ownership and insurance records early."
+   }
+  ],
+  "sources": [
+   {
+    "label": "eCFR: 42 CFR Part 483, requirements for long-term care facilities",
+    "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-483"
+   },
+   {
+    "label": "Federal Register, July 18, 2019: arbitration agreements in long-term care facilities",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2019-07-18/html/2019-14945.htm"
+   },
+   {
+    "label": "Medicare Care Compare: nursing home inspections and staffing",
+    "url": "https://www.medicare.gov/care-compare/"
+   },
+   {
+    "label": "National Long-Term Care Ombudsman Resource Center",
+    "url": "https://ltcombudsman.org/"
+   }
+  ]
+ },
+ "construction-accident-settlement-calculator": {
+  "title": "Construction Accident Settlement Calculator",
+  "metaTitle": "Construction Accident Settlement Calculator | ClaimValuator",
+  "metaDescription": "Estimate a construction injury claim against a contractor, owner or equipment maker, with the workers’ comp lien taken out of your take-home figure.",
+  "excerpt": "Estimate a construction injury claim against a contractor, property owner or equipment maker, with the workers’ comp lien taken out of your take-home figure.",
+  "html": "<h2>Two claims, not one</h2>\n<p>If you were hurt on a job site while working for an employer, workers’ compensation usually pays your medical bills and part of your lost wages, whoever was at fault. In almost every state it is also your only claim against your own employer. What comp doesn’t pay is pain and suffering, or the full value of your lost income.</p>\n<p>A second claim may exist against someone else whose carelessness caused the injury: a general contractor or subcontractor that controlled the site, the property owner, an equipment maker or rental company, or a driver who hit you in a work zone. This calculator values that third-party claim.</p>\n<h2>How the comp lien changes what you keep</h2>\n<p>Your comp insurer is usually entitled to be repaid from a third-party settlement for the benefits it paid. This is called a lien, or subrogation. Many states reduce the lien by its share of the attorney fee and costs, and some let the insurer take a credit against future benefits instead. Enter what comp has paid so far. The take-home figure subtracts all of it, which is the cautious assumption.</p>\n<h2>New York’s Scaffold Law</h2>\n<p>New York’s Labor Law § 240(1) requires owners and contractors to provide proper protection against falls from height and falling objects. When that protection is missing or fails and causes the injury, they are liable, and the worker’s own carelessness is not a defense unless it was the only cause of the accident. If you pick New York, the calculator flags it.</p>\n<h2>Common construction injuries</h2>\n<p>OSHA’s “Focus Four” hazards cause most construction deaths: falls, being struck by an object, being caught in or between equipment, and electrocution. The same hazards cause many of the most serious injuries that don’t kill, such as spinal and brain injuries, crushed limbs and burns.</p>\n<h2>Evidence that matters</h2>\n<ul>\n<li>The incident report, and the names of witnesses and the foreman</li>\n<li>Photos of the scaffold, ladder, guardrail or equipment involved</li>\n<li>Contracts showing who was responsible for safety on the site</li>\n<li>Any OSHA inspection or citation after the accident</li>\n</ul>\n<p>Read how the two claims fit together in <a href=\"/blog/workers-comp-vs-personal-injury-claim/\">workers’ comp or a personal injury claim: can you file both?</a>, and estimate the comp side with the <a href=\"/workers-comp-settlement-calculator/\">workers’ comp settlement calculator</a>.</p>",
+  "faqs": [
+   {
+    "question": "Can I sue my employer after a construction accident?",
+    "answer": "Usually not. Workers’ compensation is the only remedy against your employer in nearly every state, with narrow exceptions such as intentional harm or an employer that had no comp coverage. You can usually sue other companies or people whose negligence caused the injury."
+   },
+   {
+    "question": "Do I have to pay workers’ comp back from my settlement?",
+    "answer": "Usually part of it. The comp insurer has a lien on a third-party recovery for the benefits it paid. Many states reduce the lien by a share of the attorney fee, and lawyers often negotiate it down further."
+   },
+   {
+    "question": "Who can be liable for a construction site injury?",
+    "answer": "A general contractor or subcontractor that controlled the work, the property owner, an equipment manufacturer or rental company, sometimes an architect or engineer, and drivers in work zones."
+   },
+   {
+    "question": "How long do I have to file?",
+    "answer": "The third-party claim follows your state’s personal injury deadline, shown in the result. Workers’ comp has its own, often shorter, notice and filing deadlines."
+   }
+  ],
+  "sources": [
+   {
+    "label": "OSHA: Construction Focus Four hazards",
+    "url": "https://osha.gov/training/outreach/construction/focus-four"
+   },
+   {
+    "label": "New York Labor Law § 240 (statute text)",
+    "url": "https://newyork.public.law/laws/n.y._labor_law_section_240"
+   },
+   {
+    "label": "Matthiesen, Wickert & Lehrer: workers’ comp subrogation in construction, 50-state survey",
+    "url": "https://www.mwl-law.com/resources/workers-comp-subrogation-construction-settings-50-states"
+   }
+  ]
+ },
+ "drunk-driving-accident-settlement-calculator": {
+  "title": "Drunk Driving Accident Settlement Calculator",
+  "metaTitle": "Drunk Driving Accident Settlement Calculator | ClaimValuator",
+  "metaDescription": "Estimate an injury claim against a drunk or impaired driver, with your state’s fault and no-fault rules, the driver’s policy limit and dram shop notes.",
+  "excerpt": "Estimate an injury claim against a drunk or impaired driver. Your state’s fault rule, no-fault rules and the driver’s policy limit are applied, with notes on dram shop claims and punitive damages.",
+  "html": "<h2>How a drunk driving claim is valued</h2>\n<p>The core of the claim is the same as any crash: medical bills, lost income and pain and suffering, reduced by any share of fault on your side and limited in practice by the insurance that can pay. Evidence of impairment, such as a DUI arrest, a breath or blood test or a conviction, makes fault much easier to prove and tends to push insurers toward the higher end of the range.</p>\n<p>NHTSA counted 12,429 people killed in alcohol-impaired-driving crashes in 2023, about 30 percent of all U.S. traffic deaths. Those crashes also cause many of the most serious injury claims.</p>\n<h2>Punitive damages</h2>\n<p>Many states let a jury add punitive damages against a driver who chose to drive drunk, to punish the conduct rather than repay a loss. They are not part of this estimate because they are uncertain, some states cap them, and some states don’t let insurance pay them, so they may have to be collected from the driver personally.</p>\n<h2>Bars, restaurants and hosts (dram shop claims)</h2>\n<p>Most states allow a claim against a business that served or sold alcohol to someone who was visibly intoxicated or underage, and some extend this to social hosts. A dram shop claim can add a second insurance policy, which matters when the driver carries only the state minimum. Some states set shorter deadlines or notice rules for these claims, so raise them early.</p>\n<h2>The criminal case and your claim</h2>\n<p>The criminal DUI case and your injury claim run separately. A conviction helps prove fault, and a criminal court may order restitution for some costs, but restitution rarely covers pain and suffering. You don’t need to wait for the criminal case to end before making the claim, and your filing deadline keeps running either way.</p>\n<p>See also <a href=\"/blog/do-you-need-a-car-accident-lawyer/\">do you need a car accident lawyer?</a>, and check the coverage gap with the <a href=\"/policy-limits-calculator/\">policy limits calculator</a>.</p>",
+  "faqs": [
+   {
+    "question": "Is a drunk driving settlement worth more?",
+    "answer": "Often, because fault is clear and juries react strongly to drunk driving, which gives insurers less room to argue. The damages are valued the same way as in any crash, and the payout is still limited by the insurance available unless the driver or a bar has other coverage or assets."
+   },
+   {
+    "question": "Can I sue the bar that served the drunk driver?",
+    "answer": "In most states, yes, if the bar served someone who was visibly intoxicated or underage. The rules differ a lot from state to state, and a few states don’t allow these claims at all."
+   },
+   {
+    "question": "Does my claim depend on the driver being convicted?",
+    "answer": "No. A civil claim uses a lower standard of proof than a criminal case. A conviction or guilty plea helps, but you can recover even if the criminal charge is reduced or dismissed."
+   }
+  ],
+  "sources": [
+   {
+    "label": "NHTSA: Alcohol-Impaired Driving, 2023 Data (DOT HS 813 713)",
+    "url": "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813713"
+   }
+  ]
+ },
+ "uninsured-motorist-claim-calculator": {
+  "title": "Uninsured Motorist Claim Calculator",
+  "metaTitle": "Uninsured Motorist Claim Calculator (UM and Hit-and-Run)",
+  "metaDescription": "Estimate what your uninsured motorist coverage should pay after a hit-and-run or a crash with an uninsured driver, capped at your UM limit.",
+  "excerpt": "Estimate what your own uninsured motorist (UM) coverage should pay after a hit-and-run or a crash with a driver who had no insurance, capped at your UM limit.",
+  "html": "<h2>How a UM claim works</h2>\n<p>When the driver who caused the crash has no insurance, or drives off and can’t be found, your own uninsured motorist coverage takes the place of the liability insurance they should have had. Your insurer pays what the at-fault driver would owe you, up to your UM limit, and it can raise the same arguments the other driver’s insurer would, including your share of the fault.</p>\n<p>The Insurance Research Council estimates that 15.4 percent of U.S. drivers, more than one in seven, were uninsured in 2023, so these claims are common.</p>\n<h2>Your UM limit is the ceiling</h2>\n<p>The calculator values the injury claim, then compares it with the UM limit you pick. If the value is higher, the limit is what you can expect from this coverage. Some states let you combine (stack) UM coverage across several vehicles or policies, which raises the ceiling; check your declarations page. If the other driver had some insurance but not enough, use the <a href=\"/policy-limits-calculator/\">policy limits calculator</a> for an underinsured (UIM) claim.</p>\n<h2>Hit-and-run claims</h2>\n<p>Most policies require you to report a hit-and-run to the police within a short time and to tell your insurer promptly. Some states also require physical contact with the other vehicle, or an independent witness, before UM coverage applies to a vehicle that never touched you.</p>\n<h2>No-fault states</h2>\n<p>In a no-fault state, your personal injury protection (PIP) pays medical bills and lost wages first. The UM claim covers pain and suffering and losses above PIP once the injury meets the state’s threshold. The calculator applies this when you pick a no-fault state.</p>\n<h2>Deadlines</h2>\n<p>A UM claim is made under your insurance contract, so its deadline can differ from the injury lawsuit deadline shown in the result. Some policies and states require you to demand arbitration or sue within a set time after the crash. Read the UM section of your policy and act well before either date.</p>\n<p>Our guide to <a href=\"/blog/hit-and-run-uninsured-motorist-claim/\">hit-and-run and uninsured driver claims</a> covers the first steps.</p>",
+  "faqs": [
+   {
+    "question": "How much does uninsured motorist coverage pay?",
+    "answer": "Up to the UM limit on your policy for the injury damages the uninsured driver would have owed you. It doesn’t pay more than the claim is worth, and your share of the fault can reduce it."
+   },
+   {
+    "question": "Can I make a UM claim after a hit-and-run?",
+    "answer": "Yes, in most states, if you report the crash to the police promptly and notify your insurer. Some states require physical contact with the hit-and-run vehicle or a witness who can confirm what happened."
+   },
+   {
+    "question": "Do I need a lawyer to make a UM claim against my own insurer?",
+    "answer": "Not always, but your insurer is on the other side of this claim. If it disputes the value, many policies send the claim to arbitration, and a lawyer can help with that process."
+   },
+   {
+    "question": "What if I was partly at fault?",
+    "answer": "Your state’s fault rule applies the same way it would against the other driver. The calculator reduces the value by your share, or shows the claim as barred where your state’s rule would."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Insurance Information Institute: Facts and statistics on uninsured motorists",
+    "url": "https://www.iii.org/fact-statistic/facts-statistics-uninsured-motorists"
+   }
+  ]
+ },
+ "back-injury-settlement-calculator": {
+  "title": "Back Injury Settlement Calculator",
+  "metaTitle": "Back Injury Settlement Calculator | ClaimValuator",
+  "metaDescription": "Estimate a back injury claim, from a strain that heals in weeks to spine surgery, with your state’s fault rule and filing deadline applied.",
+  "excerpt": "Estimate a back injury claim from your medical bills, lost income and how serious the injury is, from a strain that heals in weeks to surgery and lasting limits.",
+  "html": "<h2>How a back injury claim is valued</h2>\n<p>Insurers start from the medical bills and lost income, then add an amount for pain and suffering that rises with how serious and lasting the injury is. Back injuries cover a wide spread. A lumbar strain may heal in a few weeks with therapy, while a fracture or a disc injury that needs surgery can change what someone can do for the rest of their life.</p>\n<p>Use the band that matches your treatment and your doctor’s outlook, not how much it hurt on the worst day. The calculator applies your state’s fault rule, any cap on non-economic damages and the filing deadline.</p>\n<h2>What moves a back injury into a higher band</h2>\n<ul>\n<li>Imaging that shows a structural injury, such as a fracture or a herniated disc pressing on a nerve</li>\n<li>Injections, surgery or a referral to a spine surgeon</li>\n<li>A doctor’s note on permanent restrictions, such as lifting limits</li>\n<li>Time off work, or a move to lighter work at lower pay</li>\n</ul>\n<h2>The pre-existing condition argument</h2>\n<p>Most adults have some wear in the spine by middle age, and insurers often point to it on an MRI to argue the accident didn’t cause the pain. In most states you can still recover when an accident makes an existing condition worse. The records that answer the argument are treatment notes from before the accident showing no similar complaints, and a treating doctor who connects the new symptoms to the accident.</p>\n<p>For disc injuries, see the <a href=\"/herniated-disc-settlement-calculator/\">herniated disc calculator</a> and our guide to <a href=\"/blog/herniated-disc-settlement/\">herniated disc settlement value</a>.</p>",
+  "faqs": [
+   {
+    "question": "What is the average settlement for a back injury?",
+    "answer": "There is no reliable public average for back injuries alone, because they range from strains to paralysis. Your claim’s value depends on your medical costs, lost income, how long recovery takes and whether there is lasting harm, and then on fault and the insurance available. Use the calculator with your own figures rather than an average."
+   },
+   {
+    "question": "Does back surgery increase a settlement?",
+    "answer": "Usually, yes. Surgery adds medical costs and is strong evidence of a serious injury, which moves the pain and suffering multiplier up. Surgery a doctor has recommended but you haven’t had yet can be counted as a future medical cost if it is documented."
+   },
+   {
+    "question": "How long does a back injury claim take?",
+    "answer": "Most claims wait until you finish treatment or reach maximum medical improvement, so the full value is known. Estimate the stages with the <a href=\"/settlement-timeline-calculator/\">settlement timeline calculator</a>."
+   }
+  ],
+  "sources": [
+   {
+    "label": "AAOS OrthoInfo: Herniated disk in the lower back",
+    "url": "https://www.orthoinfo.org/diseases--conditions/herniated-disk-in-the-lower-back/"
+   },
+   {
+    "label": "AAOS OrthoInfo: Sprains, strains and other soft-tissue injuries",
+    "url": "https://orthoinfo.aaos.org/en/diseases--conditions/sprains-strains-and-other-soft-tissue-injuries"
+   }
+  ]
+ },
+ "knee-injury-settlement-calculator": {
+  "title": "Knee Injury Settlement Calculator",
+  "metaTitle": "Knee Injury Settlement Calculator | ClaimValuator",
+  "metaDescription": "Estimate a knee injury claim, from a sprain to a torn meniscus or ACL and knee surgery, with your state’s fault rule and filing deadline applied.",
+  "excerpt": "Estimate a knee injury claim, from a sprain to a torn meniscus or ACL and knee surgery. Your state’s fault rule and filing deadline are applied.",
+  "html": "<h2>How a knee injury claim is valued</h2>\n<p>The calculator adds your medical bills and lost income, then a pain and suffering range that rises with severity. Knee injuries are common in car crashes, when a knee hits the dashboard, and in falls and work accidents. Their value depends on what was damaged and whether the knee recovers fully.</p>\n<p>Use the band that matches your treatment and your doctor’s outlook, not how much it hurt on the worst day. The calculator applies your state’s fault rule, any cap on non-economic damages and the filing deadline.</p>\n<h2>What moves a knee injury into a higher band</h2>\n<ul>\n<li>An MRI showing a torn meniscus or ligament (ACL, MCL or PCL), or a fracture of the kneecap or the ends of the leg bones</li>\n<li>Arthroscopic repair, ligament reconstruction or fracture surgery</li>\n<li>Months of physical therapy, or a knee that still gives way</li>\n<li>A doctor’s opinion that arthritis or a knee replacement is more likely because of the injury</li>\n</ul>\n<p>Future surgery a doctor recommends, including a likely knee replacement, can be counted as a future medical cost. Enter it in the future medical field so the estimate reflects it.</p>\n<h2>Evidence that matters</h2>\n<p>Meniscus tears also come with age, so insurers may argue a tear was already there. As with back injuries, records from before the accident and a doctor who links the new symptoms to it carry the most weight. Photos of swelling and bruising taken soon after the accident help too.</p>\n<p>If you were hurt in a fall on someone else’s property, the <a href=\"/slip-and-fall-settlement-calculator/\">slip and fall calculator</a> adds the premises liability rules.</p>",
+  "faqs": [
+   {
+    "question": "How much is a torn meniscus settlement worth?",
+    "answer": "It depends on whether the tear needed surgery, how long you were off work and whether the knee recovered. A tear treated with therapy usually falls in the moderate band; one that needed surgery or left lasting problems moves higher. Enter your own bills and pick the band that matches your treatment."
+   },
+   {
+    "question": "Does a knee replacement increase a settlement?",
+    "answer": "Yes, when the accident caused or sped up the need for it. A knee replacement is major surgery with a long recovery and future costs, which usually puts a claim in the severe band or above."
+   },
+   {
+    "question": "Can I claim for a knee injury if I had knee problems before?",
+    "answer": "Usually, yes. In most states you can recover for making an existing condition worse. Expect the insurer to ask for your earlier records."
+   }
+  ],
+  "sources": [
+   {
+    "label": "AAOS OrthoInfo: Meniscus tears",
+    "url": "https://orthoinfo.aaos.org/en/diseases--conditions/meniscus-tears/"
+   },
+   {
+    "label": "AAOS OrthoInfo: Sprains, strains and other soft-tissue injuries",
+    "url": "https://orthoinfo.aaos.org/en/diseases--conditions/sprains-strains-and-other-soft-tissue-injuries"
+   }
+  ]
+ },
+ "traumatic-brain-injury-settlement-calculator": {
+  "title": "Brain Injury and Concussion Settlement Calculator",
+  "metaTitle": "Brain Injury (TBI) and Concussion Settlement Calculator",
+  "metaDescription": "Estimate a concussion or traumatic brain injury claim from treatment costs, lost income and how lasting the symptoms are, with your state’s rules applied.",
+  "excerpt": "Estimate a concussion or traumatic brain injury claim from treatment costs, lost income and how lasting the symptoms are. Your state’s fault rule, deadline and any damages cap are applied.",
+  "html": "<h2>How a brain injury claim is valued</h2>\n<p>A traumatic brain injury (TBI) ranges from a concussion that clears up in weeks to a severe injury that changes memory, personality and the ability to work. The calculator adds your medical costs and lost income, including future care and earnings if a doctor expects lasting effects, then applies a pain and suffering range that rises with severity.</p>\n<p>Future losses matter most in serious brain injury claims. If you can’t go back to the same work, the earnings lost over the rest of a career can be larger than the medical bills. Lawyers usually put a number on this with a life care plan or a vocational assessment; enter those figures in the future fields.</p>\n<h2>Proving an injury that doesn’t show on a scan</h2>\n<p>Most concussions don’t show on a CT scan or a standard MRI, and insurers use that to argue the injury is minor. These claims are usually carried by:</p>\n<ul>\n<li>Emergency or primary care records noting a blow to the head, confusion or loss of consciousness</li>\n<li>Neuropsychological testing that measures memory, attention and processing speed</li>\n<li>Treatment for lasting symptoms such as headaches, dizziness, or vision or sleep problems</li>\n<li>Statements from family, friends and co-workers who saw the change</li>\n</ul>\n<h2>Caps and deadlines</h2>\n<p>Some states cap non-economic damages, and the calculator applies your state’s cap. A few states lift or raise the cap for catastrophic injuries, which is why picking the right band matters. The filing deadline is shown in the result, and symptoms that appear later don’t usually extend it.</p>\n<p>Read more in our guide to <a href=\"/blog/concussion-tbi-settlement/\">concussion and brain injury settlements</a>.</p>",
+  "faqs": [
+   {
+    "question": "How much is a concussion settlement worth?",
+    "answer": "A concussion that clears up within weeks is usually valued like other minor injuries, mostly from the medical bills. Post-concussion symptoms that last months, need therapy or affect work raise the value a lot. There is no reliable public average, so start from your own costs."
+   },
+   {
+    "question": "Can I get a settlement for a concussion if my CT scan was normal?",
+    "answer": "Yes. Concussions often don’t appear on imaging. Records of your symptoms, a diagnosis from your doctor and neuropsychological testing are the usual proof."
+   },
+   {
+    "question": "What is a life care plan?",
+    "answer": "A report, usually by a nurse or rehabilitation specialist, listing the care, therapy, equipment and help someone with a lasting injury will need, with the costs over their lifetime. It is the main evidence for future medical damages in severe brain injury claims."
+   }
+  ],
+  "sources": [
+   {
+    "label": "NINDS: Traumatic brain injury",
+    "url": "https://www.ninds.nih.gov/publications/traumatic-brain-injury"
+   }
+  ]
+ },
+ "herniated-disc-settlement-calculator": {
+  "title": "Herniated Disc Settlement Calculator",
+  "metaTitle": "Herniated Disc Settlement Calculator | ClaimValuator",
+  "metaDescription": "Estimate a herniated or bulging disc claim with and without surgery, from your medical bills, lost income and how lasting the symptoms are.",
+  "excerpt": "Estimate a herniated or bulging disc claim, with and without surgery, from your medical bills, lost income and how lasting the symptoms are.",
+  "html": "<h2>How a herniated disc claim is valued</h2>\n<p>A disc injury in the neck or lower back is valued from the medical bills and lost income, plus a pain and suffering range. Treatment drives the band. Many herniated discs improve with therapy and time, while nerve symptoms that don’t respond can lead to injections and then surgery, such as a discectomy, a laminectomy or a fusion.</p>\n<p>Use the band that matches your treatment and your doctor’s outlook, not how much it hurt on the worst day. The calculator applies your state’s fault rule, any cap on non-economic damages and the filing deadline.</p>\n<h2>Surgery and the value of the claim</h2>\n<p>Surgery raises a disc claim in two ways: it adds large medical costs, and it is strong evidence that the injury is serious. A fusion, which permanently joins vertebrae, usually sits in the severe band or higher. If a surgeon has recommended an operation you haven’t had yet, its cost can be claimed as a future medical expense when it is documented.</p>\n<h2>Bulging or herniated</h2>\n<p>A bulging disc extends past its normal space without its tough outer layer tearing. A herniated disc has a tear that lets the soft inner material push out, sometimes onto a nerve. Insurers often treat bulges as age-related. What matters most is whether your symptoms match the disc level on the MRI and started after the accident.</p>\n<h2>Degeneration is the insurer’s main argument</h2>\n<p>Disc degeneration is common with age, so the defense will usually say the herniation was already there. The answer is the same as for other spine claims: earlier records showing no similar complaints, and a treating doctor who explains why the accident caused or worsened the injury.</p>\n<p>See the full guide to <a href=\"/blog/herniated-disc-settlement/\">herniated disc settlement value</a>.</p>",
+  "faqs": [
+   {
+    "question": "What is the average herniated disc settlement?",
+    "answer": "There is no reliable public average. Claims without surgery and with a good recovery are usually valued in the moderate band; surgery, especially a fusion, moves the value much higher. Enter your own bills and pick the band that matches your treatment."
+   },
+   {
+    "question": "Is a herniated disc from a car accident worth more if I need surgery?",
+    "answer": "Usually, yes. Surgery adds costs and shows the injury is serious, which raises the multiplier insurers use for pain and suffering."
+   },
+   {
+    "question": "Can I still claim if my MRI shows degeneration?",
+    "answer": "Yes. Most states allow recovery for making an existing condition worse. The question is how much of your current problem the accident caused, which your doctor’s opinion helps answer."
+   }
+  ],
+  "sources": [
+   {
+    "label": "AAOS OrthoInfo: Herniated disk",
+    "url": "https://orthoinfo.aaos.org/en/diseases--conditions/herniated-disk"
+   },
+   {
+    "label": "AAOS OrthoInfo: Herniated disk in the lower back",
+    "url": "https://www.orthoinfo.org/diseases--conditions/herniated-disk-in-the-lower-back/"
+   }
+  ]
+ },
+ "whiplash-settlement-calculator": {
+  "title": "Whiplash Settlement Calculator",
+  "metaTitle": "Whiplash Settlement Calculator | ClaimValuator",
+  "metaDescription": "Estimate a whiplash or neck strain claim from your medical bills, lost income and how long symptoms last, with your state’s fault rule applied.",
+  "excerpt": "Estimate a whiplash or neck strain claim from your medical bills, lost income and how long symptoms last. Your state’s fault rule and filing deadline are applied.",
+  "html": "<h2>How a whiplash claim is valued</h2>\n<p>Whiplash is a neck injury caused by a sudden back-and-forth movement of the head, most often in rear-end crashes. Most people recover within weeks to a few months, so most whiplash claims sit in the minor band and are valued mostly from the medical bills and time off work. A claim rises when symptoms last beyond a few months or imaging shows a disc or nerve injury.</p>\n<h2>Why insurers value whiplash low</h2>\n<p>Soft-tissue injuries don’t show on X-rays, and insurers see a lot of them, so adjusters often start low and look for reasons to discount: a delay before the first treatment, gaps in care, a low-speed crash with little vehicle damage, or an earlier neck complaint.</p>\n<h2>What raises a whiplash claim</h2>\n<ul>\n<li>Treatment soon after the crash, and steady care without long gaps</li>\n<li>A specialist referral, imaging or injections when symptoms persist</li>\n<li>A doctor’s note on how long symptoms are expected to last</li>\n<li>Photos of the vehicle damage and the repair estimate</li>\n</ul>\n<h2>No-fault states</h2>\n<p>In a no-fault state, PIP pays the medical bills and some lost wages, and you can claim pain and suffering only if the injury meets the state’s threshold. Many whiplash claims don’t, so use the <a href=\"/car-accident-settlement-calculator/\">car accident calculator</a> there, which applies the threshold.</p>\n<p>Read the full guide to <a href=\"/blog/whiplash-settlement/\">whiplash settlement amounts</a>, and if you were rear-ended, see <a href=\"/blog/rear-end-accident-settlement/\">rear-end collision settlements</a>.</p>",
+  "faqs": [
+   {
+    "question": "What is the average whiplash settlement?",
+    "answer": "Most whiplash claims are small because most people recover within months, so the medical bills and lost wages drive the number. There is no reliable public average for whiplash alone. Lasting symptoms, imaging findings or injections raise the value."
+   },
+   {
+    "question": "How long after a car accident can whiplash show up?",
+    "answer": "Neck pain and stiffness often begin within a day or so of the crash rather than right away. See a doctor as soon as symptoms start, because a long delay before treatment is one of the main reasons insurers discount a claim."
+   },
+   {
+    "question": "Do I need a lawyer for a whiplash claim?",
+    "answer": "Not always. Small claims with clear fault often settle directly with the insurer. A lawyer helps more when symptoms last, fault is disputed, or the offer doesn’t cover your bills."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Johns Hopkins Medicine: Whiplash injury",
+    "url": "https://www.hopkinsmedicine.org/health/conditions-and-diseases/whiplash-injury"
+   },
+   {
+    "label": "AAOS OrthoInfo: Sprains, strains and other soft-tissue injuries",
+    "url": "https://orthoinfo.aaos.org/en/diseases--conditions/sprains-strains-and-other-soft-tissue-injuries"
+   }
+  ]
+ },
+ "soft-tissue-injury-settlement-calculator": {
+  "title": "Soft Tissue Injury Settlement Calculator",
+  "metaTitle": "Soft Tissue Injury Settlement Calculator | ClaimValuator",
+  "metaDescription": "Estimate a claim for sprains, strains, bruising and other soft-tissue injuries from your medical bills, lost income and how long recovery takes.",
+  "excerpt": "Estimate a claim for sprains, strains, bruising and other soft-tissue injuries from your medical bills, lost income and how long recovery takes.",
+  "html": "<h2>How a soft-tissue claim is valued</h2>\n<p>Soft-tissue injuries damage muscles, tendons and ligaments rather than bone: sprains (ligaments), strains (muscles or tendons) and contusions (bruises). Most heal within weeks to a few months with rest and therapy, so these claims usually sit in the minor band and are valued mostly from medical bills and time off work.</p>\n<h2>When a soft-tissue injury is worth more</h2>\n<ul>\n<li>A complete tear of a tendon or ligament that needs surgery</li>\n<li>Symptoms that last past several months despite treatment</li>\n<li>Lasting limits on lifting, standing or work duties</li>\n<li>Injuries to several parts of the body at once</li>\n</ul>\n<h2>Making the claim hold up</h2>\n<p>Because soft-tissue injuries rarely show on X-rays, the record of treatment is the proof. Get checked promptly, follow the treatment plan, keep therapy appointments, and keep a short diary of pain and the things you couldn’t do. Gaps in treatment are the most common reason an adjuster cuts an offer.</p>\n<p>For a neck injury from a crash, the <a href=\"/whiplash-settlement-calculator/\">whiplash calculator</a> has more specific guidance.</p>",
+  "faqs": [
+   {
+    "question": "What is the average soft-tissue injury settlement?",
+    "answer": "Most are modest because recovery is usually quick, and there is no reliable public average. Your total medical bills and lost wages set the base; lasting symptoms or surgery raise it."
+   },
+   {
+    "question": "Why did the insurer call my injury “just soft tissue”?",
+    "answer": "Adjusters often group sprains and strains as minor injuries and offer close to the medical bills. Complete treatment records, prompt care and a doctor’s note on lasting limits are the best answers."
+   },
+   {
+    "question": "Can a soft-tissue injury be permanent?",
+    "answer": "Sometimes. Some people have pain or reduced movement that lasts for years. If a doctor documents a lasting limit, the claim moves into a higher band."
+   }
+  ],
+  "sources": [
+   {
+    "label": "AAOS OrthoInfo: Sprains, strains and other soft-tissue injuries",
+    "url": "https://orthoinfo.aaos.org/en/diseases--conditions/sprains-strains-and-other-soft-tissue-injuries"
+   },
+   {
+    "label": "Merck Manual: Overview of sprains and other soft-tissue injuries",
+    "url": "https://www.merckmanuals.com/home/injuries-and-poisoning/sprains-and-other-soft-tissue-injuries/overview-of-sprains-and-other-soft-tissue-injuries"
+   }
+  ]
+ },
+ "settlement-timeline-calculator": {
+  "title": "Settlement Timeline Calculator: When Will I Get My Check?",
+  "metaTitle": "Settlement Timeline Calculator: When Will I Get My Check?",
+  "metaDescription": "See roughly when a personal injury settlement check will arrive, stage by stage from where your claim is now, with your filing deadline checked.",
+  "excerpt": "See roughly when a personal injury settlement check is likely to arrive, stage by stage, from where your claim is now. Your state’s filing deadline is checked against the timeline.",
+  "html": "<h2>How the estimate works</h2>\n<p>The calculator adds up the usual length of each stage still ahead of you: finishing treatment, preparing and sending a demand, the insurer’s review, negotiation or a lawsuit, and the steps after you agree, such as signing the release, the check clearing and liens being paid. The stage lengths match the table in our guide, <a href=\"/blog/how-long-does-a-settlement-take/\">how long does a personal injury settlement take?</a></p>\n<p>Treatment is the stage that varies most, so the calculator uses the injury’s severity and the date of the injury to estimate how much treatment is left. If your doctor has given you an end date, your real timeline may be shorter or longer.</p>\n<h2>After you agree to settle</h2>\n<ul>\n<li><strong>Release.</strong> You sign a release that ends the claim. The insurer usually issues payment within a few weeks of receiving it.</li>\n<li><strong>Trust account.</strong> If you have a lawyer, the check goes into the lawyer’s trust account and has to clear before money is paid out.</li>\n<li><strong>Liens.</strong> Health insurers, hospitals, Medicare and Medicaid that paid your bills are repaid from the settlement. Medicare is often the slowest, because it issues a final demand only after the settlement is reported.</li>\n</ul>\n<h2>The filing deadline doesn’t wait</h2>\n<p>Negotiating with an insurer doesn’t pause the statute of limitations. If the estimate runs past your deadline, the result warns you: a lawsuit would have to be filed before then to keep the claim alive, and the timeline would get longer. Check the exact date with the <a href=\"/statute-of-limitations-calculator/\">statute of limitations calculator</a>.</p>\n<h2>What speeds a claim up</h2>\n<ul>\n<li>Clear fault, and complete medical records sent with the demand</li>\n<li>Quick answers to the adjuster’s questions</li>\n<li>Asking lienholders for their final amounts early</li>\n</ul>",
+  "faqs": [
+   {
+    "question": "How long after a settlement do you get the check?",
+    "answer": "Usually two to six weeks after you sign the release, and a little longer with a lawyer because the money clears the lawyer’s trust account before your share is paid. Liens, especially Medicare’s, can delay your share further."
+   },
+   {
+    "question": "Why is my settlement taking so long?",
+    "answer": "The usual reasons are ongoing treatment, disputed fault, damages above the insurance limit, a lawsuit, or liens that haven’t been resolved. Ask your lawyer or adjuster which stage your claim is in."
+   },
+   {
+    "question": "Can I get money before my case settles?",
+    "answer": "Some companies offer pre-settlement funding, a cash advance repaid from the settlement, often at a high cost. Read the terms carefully and ask your lawyer first. PIP or MedPay coverage may also pay some bills while the claim is open."
+   }
+  ],
+  "sources": [
+   {
+    "label": "CMS: Non-group health plan recovery (Medicare liens on settlements)",
+    "url": "https://www.cms.gov/Medicare/Coordination-of-Benefits-and-Recovery/Coordination-of-Benefits-and-Recovery-Overview/Non-Group-Health-Plan-Recovery/Non-Group-Health-Plan-Recovery"
+   },
+   {
+    "label": "CMS: Conditional payment information for attorneys",
+    "url": "https://www.cms.gov/Medicare/Coordination-of-Benefits-and-Recovery/Attorney-Services/Conditional-Payment-Information/Conditional-Payment-Information"
+   }
+  ]
+ }
+}
