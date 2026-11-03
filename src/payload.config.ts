@@ -40,6 +40,7 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
     user: Users.slug,
+    meta: { titleSuffix: ' | ClaimValuator editor' },
     livePreview: {
       breakpoints: [
         {

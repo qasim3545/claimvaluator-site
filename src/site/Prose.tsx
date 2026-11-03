@@ -7,7 +7,7 @@ import { type JSXConvertersFunction, LinkJSXConverter, RichText } from '@payload
 import React from 'react'
 
 import { docPath } from '@/utilities/paths'
-import { CalcBlock } from './CalcBlock'
+import { CalcBlock, EngineScripts, StatesData } from './CalcBlock'
 import { Img } from './Img'
 import { hasLexical, lexicalText, prepareHtml, slugify } from './text'
 
@@ -106,7 +106,18 @@ export function Prose({ data, legacyHtml, className = 'prose' }: { data?: any; l
     )
   }
   if (legacyHtml && legacyHtml.trim()) {
-    return <div className={className} dangerouslySetInnerHTML={{ __html: prepareHtml(legacyHtml).html }} />
+    const needsEngine = /data-cv-(calc|picker|filter|toolsearch)/.test(legacyHtml)
+    return (
+      <>
+        <div className={className} dangerouslySetInnerHTML={{ __html: prepareHtml(legacyHtml).html }} />
+        {needsEngine ? (
+          <>
+            <StatesData />
+            <EngineScripts />
+          </>
+        ) : null}
+      </>
+    )
   }
   return null
 }

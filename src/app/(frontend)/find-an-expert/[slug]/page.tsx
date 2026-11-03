@@ -18,5 +18,7 @@ export default async function Expert({ params }: Args) {
 export async function generateMetadata({ params }: Args): Promise<Metadata> {
   const { slug } = await params
   const doc = await findOne('lawyers', 'slug', slug, 1)
-  return doc ? buildMeta({ doc, path: `/find-an-expert/${slug}/`, title: `${doc.title} | ClaimValuator`, description: doc.excerpt }) : {}
+  if (!doc) return {}
+  const meta = buildMeta({ doc, path: `/find-an-expert/${slug}/`, title: `${doc.title}${doc.firm ? `, ${doc.firm}` : ''} | ClaimValuator`, description: doc.excerpt })
+  return doc.indexing === 'index' ? meta : { ...meta, robots: { index: false, follow: true } }
 }

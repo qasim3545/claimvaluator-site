@@ -6,7 +6,7 @@ import { slugField } from 'payload'
 import { articleEditor } from '../../fields/articleEditor'
 import { populatePublishedAt } from '../../hooks/populatePublishedAt'
 import { generatePreviewPath } from '../../utilities/generatePreviewPath'
-import { revalidateDelete, revalidatePage } from './hooks/revalidatePage'
+import { revalidateDoc, revalidateDocDelete } from '../../hooks/revalidateDoc'
 
 import { faqsField, legacyHtmlField, reviewFields, seoTab, sourcesField } from '../../fields/shared'
 
@@ -87,9 +87,9 @@ export const Pages: CollectionConfig<'pages'> = {
     slugField(),
   ],
   hooks: {
-    afterChange: [revalidatePage],
+    afterChange: [revalidateDoc('pages')],
     beforeChange: [populatePublishedAt],
-    afterDelete: [revalidateDelete],
+    afterDelete: [revalidateDocDelete('pages')],
   },
   versions: {
     drafts: {

@@ -864,11 +864,14 @@ export interface StatePage {
 export interface Lawyer {
   id: number;
   title: string;
-  excerpt?: string | null;
+  first?: string | null;
+  middle?: string | null;
+  last?: string | null;
+  suffix?: string | null;
+  jobTitle?: string | null;
   firm?: string | null;
-  state?: (number | null) | State;
   city?: string | null;
-  status?: ('confirmed' | 'unconfirmed') | null;
+  state?: (number | null) | State;
   practiceAreas?:
     | (
         | 'Personal injury'
@@ -893,6 +896,7 @@ export interface Lawyer {
         | 'Aviation accidents'
       )[]
     | null;
+  excerpt?: string | null;
   content?: {
     root: {
       type: string;
@@ -912,6 +916,24 @@ export interface Lawyer {
    * Shown when the rich-text body above is empty. Kept so nothing is lost in the move; rewrite into the editor over time.
    */
   legacyHtml?: string | null;
+  year?: number | null;
+  jd?: number | null;
+  school?: string | null;
+  regNo?: string | null;
+  regStatus?: string | null;
+  bars?: string[] | null;
+  regions?: string[] | null;
+  countries?: string[] | null;
+  website?: string | null;
+  publicEmail?: string | null;
+  publicPhone?: string | null;
+  image?: string | null;
+  verified?: ('registry' | 'admin' | 'unverified') | null;
+  source?: ('ny-registry' | 'submission' | 'admin') | null;
+  sourceLabel?: string | null;
+  sourceUrl?: string | null;
+  sourceChecked?: string | null;
+  indexing?: ('index' | 'noindex') | null;
   meta?: {
     title?: string | null;
     /**
@@ -1590,14 +1612,36 @@ export interface StatePagesSelect<T extends boolean = true> {
  */
 export interface LawyersSelect<T extends boolean = true> {
   title?: T;
-  excerpt?: T;
+  first?: T;
+  middle?: T;
+  last?: T;
+  suffix?: T;
+  jobTitle?: T;
   firm?: T;
-  state?: T;
   city?: T;
-  status?: T;
+  state?: T;
   practiceAreas?: T;
+  excerpt?: T;
   content?: T;
   legacyHtml?: T;
+  year?: T;
+  jd?: T;
+  school?: T;
+  regNo?: T;
+  regStatus?: T;
+  bars?: T;
+  regions?: T;
+  countries?: T;
+  website?: T;
+  publicEmail?: T;
+  publicPhone?: T;
+  image?: T;
+  verified?: T;
+  source?: T;
+  sourceLabel?: T;
+  sourceUrl?: T;
+  sourceChecked?: T;
+  indexing?: T;
   meta?:
     | T
     | {

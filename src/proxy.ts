@@ -5,11 +5,10 @@ import { NextResponse, type NextRequest } from 'next/server'
  * /about → 301 → /about/. Admin, API and files are left alone.
  */
 export function proxy(req: NextRequest) {
-  const { pathname } = req.nextUrl
+  const { pathname, search } = req.nextUrl
   if (pathname === '/' || pathname.endsWith('/') || /\.[a-z0-9]{2,5}$/i.test(pathname)) return NextResponse.next()
-  const url = req.nextUrl.clone()
-  url.pathname = `${pathname}/`
-  return NextResponse.redirect(url, 301)
+  const target = new URL(`${pathname}/${search}`, req.url)
+  return new NextResponse(null, { status: 301, headers: { Location: target.toString() } })
 }
 
 export const config = {

@@ -11,6 +11,7 @@ const safe = (path: string) => {
 }
 
 const indexFor: Record<string, string[]> = {
+  posts: ['/', '/blog/'],
   tools: ['/', '/tools/'],
   states: ['/', '/states/'],
   'state-pages': [],

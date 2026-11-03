@@ -56,5 +56,5 @@ export async function categoryUrls(): Promise<Url[]> {
 }
 
 export async function expertUrls(): Promise<Url[]> {
-  return (await published('lawyers', { slug: true })).filter(indexable).map((d) => ({ loc: abs(docPath('lawyers', d)), lastmod: d.updatedAt?.slice(0, 10) }))
+  return (await published('lawyers', { slug: true, indexing: true })).filter((d) => d.indexing === 'index').filter(indexable).map((d) => ({ loc: abs(docPath('lawyers', d)), lastmod: d.updatedAt?.slice(0, 10) }))
 }

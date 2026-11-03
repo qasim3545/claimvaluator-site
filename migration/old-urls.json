@@ -1,0 +1,50 @@
+[
+ {
+  "path": "/",
+  "kind": "page"
+ },
+ {
+  "path": "/blog/",
+  "kind": "page"
+ },
+ {
+  "path": "/about/",
+  "kind": "page"
+ },
+ {
+  "path": "/car-accident-settlement-calculator/",
+  "kind": "tool-hub"
+ },
+ {
+  "path": "/states/",
+  "kind": "page"
+ },
+ {
+  "path": "/laws/",
+  "kind": "page"
+ },
+ {
+  "path": "/free-case-review/",
+  "kind": "page"
+ },
+ {
+  "path": "/car-accident-settlement-calculator/texas/",
+  "kind": "state-calculator"
+ },
+ {
+  "path": "/states/texas/",
+  "kind": "state-hub"
+ },
+ {
+  "path": "/laws/statute-of-limitations/",
+  "kind": "page"
+ },
+ {
+  "path": "/blog/how-car-accident-settlements-work/",
+  "kind": "post"
+ },
+ {
+  "path": "/find-an-expert/jane-doe-esq/",
+  "kind": "expert"
+ }
+]

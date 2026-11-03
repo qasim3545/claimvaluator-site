@@ -6,7 +6,7 @@ import { authenticated } from '../../access/authenticated'
 import { authenticatedOrPublished } from '../../access/authenticatedOrPublished'
 import { generatePreviewPath } from '../../utilities/generatePreviewPath'
 import { populateAuthors } from './hooks/populateAuthors'
-import { revalidateDelete, revalidatePost } from './hooks/revalidatePost'
+import { revalidateDoc, revalidateDocDelete } from '../../hooks/revalidateDoc'
 
 import { faqsField, legacyHtmlField, seoTab, sourcesField } from '../../fields/shared'
 import { slugField } from 'payload'
@@ -190,9 +190,9 @@ export const Posts: CollectionConfig<'posts'> = {
     slugField(),
   ],
   hooks: {
-    afterChange: [revalidatePost],
+    afterChange: [revalidateDoc('posts')],
     afterRead: [populateAuthors],
-    afterDelete: [revalidateDelete],
+    afterDelete: [revalidateDocDelete('posts')],
   },
   versions: {
     drafts: {

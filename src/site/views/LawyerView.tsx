@@ -13,7 +13,7 @@ export function LawyerView({ doc }: { doc: any }) {
         <p className="lead">
           {[doc.firm, doc.city, st?.name].filter(Boolean).join(', ')}
         </p>
-        {doc.status === 'unconfirmed' ? (
+        {doc.verified === 'unverified' ? (
           <p className="callout callout--warning" style={{ marginTop: 16, maxWidth: 640 }}>
             Listed from a public registry. We have not confirmed this profile with the lawyer or firm.
           </p>
@@ -31,7 +31,30 @@ export function LawyerView({ doc }: { doc: any }) {
               </ul>
             </section>
           ) : null}
+          <dl className="ledger__rows" style={{ maxWidth: 560 }}>
+            {[
+              ['Admitted', doc.year],
+              ['Law school', doc.school],
+              ['Bar admissions', (doc.bars || []).join(', ')],
+              ['Registration status', doc.regStatus],
+              ['Website', doc.website ? <a href={doc.website} rel="nofollow noopener">{doc.website.replace(/^https?:\/\//, '')}</a> : null],
+              ['Phone', doc.publicPhone],
+            ]
+              .filter(([, v]) => v)
+              .map(([k, v]) => (
+                <div className="ledger__row" key={String(k)}>
+                  <dt>{k}</dt>
+                  <dd style={{ fontFamily: 'var(--sans)', fontSize: '0.9375rem', whiteSpace: 'normal', textAlign: 'right' }}>{v}</dd>
+                </div>
+              ))}
+          </dl>
           <Prose data={doc.content} legacyHtml={doc.legacyHtml} />
+          {doc.sourceUrl ? (
+            <p className="cv-fine">
+              Source: <a href={doc.sourceUrl} rel="nofollow noopener">{doc.sourceLabel || doc.sourceUrl}</a>
+              {doc.sourceChecked ? `, checked ${doc.sourceChecked}` : ''}.
+            </p>
+          ) : null}
           <p className="cv-fine">ClaimValuator does not endorse or rank lawyers. Check a lawyer’s standing with the state bar before you hire them.</p>
         </div>
         <aside className="article__aside" />
