@@ -3,6 +3,7 @@ import { authenticated } from '../access/authenticated'
 import { revalidateDoc, revalidateDocDelete } from '../hooks/revalidateDoc'
 import { authenticatedOrPublished } from '../access/authenticatedOrPublished'
 import { faqsField, legacyHtmlField, reviewFields, seoTab, sourcesField } from '../fields/shared'
+import { articleEditor } from '../fields/articleEditor'
 
 /** The 50 states and DC: the rules every calculator uses, and each state's guide at /states/{slug}/. */
 export const States: CollectionConfig<'states'> = {
@@ -22,7 +23,7 @@ export const States: CollectionConfig<'states'> = {
           label: 'Guide',
           fields: [
             { name: 'excerpt', type: 'textarea', label: 'Lead (under the title)' },
-            { name: 'content', type: 'richText', label: 'State guide (2,500+ words, every fact cited)' },
+            { name: 'content', type: 'richText', label: 'State guide (2,500+ words, every fact cited)', editor: articleEditor },
             legacyHtmlField(),
             faqsField(),
             sourcesField(),

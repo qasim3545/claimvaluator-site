@@ -3,6 +3,7 @@ import { authenticated } from '../access/authenticated'
 import { revalidateDoc, revalidateDocDelete } from '../hooks/revalidateDoc'
 import { authenticatedOrPublished } from '../access/authenticatedOrPublished'
 import { faqsField, legacyHtmlField, reviewFields, seoTab, sourcesField } from '../fields/shared'
+import { articleEditor } from '../fields/articleEditor'
 
 /** One calculator for one state, at /{tool}/{state}/. */
 export const StatePages: CollectionConfig<'state-pages'> = {
@@ -26,12 +27,13 @@ export const StatePages: CollectionConfig<'state-pages'> = {
           label: 'Page content',
           fields: [
             { name: 'excerpt', type: 'textarea', label: 'Lead (under the title)' },
-            { name: 'content', type: 'richText', label: 'Intro above the rules' },
+            { name: 'content', type: 'richText', label: 'Intro above the rules', editor: articleEditor },
             legacyHtmlField(),
             {
               name: 'stateSection',
               type: 'richText',
               label: 'What changes this claim in this state (800–1,200 words)',
+              editor: articleEditor,
             },
             faqsField(),
             sourcesField(),

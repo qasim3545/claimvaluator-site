@@ -3,6 +3,7 @@ import { authenticated } from '../access/authenticated'
 import { authenticatedOrPublished } from '../access/authenticatedOrPublished'
 import { revalidateDoc, revalidateDocDelete } from '../hooks/revalidateDoc'
 import { legacyHtmlField, seoTab } from '../fields/shared'
+import { articleEditor } from '../fields/articleEditor'
 
 export const PRACTICE_AREAS = [
   'Personal injury', 'Car accidents', 'Truck accidents', 'Motorcycle accidents', 'Pedestrian and bicycle accidents',
@@ -38,7 +39,7 @@ export const Lawyers: CollectionConfig<'lawyers'> = {
             { type: 'row', fields: [{ name: 'city', type: 'text' }, { name: 'state', type: 'relationship', relationTo: 'states' }] },
             { name: 'practiceAreas', type: 'select', hasMany: true, options: PRACTICE_AREAS.map((v) => ({ label: v, value: v })) },
             { name: 'excerpt', type: 'textarea' },
-            { name: 'content', type: 'richText' },
+            { name: 'content', type: 'richText', editor: articleEditor },
             legacyHtmlField(),
           ],
         },

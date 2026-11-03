@@ -3,6 +3,7 @@ import { authenticated } from '../access/authenticated'
 import { revalidateDoc, revalidateDocDelete } from '../hooks/revalidateDoc'
 import { authenticatedOrPublished } from '../access/authenticatedOrPublished'
 import { faqsField, legacyHtmlField, reviewFields, seoTab, sourcesField } from '../fields/shared'
+import { articleEditor } from '../fields/articleEditor'
 
 export const TOOL_CATEGORIES = [
   { label: 'Accidents and injuries', value: 'accident' },
@@ -38,7 +39,7 @@ export const Tools: CollectionConfig<'tools'> = {
           label: 'Page content',
           fields: [
             { name: 'excerpt', type: 'textarea', label: 'Lead (under the title)' },
-            { name: 'content', type: 'richText', label: 'Guide below the calculator' },
+            { name: 'content', type: 'richText', label: 'Guide below the calculator', editor: articleEditor },
             legacyHtmlField(),
             faqsField(),
             sourcesField(),

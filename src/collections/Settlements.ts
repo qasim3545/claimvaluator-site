@@ -3,6 +3,7 @@ import { authenticated } from '../access/authenticated'
 import { revalidateDoc, revalidateDocDelete } from '../hooks/revalidateDoc'
 import { authenticatedOrPublished } from '../access/authenticatedOrPublished'
 import { seoTab, sourcesField } from '../fields/shared'
+import { articleEditor } from '../fields/articleEditor'
 
 /** Open class-action settlements with claim deadlines. Keep each one current; expired ones drop off the tracker. */
 export const Settlements: CollectionConfig<'settlements'> = {
@@ -24,7 +25,7 @@ export const Settlements: CollectionConfig<'settlements'> = {
             { name: 'fund', type: 'text', label: 'Settlement fund (as stated by the claims administrator)' },
             { name: 'whoQualifies', type: 'textarea' },
             { name: 'payout', type: 'textarea', label: 'Payout rules (as stated in the settlement)' },
-            { name: 'content', type: 'richText' },
+            { name: 'content', type: 'richText', editor: articleEditor },
             sourcesField(),
           ],
         },

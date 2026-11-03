@@ -12,7 +12,9 @@ import { hasLexical, lexicalToc } from '../text'
 export function StateHubView({ doc, calcPages, tools }: { doc: any; calcPages: any[]; tools: any[] }) {
   const s = getState(doc.slug)
   const neighbours = ((s?.nb as string[]) || []).map((slug) => getState(slug)).filter(Boolean) as any[]
-  const toc = hasLexical(doc.content) ? lexicalToc(doc.content) : []
+  // Once a state's guide is written in the editor, it replaces the generated example and rules sections.
+  const written = hasLexical(doc.content)
+  const toc = written ? lexicalToc(doc.content) : []
   const otherTools = tools.filter((t) => t.usesStates && !t.statePages)
   return (
     <>
@@ -45,9 +47,9 @@ export function StateHubView({ doc, calcPages, tools }: { doc: any; calcPages: a
       </section>
       <div className="wrap article">
         <div className="article__main">
-          {doc.rulesHtml ? <div className="prose" dangerouslySetInnerHTML={{ __html: doc.rulesHtml }} /> : null}
+          {!written && doc.rulesHtml ? <div className="prose" dangerouslySetInnerHTML={{ __html: doc.rulesHtml }} /> : null}
           <Prose data={doc.content} legacyHtml={doc.legacyHtml} />
-          <Faq items={mergeFaq(doc.generatedFaq, doc.faqs)} />
+          <Faq items={mergeFaq(written ? null : doc.generatedFaq, doc.faqs)} />
           <Sources items={doc.sources} />
         </div>
         <aside className="article__aside">

@@ -9,6 +9,7 @@ import { getPayload } from 'payload'
 import config from '@payload-config'
 import { convertHTMLToLexical, editorConfigFactory } from '@payloadcms/richtext-lexical'
 import { JSDOM } from 'jsdom'
+import { articleEditor } from '../src/fields/articleEditor'
 import fs from 'fs'
 import path from 'path'
 
@@ -19,7 +20,7 @@ const copy = read('tools-new-content.json') as Record<string, any>
 const force = process.env.FORCE === '1'
 
 const payload = await getPayload({ config })
-const editorConfig = await editorConfigFactory.default({ config: payload.config })
+const editorConfig = await editorConfigFactory.fromEditor({ config: payload.config, editor: articleEditor })
 const ctx = { disableRevalidate: true }
 
 const author = (

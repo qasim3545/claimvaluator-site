@@ -4,6 +4,8 @@ import {
   HeadingFeature,
   HorizontalRuleFeature,
   InlineToolbarFeature,
+  OrderedListFeature,
+  UnorderedListFeature,
   lexicalEditor,
 } from '@payloadcms/richtext-lexical'
 import type { Block } from 'payload'
@@ -43,10 +45,13 @@ export const TableBlock: Block = {
   ],
 }
 
+/** The editor for every long page: headings, lists, links, tables, callouts, images and embedded calculators. */
 export const articleEditor = lexicalEditor({
   features: ({ rootFeatures }) => [
     ...rootFeatures,
     HeadingFeature({ enabledHeadingSizes: ['h2', 'h3', 'h4'] }),
+    UnorderedListFeature(),
+    OrderedListFeature(),
     BlocksFeature({ blocks: [MediaBlock, Banner, Callout, TableBlock, CalculatorEmbed] }),
     FixedToolbarFeature(),
     InlineToolbarFeature(),
