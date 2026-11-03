@@ -918,9 +918,12 @@ p {
 }
 .cv-row.is-strong {
   border-top: 1px solid var(--ink);
-  border-bottom: 3px double var(--ink);
+  border-bottom: 1px solid var(--ink);
   padding-top: 8px;
   margin-top: 4px;
+}
+.cv-row.is-strong:last-child {
+  border-bottom: 3px double var(--ink);
 }
 .cv-row.is-strong .cv-mono {
   font-size: 1.125rem;

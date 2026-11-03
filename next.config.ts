@@ -48,6 +48,7 @@ const nextConfig: NextConfig = {
   // Trailing slashes are added by src/proxy.ts for site pages only (matches WordPress).
   skipTrailingSlashRedirect: true,
   poweredByHeader: false,
+  devIndicators: false,
   redirects,
   async headers() {
     const security = [
