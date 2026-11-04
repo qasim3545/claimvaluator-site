@@ -1,6 +1,8 @@
 import { getState } from '@/calculators/data'
 import { docPath } from '@/utilities/paths'
 import { Byline } from '../Byline'
+import { abs } from '../cms'
+import { JsonLd } from '../JsonLd'
 import { Crumbs } from '../Crumbs'
 import { Faq, mergeFaq } from '../Faq'
 import { Prose } from '../Prose'
@@ -68,6 +70,25 @@ export function StateHubView({ doc, calcPages, tools }: { doc: any; calcPages: a
           ) : null}
         </aside>
       </div>
+      {written ? (
+        <JsonLd
+          data={{
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: doc.title,
+            description: doc.meta?.description || doc.excerpt || undefined,
+            mainEntityOfPage: abs(docPath('states', doc)),
+            datePublished: doc.createdAt,
+            dateModified: doc.reviewedAt || doc.updatedAt,
+            about: { '@type': 'State', name: doc.name },
+            image: abs('/og-default.jpg'),
+            author: doc.author?.name
+              ? { '@type': 'Person', name: doc.author.name, url: doc.author.slug ? abs(docPath('users', doc.author)) : undefined }
+              : { '@type': 'Organization', name: 'ClaimValuator' },
+            publisher: { '@type': 'Organization', name: 'ClaimValuator', logo: { '@type': 'ImageObject', url: abs('/favicon.svg') } },
+          }}
+        />
+      ) : null}
     </>
   )
 }

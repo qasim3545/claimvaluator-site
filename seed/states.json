@@ -1673,8 +1673,8 @@
             "cap_cite": "",
             "dog": {
                 "rule": "common",
-                "text": "Owners are liable for injuries if they knew or should have known the dog was vicious. Medical costs are covered without proof of fault if the dog was already declared dangerous.",
-                "cite": "N.Y. Agric. & Mkts. Law § 123"
+                "text": "Owners are strictly liable if they knew or should have known the dog was vicious, and since 2025 they can also be liable for ordinary negligence. Medical costs are covered without proof of fault if the dog was already declared dangerous.",
+                "cite": "Flanders v. Goodfellow, 44 N.Y.3d 57 (2025); N.Y. Agric. & Mkts. Law § 123"
             },
             "reviewer": {
                 "name": "",
@@ -3449,7 +3449,7 @@
             "cap": null,
             "capText": "No cap on injury damages. Medical malpractice and punitive damages can have separate limits.",
             "dog": "common",
-            "dogText": "Owners are liable for injuries if they knew or should have known the dog was vicious. Medical costs are covered without proof of fault if the dog was already declared dangerous."
+            "dogText": "Owners are strictly liable if they knew or should have known the dog was vicious, and since 2025 they can also be liable for ordinary negligence. Medical costs are covered without proof of fault if the dog was already declared dangerous."
         },
         "north-carolina": {
             "slug": "north-carolina",
