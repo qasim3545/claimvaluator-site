@@ -265,7 +265,7 @@
             "nf": null,
             "cap": {
                 "amount": 1500000,
-                "text": "$1.5 million on non-economic damages for claims that arose on or after January 1, 2025.",
+                "text": "$1.5 million on non-economic damages for lawsuits filed on or after January 1, 2025.",
                 "cite": "Colo. Rev. Stat. § 13-21-102.5"
             },
             "cap_text": "",
@@ -1043,8 +1043,8 @@
             "um": true,
             "nf": null,
             "cap": {
-                "amount": 965000,
-                "text": "$965,000 on non-economic damages for injuries on or after October 1, 2026. The cap rises by $15,000 every October 1.",
+                "amount": 980000,
+                "text": "$980,000 on non-economic damages for injuries on or after October 1, 2026. The cap rises by $15,000 every October 1.",
                 "cite": "Md. Code, Cts. & Jud. Proc. § 11-108"
             },
             "cap_text": "",
@@ -2752,7 +2752,7 @@
                 "cat": 0,
                 "formula": ""
             },
-            "capText": "$1.5 million on non-economic damages for claims that arose on or after January 1, 2025.",
+            "capText": "$1.5 million on non-economic damages for lawsuits filed on or after January 1, 2025.",
             "dog": "limited",
             "dogText": "Owners are strictly liable for economic damages when a dog causes serious bodily injury or death. Other bites follow the negligence rules."
         },
@@ -3133,11 +3133,11 @@
             ],
             "nf": null,
             "cap": {
-                "amount": 965000,
+                "amount": 980000,
                 "cat": 0,
                 "formula": ""
             },
-            "capText": "$965,000 on non-economic damages for injuries on or after October 1, 2026. The cap rises by $15,000 every October 1.",
+            "capText": "$980,000 on non-economic damages for injuries on or after October 1, 2026. The cap rises by $15,000 every October 1.",
             "dog": "limited",
             "dogText": "The law presumes the owner knew the dog was dangerous, which the owner can rebut. Owners are strictly liable for a dog running at large."
         },
