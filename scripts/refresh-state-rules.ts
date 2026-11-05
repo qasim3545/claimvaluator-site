@@ -3,7 +3,7 @@
  * for the state hub and each state calculator page. Use it after correcting a rule in seed/states.json and
  * seed/state_blocks.json. Only the generated fields are rewritten, so anything edited in the admin stays as it is.
  * Past uses: Maryland cap (Oct 2026 amount), Colorado cap wording (filing date), Oklahoma 2025 cap (SB 453).
- * Usage: ONLY=oklahoma npx payload run scripts/refresh-state-rules.ts
+ * Usage: ONLY=oklahoma npx payload run scripts/refresh-state-rules.ts   (ONLY=all for every state)
  */
 import { getPayload } from 'payload'
 import config from '@payload-config'
@@ -12,7 +12,8 @@ import path from 'path'
 
 const states = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'seed', 'states.json'), 'utf8')).states
 const blocks = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'seed', 'state_blocks.json'), 'utf8'))
-const slugs = (process.env.ONLY || '').split(',').map((s) => s.trim()).filter(Boolean)
+const only = (process.env.ONLY || '').trim()
+const slugs = only === 'all' ? Object.keys(states) : only.split(',').map((s) => s.trim()).filter(Boolean)
 const payload = await getPayload({ config })
 const ctx = { disableRevalidate: true }
 

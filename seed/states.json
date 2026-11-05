@@ -2505,8 +2505,8 @@
                 "virginia",
                 "kentucky"
             ],
-            "fault": "bar50",
-            "fault_cite": "W. Va. Code § 55-7-13a",
+            "fault": "bar51",
+            "fault_cite": "W. Va. Code § 55-7-13c",
             "sol": 2,
             "sol_cite": "W. Va. Code § 55-2-12",
             "ins": [
@@ -3837,7 +3837,7 @@
             "slug": "west-virginia",
             "name": "West Virginia",
             "short": "West Virginia",
-            "fault": "bar50",
+            "fault": "bar51",
             "barScope": "all",
             "faultPrior": null,
             "sol": 2,

@@ -76,13 +76,34 @@ function blocksToHtml(blocks: any[]): { html: string; template?: string } {
   return { html: cleanHtml(parts.join('\n')), template }
 }
 
+/** Undo the HTML entities WordPress stores in SEO fields (“&amp;” would otherwise show in titles). */
+const ENTITIES: Record<string, string> = { amp: '&', quot: '"', apos: "'", lt: '<', gt: '>', nbsp: ' ', rsquo: '’', lsquo: '‘', ldquo: '“', rdquo: '”', ndash: '–', mdash: '—', hellip: '…' }
+export function decodeEntities(v?: string | null) {
+  if (!v) return v || undefined
+  return v
+    .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)))
+    .replace(/&([a-z]+);/gi, (m, n) => ENTITIES[n.toLowerCase()] ?? m)
+}
+
+/**
+ * Rank Math titles use variables such as %currentyear%. The export resolves them to blanks,
+ * which leaves “()” in 374 titles, so the raw template is used instead. %currentyear% is kept
+ * and filled in when the page renders (see src/site/meta.ts); other variables are dropped.
+ */
+function seoTitle(p: any) {
+  const raw: string = p.meta?.rank_math_title || ''
+  const t = raw.includes('%') ? raw.replace(/%(?!currentyear%)[a-z_]+%/g, '').replace(/\s{2,}/g, ' ').trim() : p.seo?.title
+  return decodeEntities(t)
+}
+
 function seoMeta(p: any, ownPath: string) {
   const s = p.seo || {}
   const robots = Array.isArray(s.robots) ? s.robots : []
   const canonical = s.canonical && s.canonical.replace(HOME, '') !== ownPath ? s.canonical : undefined
   return {
-    title: s.title || undefined,
-    description: s.description || undefined,
+    title: seoTitle(p) || undefined,
+    description: decodeEntities(s.description) || undefined,
     noindex: robots.includes('noindex'),
     canonical,
   }
@@ -163,6 +184,12 @@ async function mediaFor(id?: number | null) {
   if (!fs.existsSync(src)) {
     warnings.push(`Missing image file ${a.file}`)
     return undefined
+  }
+  // Re-running the import reuses images it already made instead of uploading copies.
+  const existing = await payload.find({ collection: 'media', where: { filename: { equals: path.basename(src) } }, limit: 1, depth: 0 })
+  if (existing.docs[0]) {
+    mediaIds.set(id, existing.docs[0].id)
+    return existing.docs[0].id
   }
   let doc: any
   try {
@@ -256,7 +283,7 @@ for (const p of posts.filter((p) => p.type === 'post')) {
     reviewerTitle: p.meta?._cv_reviewer_title || undefined,
     reviewerUrl: p.meta?._cv_reviewer_url || undefined,
     reviewedAt: date(p.modified_gmt),
-    meta: { ...seoMeta(p, p.path), description: p.seo?.description || p.excerpt || undefined },
+    meta: { ...seoMeta(p, p.path), description: decodeEntities(p.seo?.description) || p.excerpt || undefined },
   })
   if (p.status === 'future') warnings.push(`Post "${p.title}" was scheduled for ${p.date_gmt} UTC; imported as a draft with that publish date. Use Schedule publish in the editor.`)
 }

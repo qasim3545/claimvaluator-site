@@ -19,7 +19,8 @@
     "start": "cross-env NODE_OPTIONS=--no-deprecation next start",
     "test": "pnpm run test:int && pnpm run test:e2e",
     "test:e2e": "cross-env NODE_OPTIONS=\"--no-deprecation --import=tsx/esm\" playwright test --config=playwright.config.ts",
-    "test:int": "cross-env NODE_OPTIONS=--no-deprecation vitest run --config ./vitest.config.mts"
+    "test:int": "cross-env NODE_OPTIONS=--no-deprecation vitest run --config ./vitest.config.mts",
+    "migrate:wp": "cross-env NODE_OPTIONS=--no-deprecation sh -c 'payload run scripts/import-wordpress.ts && FORCE=1 payload run scripts/seed-state-guides.ts && ONLY=all payload run scripts/refresh-state-rules.ts && payload run scripts/fix-wv-fault-rule.ts'"
   },
   "dependencies": {
     "@payloadcms/admin-bar": "3.92.1",
