@@ -13,8 +13,9 @@ import './site.css'
 
 const serif = localFont({
   src: [
-    { path: '../fonts/source-serif-4-latin-opsz-normal.woff2', style: 'normal', weight: '200 900' },
-    { path: '../fonts/source-serif-4-latin-opsz-italic.woff2', style: 'italic', weight: '200 900' },
+    { path: '../fonts/libre-caslon-text-latin-400-normal.woff2', style: 'normal', weight: '400' },
+    { path: '../fonts/libre-caslon-text-latin-400-italic.woff2', style: 'italic', weight: '400' },
+    { path: '../fonts/libre-caslon-text-latin-700-normal.woff2', style: 'normal', weight: '700' },
   ],
   variable: '--font-serif',
   display: 'swap',
@@ -52,7 +53,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   )
 }
 
-export const viewport: Viewport = { themeColor: '#0e5e47', width: 'device-width', initialScale: 1 }
+export const viewport: Viewport = { themeColor: '#0b1f3a', width: 'device-width', initialScale: 1 }
 
 export const metadata: Metadata = {
   metadataBase: new URL(getServerSideURL()),
