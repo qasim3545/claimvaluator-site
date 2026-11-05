@@ -22,3 +22,16 @@
     opacity: 0.85;
   }
 }
+
+.before-dashboard__setup {
+  margin-bottom: calc(var(--base) * 1.5);
+  padding: calc(var(--base) * 1);
+  border: 1px solid var(--theme-elevation-150);
+  border-radius: 4px;
+
+  ol {
+    margin-top: calc(var(--base) * 0.5);
+    font-family: monospace;
+    font-size: 13px;
+  }
+}

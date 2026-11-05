@@ -9,7 +9,7 @@ Run these once against the production database, in this order.
 3. Run:
 
    ```
-   WP_EXPORT=./migration/claimvaluator-export.json WP_UPLOADS=./migration/uploads pnpm migrate:wp
+   npx payload run scripts/setup-content.ts
    ```
 
    This runs four steps:

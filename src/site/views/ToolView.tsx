@@ -35,7 +35,7 @@ export function ToolView({ doc }: { doc: any }) {
         <CalcBlock toolSlug={doc.slug} />
       </div>
       {doc.statePages ? (
-        <section className="band band--ledger" aria-labelledby="by-state">
+        <section className="band band--panel" aria-labelledby="by-state">
           <div className="wrap">
             <div className="band__head">
               <h2 id="by-state">{doc.short} rules by state</h2>

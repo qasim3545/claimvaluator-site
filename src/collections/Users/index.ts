@@ -14,6 +14,18 @@ export const Users: CollectionConfig = {
   },
   admin: { defaultColumns: ['name', 'email', 'role'], useAsTitle: 'name', group: 'Settings' },
   auth: { maxLoginAttempts: 5, lockTime: 15 * 60 * 1000 },
+  hooks: {
+    beforeChange: [
+      // The account made on the "create first user" screen of a new site is the admin.
+      async ({ data, operation, req }) => {
+        if (operation === 'create') {
+          const { totalDocs } = await req.payload.count({ collection: 'users', overrideAccess: true, req })
+          if (totalDocs === 0) data.role = 'admin'
+        }
+        return data
+      },
+    ],
+  },
   fields: [
     { name: 'name', type: 'text', required: true },
     {

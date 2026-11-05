@@ -11,7 +11,7 @@
 .cv-btn--ghost { background: transparent; color: var(--wp--preset--color--ink); border: 1.5px solid var(--wp--preset--color--field-line); }
 .cv-btn--ghost:hover { background: var(--wp--preset--color--ground); color: var(--wp--preset--color--ink); }
 .cv-btn--mint { background: var(--wp--preset--color--accent-on-dark); color: var(--wp--preset--color--ink); font-weight: 700; }
-.cv-btn--mint:hover { background: #a6ead5; color: var(--wp--preset--color--ink); }
+.cv-btn--mint:hover { background: var(--brass-hover); color: var(--wp--preset--color--ink); }
 .cv-fine { font-size: 0.75rem; line-height: 1.5; color: var(--wp--preset--color--ink-2); }
 .cv-notice { padding: 14px 16px; border-radius: 12px; background: var(--wp--preset--color--ground); border: 1px solid var(--wp--preset--color--line); }
 .cv-notice p { margin: 0; }
@@ -46,7 +46,7 @@ select.cv-control { appearance: none; padding-right: 36px; background-image: url
 .cv-choice { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; min-height: 44px; padding: 10px 12px; border-radius: var(--wp--custom--radius--control); border: 1.5px solid var(--wp--preset--color--field-line); background: var(--wp--preset--color--surface); color: var(--wp--preset--color--ink); font: inherit; text-align: left; cursor: pointer; }
 .cv-choice--cards { min-height: 64px; }
 .cv-choice--pills { justify-content: center; border-radius: var(--wp--custom--radius--pill); padding: 0 16px; font-size: 0.875rem; font-weight: 600; }
-.cv-choice[aria-pressed="true"] { border-color: var(--wp--preset--color--accent); background: var(--wp--preset--color--accent-tint); color: #0B4A3B; }
+.cv-choice[aria-pressed="true"] { border-color: var(--wp--preset--color--accent); background: var(--wp--preset--color--accent-tint); color: var(--accent-ink); }
 .cv-choice--pills[aria-pressed="true"] { background: var(--wp--preset--color--ink); border-color: var(--wp--preset--color--ink); color: #fff; }
 .cv-choice__t { font-size: 0.9375rem; font-weight: 700; }
 .cv-choice__s { font-size: 0.8125rem; }
@@ -128,11 +128,11 @@ select.cv-control { appearance: none; padding-right: 36px; background-image: url
 
 /* Rule tags */
 .cv-rule { display: inline-block; font-size: 0.75rem; font-weight: 600; padding: 2px 8px; border-radius: var(--wp--custom--radius--pill); line-height: 1.5; white-space: nowrap; }
-.cv-rule--pure { background: #E3F2ED; color: #0B5A48; }
-.cv-rule--bar51 { background: #E2EBF8; color: #1C4C8F; }
-.cv-rule--bar50 { background: #EEE6F8; color: #5A3A92; }
-.cv-rule--contributory { background: #FBE6DF; color: #9A3412; }
-.cv-rule--slight_gross { background: #EEF1F3; color: #3F4D58; }
+.cv-rule--pure { background: var(--rule-pure); color: var(--navy); }
+.cv-rule--bar51 { background: var(--rule-51); color: var(--navy); }
+.cv-rule--bar50 { background: var(--rule-50); color: #fff; }
+.cv-rule--contributory { background: var(--rule-contrib); color: #fff; }
+.cv-rule--slight_gross { background: var(--rule-slight); color: var(--navy); }
 .cv-rule--nf { background: transparent; border: 1px solid var(--wp--preset--color--ink-2); color: #3F4D58; padding: 1px 7px; }
 
 /* States grid */
@@ -181,8 +181,8 @@ select.cv-control { appearance: none; padding-right: 36px; background-image: url
 .cv-linklist ul { margin: 0; display: flex; flex-direction: column; gap: 10px; }
 .cv-linklist li a { color: var(--wp--preset--color--ink); text-decoration: none; }
 .cv-aside { display: flex; flex-direction: column; gap: 16px; }
-.cv-tip { padding: 20px; background: var(--wp--preset--color--accent-tint); border-radius: var(--wp--custom--radius--card); display: flex; flex-direction: column; gap: 10px; font-size: 0.9375rem; color: #234A40; }
-.cv-tip__title { font-size: 1.0625rem; font-weight: 700; color: #0B4A3B; }
+.cv-tip { padding: 20px; background: var(--wp--preset--color--accent-tint); border-radius: var(--wp--custom--radius--card); display: flex; flex-direction: column; gap: 10px; font-size: 0.9375rem; color: var(--body); }
+.cv-tip__title { font-size: 1.0625rem; font-weight: 700; color: var(--accent-ink); }
 .cv-tip a { font-weight: 700; color: var(--wp--preset--color--accent-ink); }
 
 /* Cards */

@@ -33,7 +33,13 @@ export function buildMeta({ doc, path, title, description, type = 'website', pub
     title: t,
     description: d,
     alternates: { canonical },
-    robots: m.noindex ? { index: false, follow: true } : { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+    // A staging copy (SITE_ENV=staging) is never indexed, so it can't compete with the live site.
+    robots:
+      process.env.SITE_ENV === 'staging'
+        ? { index: false, follow: false }
+        : m.noindex
+          ? { index: false, follow: true }
+          : { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
     openGraph: {
       title: t,
       description: d,

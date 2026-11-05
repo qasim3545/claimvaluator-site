@@ -32,3 +32,5 @@ tsconfig.tsbuildinfo
 migration/uploads/
 migration/old-urls.json
 migration/*.json
+# The export the admin's "Load site content" button reads (WordPress logins removed).
+!migration/wordpress-export.json
