@@ -1,0 +1,3 @@
+# Private: lead data, settings and code. Nothing here is served to visitors.
+Require all denied
+Deny from all

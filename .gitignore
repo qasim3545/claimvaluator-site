@@ -34,3 +34,8 @@ migration/old-urls.json
 migration/*.json
 # The export the admin's "Load site content" button reads (WordPress logins removed).
 !migration/wordpress-export.json
+# Static export output and its private settings
+static-out/
+static-php/cv-data/config.php
+static-php/cv-data/admin.json
+static-php/cv-data/leads.sqlite*

@@ -6,6 +6,7 @@ import { ClaimIcon } from '../Icons'
 import { JsonLd } from '../JsonLd'
 import { FillPicker } from '../Picker'
 import { PostList } from '../PostList'
+import { Motion } from '../Motion'
 import { Prose } from '../Prose'
 
 /** Worked example: the multiplier method with a 20% fault reduction in Texas. Arithmetic checked in tests. */
@@ -54,6 +55,9 @@ export function HomeView({ doc, posts }: { doc: any; posts: any[] }) {
             </p>
             <FillPicker />
           </div>
+          <div className="stage">
+            <span className="stage__sheet stage__sheet--back" aria-hidden="true" />
+            <span className="stage__sheet stage__sheet--mid" aria-hidden="true" />
           <figure className="ledger hero__card" aria-labelledby="ex-cap">
             <div className="ledger__title">
               Worked example
@@ -91,6 +95,7 @@ export function HomeView({ doc, posts }: { doc: any; posts: any[] }) {
               Texas cuts the award by your share of fault and bars it at 51%. In a contributory negligence state, the same 20% could bar the claim.
             </figcaption>
           </figure>
+          </div>
         </div>
         <div className="wrap">
           <ul className="proof" aria-label="What the site covers">
@@ -112,11 +117,11 @@ export function HomeView({ doc, posts }: { doc: any; posts: any[] }) {
 
       <section className="band" aria-labelledby="start-title">
         <div className="wrap">
-          <div className="band__head">
+          <div className="band__head" data-reveal>
             <h2 id="start-title">Start with what happened</h2>
             <p>Each calculator asks for the losses you can prove, applies your state’s rules and shows the math line by line.</p>
           </div>
-          <ul className="claims">
+          <ul className="claims" data-reveal>
             {POPULAR.map(([slug, icon]) => {
               const t = getTool(slug)
               if (!t) return null
@@ -139,14 +144,16 @@ export function HomeView({ doc, posts }: { doc: any; posts: any[] }) {
 
       <section className="band band--panel" aria-labelledby="fault-title">
         <div className="wrap fault">
-          <div className="band__head">
+          <div className="band__head" data-reveal>
             <h2 id="fault-title">Your state’s fault rule can cut a claim to zero</h2>
             <p>
               If you were partly to blame, your state’s rule decides how much of the claim survives. Five jurisdictions still bar a claim for any fault at all. Pick
               your state for its deadline, insurance minimums and damage caps, each with the statute or case behind it.
             </p>
           </div>
-          <FaultMap />
+          <div data-reveal>
+            <FaultMap />
+          </div>
         </div>
       </section>
 
@@ -176,7 +183,7 @@ export function HomeView({ doc, posts }: { doc: any; posts: any[] }) {
 
       <section className="band band--panel" aria-labelledby="tools-title">
         <div className="wrap">
-          <div className="band__head">
+          <div className="band__head" data-reveal>
             <h2 id="tools-title">All {tools.length} calculators</h2>
             <p>Settlement money, insurance, deadlines, workplace benefits and employment claims.</p>
           </div>
@@ -186,10 +193,10 @@ export function HomeView({ doc, posts }: { doc: any; posts: any[] }) {
 
       <section className="band" aria-labelledby="how-title">
         <div className="wrap">
-          <div className="band__head">
+          <div className="band__head" data-reveal>
             <h2 id="how-title">How the estimates are built</h2>
           </div>
-          <ol className="steps">
+          <ol className="steps" data-reveal>
             <li>
               <h3>Add up the losses you can prove</h3>
               <p>Medical bills, future care, lost wages and property damage, from your own records.</p>
@@ -211,7 +218,7 @@ export function HomeView({ doc, posts }: { doc: any; posts: any[] }) {
       {posts.length ? (
         <section className="band band--panel" aria-labelledby="guides-title">
           <div className="wrap">
-            <div className="band__head">
+            <div className="band__head" data-reveal>
               <h2 id="guides-title">Guides</h2>
               <p>
                 Plain-English explainers on claims, offers and deadlines. <a href="/blog/">All guides</a>
@@ -245,6 +252,7 @@ export function HomeView({ doc, posts }: { doc: any; posts: any[] }) {
         </div>
       ) : null}
 
+      <Motion />
       <JsonLd
         data={[
           {

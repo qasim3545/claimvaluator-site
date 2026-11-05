@@ -30,8 +30,11 @@ export function LawyerDirectory({ entries, states, areas }: Props) {
   useEffect(() => {
     const p = new URLSearchParams(window.location.search)
     setQ(p.get('q') || '')
-    setState(p.get('state') || '')
-    setArea(p.get('area') || '')
+    // The old site's links used region=us-texas and practice=car-accidents.
+    setState(p.get('state') || (p.get('region') || '').replace(/^us-/, ''))
+    const slug = (v: string) => v.toLowerCase().replace(/['’]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
+    const practice = p.get('practice')
+    setArea(p.get('area') || (practice ? areas.find((a) => slug(a) === practice) || '' : ''))
   }, [])
 
   useEffect(() => {
@@ -67,7 +70,7 @@ export function LawyerDirectory({ entries, states, areas }: Props) {
   const filtered = Boolean(q || state || area)
 
   return (
-    <div className="dir">
+    <div className="dir" id="directory">
       <div className="dir__filters" role="search">
         <div className="cv-field">
           <label className="cv-label" htmlFor="dir-q">

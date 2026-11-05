@@ -72,9 +72,46 @@ export async function importWordPress(payload: Payload, log: Log, opts: { file: 
     for (const b of blocks || []) {
       if (b.name && TEMPLATE_BY_BLOCK[b.name]) template = template || TEMPLATE_BY_BLOCK[b.name]
       if (b.name && DROP.has(b.name)) continue
+      if (b.html && /class="[^"]*\bcv-dir\b/.test(b.html)) template = template || 'directory'
       if (b.html && b.html.trim()) parts.push(b.html)
     }
-    return { html: cleanHtml(parts.join('\n')), template }
+    return { html: dropDrawnSections(cleanHtml(parts.join('\n'))), template }
+  }
+
+  /**
+   * Removes the <section>s the new templates draw themselves: the old page hero (it repeats the H1)
+   * and the old directory widget, which needed WordPress to search. The rest of the page stays.
+   */
+  function dropDrawnSections(html: string) {
+    const out: string[] = []
+    let i = 0
+    while (i < html.length) {
+      const start = html.indexOf('<section', i)
+      if (start < 0) {
+        out.push(html.slice(i))
+        break
+      }
+      out.push(html.slice(i, start))
+      // Find the matching </section>, counting nested sections.
+      let depth = 0
+      let j = start
+      const re = /<section\b|<\/section>/g
+      re.lastIndex = start
+      let m: RegExpExecArray | null
+      while ((m = re.exec(html))) {
+        depth += m[0] === '</section>' ? -1 : 1
+        if (depth === 0) {
+          j = m.index + m[0].length
+          break
+        }
+      }
+      if (j === start) j = html.length
+      const sec = html.slice(start, j)
+      const drawn = /class="[^"]*\bcv-dir\b/.test(sec) || (/\bcv-hero\b/.test(sec) && /<h1[\s>]/i.test(sec))
+      if (!drawn) out.push(sec)
+      i = j
+    }
+    return out.join('').trim()
   }
 
 

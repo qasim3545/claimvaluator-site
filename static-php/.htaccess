@@ -1,0 +1,70 @@
+# ClaimValuator on plain hosting (public_html). Every page is a folder with index.html,
+# so each address stays exactly as it was on WordPress.
+
+Options -Indexes
+DirectoryIndex index.html index.php
+DirectorySlash On
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# One address for the site: https and no www.
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L,NE]
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTP_HOST} !^(localhost|127\.0\.0\.1) [NC]
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L,NE]
+
+# Private folder.
+RewriteRule ^cv-data(/|$) - [F,L]
+
+# Forms post here.
+RewriteRule ^api/leads/?$ api/leads.php [L]
+
+# The state rules feed the old site published.
+RewriteRule ^wp-json/cv/v1/states/?$ wp-json/cv/v1/states.json [L,T=application/json]
+
+# RSS feed.
+RewriteRule ^feed/?$ feed.xml [L,T=application/rss+xml]
+
+# Old WordPress-only addresses.
+RewriteRule ^page-sitemap[0-9]+\.xml$ /page-sitemap.xml [R=301,L]
+RewriteRule ^post-sitemap[0-9]+\.xml$ /post-sitemap.xml [R=301,L]
+RewriteRule ^sitemap\.xml$ /sitemap_index.xml [R=301,L]
+RewriteRule ^wp-sitemap\.xml$ /sitemap_index.xml [R=301,L]
+RewriteRule ^feed/rss2/?$ /feed/ [R=301,L]
+RewriteRule ^comments/feed/?$ /feed/ [R=301,L]
+RewriteRule ^blog/feed/?$ /feed/ [R=301,L]
+RewriteRule ^category/([^/]+)/?$ /blog/topic/$1/ [R=301,L]
+RewriteRule ^(wp-admin|wp-login\.php)(/.*)?$ /leads-admin/ [R=302,L]
+
+# @@REDIRECTS@@
+</IfModule>
+
+<IfModule mod_mime.c>
+AddType application/xml .xml
+AddType image/webp .webp
+AddType image/svg+xml .svg
+AddType font/woff2 .woff2
+AddCharset utf-8 .html .xml .txt .css .js
+</IfModule>
+
+<IfModule mod_headers.c>
+Header always set X-Content-Type-Options "nosniff"
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+Header always set X-Frame-Options "SAMEORIGIN"
+Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains" "expr=%{HTTPS} == 'on'"
+<FilesMatch "\.(js|css|woff2|webp|png|jpe?g|svg|ico)$">
+Header set Cache-Control "public, max-age=604800, stale-while-revalidate=86400"
+</FilesMatch>
+<FilesMatch "\.html$">
+Header set Cache-Control "public, max-age=600, must-revalidate"
+</FilesMatch>
+</IfModule>
+
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/css application/javascript application/xml application/rss+xml text/plain image/svg+xml application/json
+</IfModule>

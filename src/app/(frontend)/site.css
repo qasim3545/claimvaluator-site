@@ -1720,3 +1720,160 @@ p {
 .review :focus-visible {
   outline-color: var(--brass);
 }
+
+/* Depth: the hero sits on a receding brass grid, like a desk under a lamp,
+   and the worked example is a stack of paper turned toward the reader. */
+.hero {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: -25%;
+  right: -25%;
+  bottom: -6%;
+  height: 62%;
+  background-image:
+    linear-gradient(rgba(195, 154, 75, 0.16) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(195, 154, 75, 0.16) 1px, transparent 1px);
+  background-size: 72px 72px;
+  transform: perspective(520px) rotateX(64deg);
+  transform-origin: 50% 100%;
+  -webkit-mask-image: linear-gradient(to top, #000 0%, transparent 78%);
+  mask-image: linear-gradient(to top, #000 0%, transparent 78%);
+  pointer-events: none;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 720px;
+  height: 720px;
+  right: -180px;
+  top: -160px;
+  background: radial-gradient(closest-side, rgba(29, 78, 137, 0.55), transparent);
+  pointer-events: none;
+}
+.stage {
+  --tilt-x: 6deg;
+  --tilt-y: -12deg;
+  position: relative;
+  perspective: 1400px;
+  transform-style: preserve-3d;
+}
+.stage .hero__card {
+  position: relative;
+  transform: rotateX(var(--tilt-x)) rotateY(var(--tilt-y));
+  transform-style: preserve-3d;
+  transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.6) inset,
+    0 40px 80px -30px rgba(0, 0, 0, 0.7),
+    0 18px 30px -18px rgba(0, 0, 0, 0.5);
+}
+.stage__sheet {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--r-card);
+  background: #e9eef5;
+  transform: rotateX(var(--tilt-x)) rotateY(var(--tilt-y)) translate3d(14px, 14px, -40px);
+  transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+  box-shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.6);
+}
+.stage__sheet--back {
+  background: #c9d4e2;
+  transform: rotateX(var(--tilt-x)) rotateY(var(--tilt-y)) translate3d(28px, 28px, -80px);
+}
+@media (max-width: 1023px) {
+  .stage {
+    --tilt-x: 3deg;
+    --tilt-y: -5deg;
+  }
+  .stage__sheet {
+    transform: rotateX(var(--tilt-x)) rotateY(var(--tilt-y)) translate3d(8px, 8px, -20px);
+  }
+  .stage__sheet--back {
+    transform: rotateX(var(--tilt-x)) rotateY(var(--tilt-y)) translate3d(16px, 16px, -40px);
+  }
+}
+
+/* Claim icons as raised brass-on-navy seals */
+.claim__icon {
+  background: radial-gradient(circle at 30% 25%, #2a5287 0%, var(--navy) 62%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.18),
+    inset 0 -3px 6px rgba(0, 0, 0, 0.35),
+    0 4px 0 -1px var(--navy-950),
+    0 10px 18px -8px rgba(11, 31, 58, 0.55);
+  transition: transform 0.2s ease;
+}
+.claim {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+.claim:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 30px -22px rgba(11, 31, 58, 0.55);
+}
+.claim:hover .claim__icon {
+  transform: translateY(-2px) rotate(-4deg);
+}
+
+/* Fault map as a board of raised tiles, tipped back slightly */
+@media (min-width: 1024px) {
+  .faultmap__grid {
+    transform: perspective(1400px) rotateX(16deg);
+    transform-origin: 50% 100%;
+  }
+}
+.faultmap__tile {
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.35),
+    0 3px 0 rgba(11, 31, 58, 0.28);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.faultmap__tile:hover {
+  transform: translateY(-4px) scale(1.08);
+  box-shadow:
+    0 0 0 2px var(--brass),
+    0 8px 0 rgba(11, 31, 58, 0.25),
+    0 14px 18px -8px rgba(11, 31, 58, 0.5);
+}
+
+/* One reveal per section, only when motion is welcome (see Motion.tsx) */
+.has-motion [data-reveal] {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.has-motion [data-reveal].is-in {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .stage .hero__card,
+  .stage__sheet,
+  .claim,
+  .claim__icon,
+  .faultmap__tile {
+    transition: none;
+  }
+}
+
+/* Wide tables from the old posts scroll inside their own box on phones instead of widening the page. */
+.prose .wp-block-table,
+.prose figure:has(> table) {
+  max-width: 100%;
+  overflow-x: auto;
+  margin-inline: 0;
+}
+.prose table {
+  max-width: 100%;
+}
+@media (max-width: 600px) {
+  .prose table.has-fixed-layout {
+    table-layout: auto;
+  }
+}
