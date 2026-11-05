@@ -1,9 +1,9 @@
 /**
- * One-off: refreshes the stored rules and generated sections for states whose cap text changed in the seed files.
- * Maryland's non-economic cap is $980,000 for injuries on or after October 1, 2026 (it was stored as $965,000),
- * and Colorado's HB24-1472 caps apply to lawsuits filed on or after January 1, 2025, not to claims that arose then.
- * Only the generated fields are rewritten, so anything edited in the admin stays as it is.
- * Usage: ONLY=maryland,colorado npx payload run scripts/fix-md-co-caps.ts
+ * Refreshes the stored rules and generated sections (facts, rules, FAQ) for the listed states from the seed files,
+ * for the state hub and each state calculator page. Use it after correcting a rule in seed/states.json and
+ * seed/state_blocks.json. Only the generated fields are rewritten, so anything edited in the admin stays as it is.
+ * Past uses: Maryland cap (Oct 2026 amount), Colorado cap wording (filing date), Oklahoma 2025 cap (SB 453).
+ * Usage: ONLY=oklahoma npx payload run scripts/refresh-state-rules.ts
  */
 import { getPayload } from 'payload'
 import config from '@payload-config'
@@ -12,7 +12,7 @@ import path from 'path'
 
 const states = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'seed', 'states.json'), 'utf8')).states
 const blocks = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'seed', 'state_blocks.json'), 'utf8'))
-const slugs = (process.env.ONLY || 'maryland,colorado').split(',').map((s) => s.trim()).filter(Boolean)
+const slugs = (process.env.ONLY || '').split(',').map((s) => s.trim()).filter(Boolean)
 const payload = await getPayload({ config })
 const ctx = { disableRevalidate: true }
 

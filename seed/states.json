@@ -1873,9 +1873,15 @@
             "ins_cite": "",
             "um": false,
             "nf": null,
-            "cap": null,
-            "cap_text": "None on injury damages. The Oklahoma Supreme Court struck down the non-economic cap in 2019.",
-            "cap_cite": "Beason v. I.E. Miller Services, 2019 OK 28",
+            "cap": {
+                "amount": 500000,
+                "text": "$500,000 on non-economic damages in most bodily injury claims arising on or after September 1, 2025, with no cap for permanent and severe injuries or when the defendant acted with gross negligence or reckless disregard, and none for wrongful death. Earlier injuries have no cap.",
+                "cite": "Okla. Stat. tit. 23, § 61.3",
+                "since": "2025-09-01",
+                "formula": "ok"
+            },
+            "cap_text": "",
+            "cap_cite": "",
             "dog": {
                 "rule": "strict",
                 "text": "Owners are strictly liable for injuries to people lawfully present who did not provoke the dog.",
@@ -3548,8 +3554,13 @@
                 25000
             ],
             "nf": null,
-            "cap": null,
-            "capText": "None on injury damages. The Oklahoma Supreme Court struck down the non-economic cap in 2019.",
+            "cap": {
+                "amount": 500000,
+                "cat": 0,
+                "formula": "ok",
+                "since": "2025-09-01"
+            },
+            "capText": "$500,000 on non-economic damages in most bodily injury claims arising on or after September 1, 2025, with no cap for permanent and severe injuries or when the defendant acted with gross negligence or reckless disregard, and none for wrongful death. Earlier injuries have no cap.",
             "dog": "strict",
             "dogText": "Owners are strictly liable for injuries to people lawfully present who did not provoke the dog."
         },

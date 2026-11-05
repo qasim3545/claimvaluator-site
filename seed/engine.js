@@ -212,13 +212,23 @@
 		}
 	}
 
-	/** Cap non-economic damages where the state applies one. */
-	function capNon(st, non, econ, sev) {
+	/**
+	 * Cap non-economic damages where the state applies one.
+	 * cap.since (ISO date) limits the cap to injuries on or after that date when the injury date is known.
+	 * formula 'ok' (Oklahoma, 2025): no cap for catastrophic (permanent and severe) injuries.
+	 */
+	function capNon(st, non, econ, sev, date) {
 		if (!st || !st.cap || !st.cap.amount) {
 			return { value: non, applied: false, limit: 0 };
 		}
 		var c = st.cap;
 		var limit;
+		if (c.since && date && iso(date) < c.since) {
+			return { value: non, applied: false, limit: 0 };
+		}
+		if (c.formula === 'ok' && sev === 'catastrophic') {
+			return { value: non, applied: false, limit: 0 };
+		}
 		if (c.formula === 'oh') {
 			if (sev === 'catastrophic') {
 				return { value: non, applied: false, limit: 0 };
@@ -326,8 +336,8 @@
 
 		var nonLo = thresholdMet ? econ * m[0] : 0;
 		var nonHi = thresholdMet ? econ * m[1] : 0;
-		var capLo = capNon(st, nonLo, econ, sev);
-		var capHi = capNon(st, nonHi, econ, sev);
+		var capLo = capNon(st, nonLo, econ, sev, date);
+		var capHi = capNon(st, nonHi, econ, sev, date);
 		nonLo = capLo.value;
 		nonHi = capHi.value;
 		var econClaim = Math.max(0, econ - pip);
