@@ -54,7 +54,7 @@ function StatesPanel() {
   )
 }
 
-const PANELS: Record<string, () => React.ReactNode> = {
+const PANELS: Partial<Record<string, () => React.ReactNode>> = {
   '/tools/': ToolsPanel,
   '/states/': StatesPanel,
 }
