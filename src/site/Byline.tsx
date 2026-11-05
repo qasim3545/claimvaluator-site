@@ -22,7 +22,11 @@ export function Byline({ author, reviewLine, reviewedAt, updatedAt, reviewer }: 
           By {author.slug ? <a href={docPath('users', author)}>{name}</a> : name}.{' '}
         </>
       ) : null}
-      {reviewer?.name ? (
+      {reviewer?.name && reviewer.name === name ? (
+        reviewer.title ? (
+          <>{reviewer.title.charAt(0).toUpperCase() + reviewer.title.slice(1).replace(/\.$/, '')}. </>
+        ) : null
+      ) : reviewer?.name ? (
         <>
           Reviewed by {reviewer.url ? <a href={reviewer.url} rel="noopener">{reviewer.name}</a> : reviewer.name}
           {reviewer.title ? `, ${reviewer.title}` : ''}.{' '}
