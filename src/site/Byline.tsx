@@ -13,6 +13,8 @@ type Props = {
 export function Byline({ author, reviewLine, reviewedAt, updatedAt, reviewer }: Props) {
   const name = author && typeof author === 'object' ? author.name : null
   const date = reviewedAt || updatedAt
+  // A team credited as author is not also listed as its own fact-checker.
+  const review = reviewLine && name && reviewLine.includes(name) ? null : reviewLine
   return (
     <p className="byline">
       {name ? (
@@ -25,8 +27,8 @@ export function Byline({ author, reviewLine, reviewedAt, updatedAt, reviewer }: 
           Reviewed by {reviewer.url ? <a href={reviewer.url} rel="noopener">{reviewer.name}</a> : reviewer.name}
           {reviewer.title ? `, ${reviewer.title}` : ''}.{' '}
         </>
-      ) : reviewLine ? (
-        <>{reviewLine.replace(/\.$/, '')}. </>
+      ) : review ? (
+        <>{review.replace(/\.$/, '')}. </>
       ) : null}
       {date ? <>Last reviewed {fmtDate(date)}.</> : null}
     </p>

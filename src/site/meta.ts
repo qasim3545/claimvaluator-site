@@ -11,11 +11,22 @@ type MetaInput = {
   modifiedTime?: string | null
 }
 
+/** Fills %currentyear% in an SEO title or description, the way Rank Math did on the old site. */
+export function fillVars(v?: string | null) {
+  if (!v) return v || undefined
+  return v
+    .replace(/%currentyear%/g, String(new Date().getUTCFullYear()))
+    .replace(/%[a-z_]+%/g, '')
+    .replace(/\(\s*\)/g, '')
+    .replace(/\s{2,}/g, ' ')
+    .trim()
+}
+
 /** Title, description, canonical, robots and social tags for any page. */
 export function buildMeta({ doc, path, title, description, type = 'website', publishedTime, modifiedTime }: MetaInput): Metadata {
   const m = doc?.meta || {}
-  const t = m.title || title
-  const d = m.description || description || undefined
+  const t = fillVars(m.title || title) as string
+  const d = fillVars(m.description || description) || undefined
   const img = typeof m.image === 'object' && m.image ? m.image.sizes?.og?.url || m.image.url : null
   const canonical = m.canonical || abs(path)
   return {
