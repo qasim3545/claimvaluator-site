@@ -1,17 +1,19 @@
+// Plain JavaScript on purpose: Hostinger's build servers can't run Next.js's native compiler,
+// and the WebAssembly fallback can't load a TypeScript config.
 import { withPayload } from '@payloadcms/next/withPayload'
-import type { NextConfig } from 'next'
 import path from 'path'
 import { fileURLToPath } from 'url'
 
 const __filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(__filename)
-import { redirects } from './redirects'
+import { redirects } from './redirects.mjs'
 
 const NEXT_PUBLIC_SERVER_URL = process.env.VERCEL_PROJECT_PRODUCTION_URL
   ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
   : process.env.__NEXT_PRIVATE_ORIGIN || 'http://localhost:3000'
 
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   // Temporarily required on Windows until Next.js fixes Turbopack Sass resolution.
   // See: https://github.com/vercel/next.js/issues/86431
   sassOptions: {
@@ -30,12 +32,12 @@ const nextConfig: NextConfig = {
 
         return {
           hostname: url.hostname,
-          protocol: url.protocol.replace(':', '') as 'http' | 'https',
+          protocol: /** @type {'http' | 'https'} */ (url.protocol.replace(':', '')),
         }
       }),
     ],
   },
-  webpack: (webpackConfig) => {
+  webpack: (/** @type {any} */ webpackConfig) => {
     webpackConfig.resolve.extensionAlias = {
       '.cjs': ['.cts', '.cjs'],
       '.js': ['.ts', '.tsx', '.js', '.jsx'],

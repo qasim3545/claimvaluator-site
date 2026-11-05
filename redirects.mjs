@@ -1,10 +1,9 @@
-import type { NextConfig } from 'next'
-
 /**
  * Fixed redirects that keep old WordPress-only addresses working.
  * Editor-managed redirects live in the CMS (Redirects) and are applied at request time.
  */
-export const redirects: NextConfig['redirects'] = async () => [
+/** @type {import('next').NextConfig['redirects']} */
+export const redirects = async () => [
   // Rank Math split the page sitemap into numbered files.
   { source: '/page-sitemap:n(\\d+).xml', destination: '/page-sitemap.xml', permanent: true },
   { source: '/post-sitemap:n(\\d+).xml', destination: '/post-sitemap.xml', permanent: true },
