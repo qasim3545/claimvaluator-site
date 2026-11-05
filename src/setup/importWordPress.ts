@@ -318,8 +318,15 @@ export async function importWordPress(payload: Payload, log: Log, opts: { file: 
     if (p.status === 'future') warnings.push(`Post "${p.title}" was scheduled for ${p.date_gmt} UTC; imported as a draft with that publish date. Use Schedule publish in the editor.`)
   }
 
+  const stateIdBySlug = new Map<string, number | string>()
+  for (const st of (await payload.find({ collection: 'states', limit: 100, depth: 0, pagination: false, draft: true })).docs as any[]) stateIdBySlug.set(st.slug, st.id)
+
   for (const p of posts.filter((p) => p.type === 'cv_expert')) {
     const m = p.meta || {}
+    // The old site kept a profile out of search unless _cvx_indexable was 1 (93 of 108 were indexable).
+    const indexable = m._cvx_indexable === '1' || m._cvx_index === 'index'
+    const region = (p.terms?.cv_region || [])[0] as string | undefined
+    const stateId = region?.startsWith('us-') ? stateIdBySlug.get(region.slice(3)) : undefined
     const f = (k: string) => (m[`_cvx_${k}`] === '' ? undefined : m[`_cvx_${k}`])
     const names = (tax: string) => (p.terms?.[tax] || []).map((s: string) => termName.get(`${tax}:${s}`) || s)
     const { html } = blocksToHtml(p.blocks)
@@ -336,7 +343,8 @@ export async function importWordPress(payload: Payload, log: Log, opts: { file: 
       website: f('website'), publicEmail: f('email'), publicPhone: f('phone'), image: f('image'),
       source: f('source'), sourceUrl: f('source_url'), sourceLabel: f('source_label'), sourceChecked: f('source_checked'),
       verified: f('verified') || 'unverified',
-      indexing: f('index') === 'index' ? 'index' : 'noindex',
+      indexing: indexable ? 'index' : 'noindex',
+      ...(stateId ? { state: stateId } : {}),
       practiceAreas: names('cv_practice'),
       bars: names('cv_bar'),
       regions: names('cv_region'),

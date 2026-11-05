@@ -28,7 +28,8 @@ export function buildMeta({ doc, path, title, description, type = 'website', pub
   const t = fillVars(m.title || title) as string
   const d = fillVars(m.description || description) || undefined
   const img = typeof m.image === 'object' && m.image ? m.image.sizes?.og?.url || m.image.url : null
-  const canonical = m.canonical || abs(path)
+  // The home page keeps WordPress's form, with the trailing slash.
+  const canonical = m.canonical || (path === '/' ? `${abs('/').replace(/\/$/, '')}/` : abs(path))
   return {
     title: t,
     description: d,

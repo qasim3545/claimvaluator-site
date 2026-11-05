@@ -25,8 +25,22 @@ export function Crumbs({ items }: { items: Crumb[] }) {
       <JsonLd
         data={{
           '@context': 'https://schema.org',
-          '@type': 'BreadcrumbList',
-          itemListElement: all.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.label, item: abs(c.href) })),
+          '@graph': [
+            {
+              '@type': 'WebPage',
+              '@id': `${abs(all[all.length - 1].href)}#webpage`,
+              url: abs(all[all.length - 1].href),
+              name: all[all.length - 1].label,
+              inLanguage: 'en-US',
+              isPartOf: { '@type': 'WebSite', name: 'ClaimValuator', url: abs('/') },
+              breadcrumb: { '@id': `${abs(all[all.length - 1].href)}#breadcrumb` },
+            },
+            {
+              '@type': 'BreadcrumbList',
+              '@id': `${abs(all[all.length - 1].href)}#breadcrumb`,
+              itemListElement: all.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.label, item: abs(c.href) })),
+            },
+          ],
         }}
       />
     </>

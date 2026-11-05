@@ -19,5 +19,13 @@ export default async function Topic({ params }: Args) {
 export async function generateMetadata({ params }: Args): Promise<Metadata> {
   const { slug } = await params
   const cat = await findOne('categories', 'slug', slug, 0)
-  return cat ? buildMeta({ path: `/blog/topic/${slug}/`, title: `${cat.title} Guides | ClaimValuator` }) : {}
+  return cat
+    ? buildMeta({
+        path: `/blog/topic/${slug}/`,
+        title: `${cat.title} Guides | ClaimValuator`,
+        description:
+          (cat as any).description ||
+          `Plain-English ClaimValuator guides on ${String(cat.title).toLowerCase()}: how injury claims work, what they are worth and the state rules that change the outcome.`,
+      })
+    : {}
 }

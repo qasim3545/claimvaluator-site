@@ -58,5 +58,5 @@ export default async function Author({ params }: Args) {
 export async function generateMetadata({ params }: Args): Promise<Metadata> {
   const { slug } = await params
   const user = await loadAuthor(slug)
-  return user ? buildMeta({ path: `/author/${slug}/`, title: `${user.name} | ClaimValuator`, description: user.bio?.slice(0, 155) }) : {}
+  return user ? buildMeta({ path: `/author/${slug}/`, title: `${user.name} | ClaimValuator`, description: user.bio && user.bio.length >= 70 ? user.bio.slice(0, 155) : `${user.name} writes ClaimValuator's injury claim guides and calculators. Every article is fact-checked against state statutes and court opinions.` }) : {}
 }

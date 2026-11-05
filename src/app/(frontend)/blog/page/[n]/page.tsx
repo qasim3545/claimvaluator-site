@@ -16,5 +16,9 @@ export default async function BlogPaged({ params }: Args) {
 
 export async function generateMetadata({ params }: Args): Promise<Metadata> {
   const { n } = await params
-  return buildMeta({ path: `/blog/page/${n}/`, title: `Injury Claim Guides, page ${n} | ClaimValuator` })
+  return buildMeta({
+    path: `/blog/page/${n}/`,
+    title: `Injury Claim Guides, page ${n} | ClaimValuator`,
+    description: `Page ${n} of ClaimValuator's guides on injury claims, settlement value, insurance offers, deadlines and state laws, written in plain English.`,
+  })
 }
