@@ -164,7 +164,15 @@ async function mediaFor(id?: number | null) {
     warnings.push(`Missing image file ${a.file}`)
     return undefined
   }
-  const doc = await payload.create({ collection: 'media', data: { alt: a.alt || a.title || '' } as any, filePath: src })
+  let doc: any
+  try {
+    doc = await payload.create({ collection: 'media', data: { alt: a.alt || a.title || '' } as any, filePath: src })
+  } catch (err: any) {
+    // A damaged image should not stop the whole import. Skip it and report it.
+    warnings.push(`Skipped damaged image ${a.file} (${String(err?.message || err).slice(0, 80)}). Re-upload it in Admin → Media.`)
+    mediaIds.set(id, undefined)
+    return undefined
+  }
   mediaIds.set(id, doc.id)
   tally('media')
   return doc.id

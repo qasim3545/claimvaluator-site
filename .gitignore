@@ -27,6 +27,8 @@ node_modules/
 tsconfig.tsbuildinfo
 
 # Migrated WordPress uploads are deployed separately (large)
-public/wp-content/
+# Old WordPress image URLs are served from here, so the files ship with the code.
+# migration/uploads is only the raw copy the import reads from.
+migration/uploads/
 migration/old-urls.json
 migration/*.json
