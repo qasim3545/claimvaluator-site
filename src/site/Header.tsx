@@ -17,7 +17,7 @@ function ToolsPanel() {
             <div key={g.key} className="mega__group">
               <p className="mega__title">{g.title}</p>
               <ul>
-                {g.tools.slice(0, 8).map((t) => (
+                {g.tools.map((t) => (
                   <li key={t.slug}>
                     <a href={`/${t.slug}/`}>{t.short || t.name}</a>
                   </li>
@@ -68,7 +68,9 @@ export async function SiteHeader() {
     <header className="site-head">
       <div className="site-head__util">
         <div className="wrap site-head__utilbar">
-          <p>Free injury claim estimates built on each state’s statutes and court rules. ClaimValuator is not a law firm.</p>
+          <p>
+            <span className="util-long">Free injury claim estimates built on each state’s statutes and court rules. </span>ClaimValuator is not a law firm.
+          </p>
           <nav aria-label="About ClaimValuator">
             <a href="/methodology/">How we calculate</a>
             <a href="/editorial-policy/">Editorial policy</a>

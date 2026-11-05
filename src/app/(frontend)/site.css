@@ -238,7 +238,8 @@ p {
   text-decoration: underline;
 }
 @media (max-width: 760px) {
-  .site-head__utilbar nav {
+  .site-head__utilbar nav,
+  .util-long {
     display: none;
   }
 }
@@ -681,9 +682,8 @@ p {
 }
 .ledger__row dd {
   margin: 0;
-  font-family: var(--sans);
-  font-size: 1.0625rem;
-  font-weight: 500;
+  font-family: var(--serif);
+  font-size: 1.125rem;
   font-variant-numeric: tabular-nums lining-nums;
   color: var(--ink);
   white-space: nowrap;
