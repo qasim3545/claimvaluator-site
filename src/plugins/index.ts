@@ -3,6 +3,7 @@ import { redirectsPlugin } from '@payloadcms/plugin-redirects'
 import { seoPlugin } from '@payloadcms/plugin-seo'
 import { searchPlugin } from '@payloadcms/plugin-search'
 import { Plugin } from 'payload'
+import { s3Storage } from '@payloadcms/storage-s3'
 import { revalidateRedirects } from '@/hooks/revalidateRedirects'
 import { GenerateTitle, GenerateURL } from '@payloadcms/plugin-seo/types'
 import { searchFields } from '@/search/fieldOverrides'
@@ -61,4 +62,26 @@ export const plugins: Plugin[] = [
       },
     },
   }),
+  /*
+   * Media files go to S3-compatible storage when it is configured (Supabase Storage in production),
+   * because a Hostinger redeploy replaces the app folder and would lose anything uploaded to disk.
+   * Without S3_BUCKET the files stay in public/media, which is fine for local work.
+   */
+  ...(process.env.S3_BUCKET
+    ? [
+        s3Storage({
+          collections: { media: true },
+          bucket: process.env.S3_BUCKET,
+          config: {
+            endpoint: process.env.S3_ENDPOINT,
+            region: process.env.S3_REGION || 'us-east-1',
+            forcePathStyle: true,
+            credentials: {
+              accessKeyId: process.env.S3_ACCESS_KEY_ID || '',
+              secretAccessKey: process.env.S3_SECRET_ACCESS_KEY || '',
+            },
+          },
+        }),
+      ]
+    : []),
 ]

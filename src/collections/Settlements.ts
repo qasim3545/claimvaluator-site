@@ -19,7 +19,7 @@ export const Settlements: CollectionConfig<'settlements'> = {
         {
           label: 'Details',
           fields: [
-            { name: 'status', type: 'select', defaultValue: 'open', options: ['open', 'closed', 'paid'].map((v) => ({ label: v, value: v })) },
+            { name: 'status', type: 'select', enumName: 'enum_settlements_claim_status', defaultValue: 'open', options: ['open', 'closed', 'paid'].map((v) => ({ label: v, value: v })) },
             { name: 'deadline', type: 'date', label: 'Claim deadline' },
             { name: 'claimUrl', type: 'text', label: 'Official claim site' },
             { name: 'fund', type: 'text', label: 'Settlement fund (as stated by the claims administrator)' },

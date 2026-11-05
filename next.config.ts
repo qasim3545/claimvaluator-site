@@ -45,6 +45,8 @@ const nextConfig: NextConfig = {
     return webpackConfig
   },
   reactStrictMode: true,
+  // Used by the admin's "Load site content" step; kept out of the server bundle.
+  serverExternalPackages: ['jsdom'],
   // Trailing slashes are added by src/proxy.ts for site pages only (matches WordPress).
   skipTrailingSlashRedirect: true,
   poweredByHeader: false,
